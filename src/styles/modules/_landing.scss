@@ -57,6 +57,7 @@
 
   & h2 {
     font-size: 2rem;
+    color: var(--primary-blue);
     letter-spacing: 2px;
   }
 
@@ -97,5 +98,52 @@
 
 .section-three {
   background: white;
-  height: 80vh;
+  // height: 80vh;
+  // border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+
+  & h2 {
+    text-align: center;
+    color: var(--primary-purple);
+  }
+
+  & .people {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // display: flex;
+    justify-content: center;
+    gap: 30px;
+    // border: 2px solid blue;
+
+    & .person {
+      // border: 2px solid green;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      border-radius: 10px;
+      border: 1px solid var(--primary-blue);
+      box-shadow: 1px 2px 15px 1px rgb(211, 208, 208);
+
+      & h3 {
+        font-size: 1rem;
+        text-align: center;
+        height: 40%;
+        // border: 2px solid red;
+      }
+
+      & p {
+        font-size: 0.7rem;
+        text-align: center;
+      }
+
+      & .company {
+        color: var(--primary-purple);
+      }
+    }
+  }
 }
