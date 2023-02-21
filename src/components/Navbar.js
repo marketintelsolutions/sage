@@ -1,10 +1,12 @@
 import React from "react";
+import logo from "../assets/logos/logo2.jpg";
 
 const Navbar = () => {
   return (
     <nav className="nav-bar">
       <div className="logo">
-        <h1>Sage</h1>
+        {/* <h1>Sage</h1> */}
+        <img src={logo} alt="logo" />
       </div>
       <div className="right">
         <a href="#">Home</a>
