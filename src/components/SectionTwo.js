@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionTwo = () => {
   return (
-    <section className="section-two">
+    <section className="section-two" id="sectionTwo">
       <h2>About us</h2>
       <div className="group">
         <div className="center">
