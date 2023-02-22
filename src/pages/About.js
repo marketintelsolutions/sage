@@ -107,6 +107,26 @@ const About = () => {
           </div>
         </div>
       </section>
+      <section className="service-offering">
+        <h1>Service offering</h1>
+        <div className="center">
+          <div className="item">
+            <p>
+              Comprehensive wellness packages: Occupational Health screenings
+              (Annual Health Checks, Fit To Fly tests, Medical Fitness Tests
+              etc)
+            </p>
+          </div>
+          <div className="item">
+            <p>
+              Comprehensive laboratory, Basic Imaging, Other complimentary tests
+            </p>
+          </div>
+          <div className="item">
+            <p>Specialized PCR Tests</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
