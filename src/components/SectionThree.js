@@ -41,7 +41,7 @@ const SectionThree = () => {
               <li>X-Ray</li>
               <li>ECG</li>
               <li>
-                <Link to="/services" className="read-more">
+                <Link to="/services#Imaging" className="read-more">
                   Read more...
                 </Link>
               </li>
