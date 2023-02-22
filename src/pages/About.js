@@ -5,6 +5,8 @@ import { RiCustomerService2Fill, RiScalesFill } from "react-icons/ri";
 import { TbHeartHandshake, TbBulb } from "react-icons/tb";
 import { CiDumbbell } from "react-icons/ci";
 import { FaPeopleCarry } from "react-icons/fa";
+import { MdAddLocation } from "react-icons/md";
+import { GoLocation } from "react-icons/go";
 
 const About = () => {
   useEffect(() => {
@@ -17,6 +19,12 @@ const About = () => {
         <div className="top" style={{ backgroundImage: `url(${items})` }}>
           <h3> Improving health & wellness, impacting lives.</h3>
           <p>Cutting-Edge Molecular Lab Solutions.</p>
+          <p>
+            <span>
+              <GoLocation />
+            </span>{" "}
+            Plot10, Block 64, Fola Osibo Street, Lekki Phase 1, Lagos
+          </p>
         </div>
         <div className="group">
           <div className="center">
