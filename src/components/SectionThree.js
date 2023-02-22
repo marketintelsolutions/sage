@@ -13,7 +13,10 @@ const SectionThree = () => {
         <div className="item-center">
           <div className="item">
             <h2>
-              <FaDisease /> Pathology
+              <span>
+                <FaDisease />
+              </span>{" "}
+              Pathology
             </h2>
             <ul>
               <li>Hematology</li>
@@ -29,7 +32,10 @@ const SectionThree = () => {
         <div className="item-center">
           <div className="item">
             <h2>
-              <MdOutlineImageSearch /> Imaging
+              <span>
+                <MdOutlineImageSearch />
+              </span>{" "}
+              Imaging
             </h2>
             <ul>
               <li>X-Ray</li>
@@ -45,7 +51,10 @@ const SectionThree = () => {
         <div className="item-center">
           <div className="item">
             <h2>
-              <TbVirusSearch /> Other Investigations
+              <span>
+                <TbVirusSearch />
+              </span>{" "}
+              Other Investigations
             </h2>
             <ul>
               <li>Spirometry</li>
@@ -61,7 +70,10 @@ const SectionThree = () => {
         <div className="item-center">
           <div className="item">
             <h2>
-              <GoPackage /> Healthcare Packages
+              <span>
+                <GoPackage />
+              </span>{" "}
+              Healthcare Packages
             </h2>
             <ul>
               <li>Individual Health Checks</li>
