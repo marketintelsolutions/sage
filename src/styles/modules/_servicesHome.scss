@@ -1,0 +1,101 @@
+.services {
+  //   border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  //   padding: 40px;
+  //   width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 100vh;
+
+  & h1 {
+    color: var(--primary-blue);
+    font-size: 24px;
+  }
+
+  & .center {
+    // border: 2px solid blue;
+    // height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 60px;
+    width: 100%;
+    background: var(--primary-grey);
+    padding: 50px 70px;
+    border-radius: 5px;
+
+    & .item-center {
+      //   border: 2px solid red;
+      transition: var(--transition-slow);
+      height: 80px;
+    }
+
+    & .item {
+      //   cursor: pointer;
+      transition: var(--transition-slow);
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      padding: 5px 15px;
+      border-radius: 5px;
+      background: white;
+
+      & h2 {
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: var(--primary-purple);
+        // opacity: 0.8;
+        font-weight: 200;
+        font-family: Baumans;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      & ul {
+        text-decoration: none;
+        list-style-type: none;
+        // display: none;
+        opacity: 0;
+        transition: var(--transition-slow);
+        transform: translateY(-30px);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        & li {
+          font-size: 12px;
+          opacity: 0.7;
+
+          & .read-more {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: var(--primary-blue);
+            font-size: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    & .item:hover {
+      border: 1px dashed var(--primary-purple);
+      transition: var(--transition);
+      height: 100px;
+
+      & ul {
+        transition: var(--transition-slow);
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}

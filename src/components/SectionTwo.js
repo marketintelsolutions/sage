@@ -1,39 +1,31 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import company from "../assets/company.jpg";
+import { BsArrowRightShort } from "react-icons/bs";
 
 const SectionTwo = () => {
   return (
-    <section className="section-two" id="sectionTwo">
-      <h2>About us</h2>
+    <section className="about-home" id="sectionTwo">
+      {/* <h2>About us</h2> */}
       <div className="group">
-        <div className="center">
-          <h3>What Drives Us</h3>
+        <div className="left">
+          <h2>About Company</h2>
+          <h4>The preferred and trusted medical diagnostics partner</h4>
+
           <p>
             Sage Diagnostics center is a full-fledged diagnostic center
             inclusive of a molecular lab center to service the growing demand
             for diagnostics both for occupational health safety and for medical
             diagnostics requirements to aid treatment.{" "}
           </p>
+          <Link to="/about" className="read-more">
+            <button>
+              Read More <BsArrowRightShort />
+            </button>
+          </Link>
         </div>
-        <div className="center">
-          <h3>Vision</h3>
-          <p>
-            The preferred and trusted medical diagnostics partner — improving
-            health & wellness, impacting lives.
-          </p>
-        </div>
-        <div className="center">
-          <h3>Mission</h3>
-          <p>
-            Provide innovative, timely, and quality medical diagnostics
-            services.{" "}
-          </p>
-        </div>
-        <div className="center">
-          <h3>Core values</h3>
-          <p>
-            Services, Professionalism, Integrity, Respect, Innovation, Team
-            Spirit
-          </p>
+        <div className="right">
+          <img src={company} alt="company" />
         </div>
       </div>
     </section>

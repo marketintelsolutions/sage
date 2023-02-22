@@ -1,5 +1,9 @@
 @import "./modules/navbar";
 @import "./modules/landing";
+@import "./modules/sectionTwo.scss";
+@import "./modules/sectionThree.scss";
+@import "./modules/aboutHome.scss";
+@import "./modules/servicesHome.scss";
 
 body {
   background: var(--primary-grey);
