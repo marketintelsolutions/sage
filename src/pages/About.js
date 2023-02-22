@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import items from "../assets/items.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -7,8 +8,12 @@ const About = () => {
 
   return (
     <>
-      <section className="section-two" id="sectionTwo">
-        <h2>About us</h2>
+      <section className="about">
+        {/* <h2>About us</h2> */}
+        <div className="top" style={{ backgroundImage: `url(${items})` }}>
+          <h3> Improving health & wellness, impacting lives.</h3>
+          <p>Cutting-Edge Molecular Lab Solutions.</p>
+        </div>
         <div className="group">
           <div className="center">
             <h3>What Drives Us</h3>
