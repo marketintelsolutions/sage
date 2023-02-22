@@ -1,9 +1,10 @@
 @import "./modules/navbar";
-@import "./modules/landing";
+@import "./modules/sectionOne";
 @import "./modules/about.scss";
-@import "./modules/sectionThree.scss";
+@import "./modules/team.scss";
 @import "./modules/aboutHome.scss";
 @import "./modules/servicesHome.scss";
+@import "./modules/valueProposition";
 
 body {
   background: var(--primary-grey);

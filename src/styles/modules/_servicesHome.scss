@@ -23,7 +23,13 @@
     grid-auto-rows: auto;
     gap: 60px;
     width: 100%;
-    background: var(--primary-grey);
+    // background: var(--primary-grey);
+    background: rgb(217, 217, 216);
+    background: linear-gradient(
+      90deg,
+      rgba(217, 217, 216, 1) 0%,
+      rgba(255, 255, 255, 1) 85%
+    );
     padding: 50px 200px;
     border-radius: 5px;
     // padding-bottom: 80px;
@@ -52,6 +58,7 @@
       // background: rgba(46, 54, 143, 1);
       // background: var(--primary-purple);
       border: 1px solid var(--primary-blue);
+      box-shadow: 1px 1px 5px 3px rgb(161, 160, 160);
 
       & h2 {
         font-size: 25px;

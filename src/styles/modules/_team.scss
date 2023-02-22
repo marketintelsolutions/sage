@@ -1,0 +1,76 @@
+.team {
+  background: white;
+  // height: 80vh;
+  // border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 90px;
+  // border-top: 5px solid red;
+  // background: rgb(217, 217, 216);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(217, 217, 216, 1) 0%,
+  //   rgba(255, 255, 255, 1) 10%
+  // );
+
+  & h2 {
+    text-align: center;
+    color: var(--primary-purple);
+    font-size: 40px;
+  }
+
+  & .people {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // display: flex;
+    justify-content: center;
+    gap: 30px;
+    // border: 2px solid blue;
+  }
+
+  & .person {
+    // border: 2px solid green;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    // border: 1px solid var(--primary-blue);
+    box-shadow: 1px 2px 15px 1px rgb(211, 208, 208);
+
+    & img {
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    & h3 {
+      font-size: 1rem;
+      text-align: center;
+      height: 40%;
+      // border: 2px solid red;
+    }
+
+    & p {
+      font-size: 0.7rem;
+      text-align: center;
+    }
+
+    & .company {
+      color: var(--primary-purple);
+    }
+  }
+
+  & .bottom {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    & .person {
+      width: 32%;
+    }
+  }
+}

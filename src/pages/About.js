@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
 import items from "../assets/items.jpg";
+import Team from "../components/Team";
+import { RiCustomerService2Fill, RiScalesFill } from "react-icons/ri";
+import { TbHeartHandshake, TbBulb } from "react-icons/tb";
+import { CiDumbbell } from "react-icons/ci";
+import { FaPeopleCarry } from "react-icons/fa";
 
 const About = () => {
   useEffect(() => {
@@ -9,7 +14,6 @@ const About = () => {
   return (
     <>
       <section className="about">
-        {/* <h2>About us</h2> */}
         <div className="top" style={{ backgroundImage: `url(${items})` }}>
           <h3> Improving health & wellness, impacting lives.</h3>
           <p>Cutting-Edge Molecular Lab Solutions.</p>
@@ -38,42 +42,68 @@ const About = () => {
               services.{" "}
             </p>
           </div>
-          <div className="center">
+          <div className="center values">
             <h3>Core values</h3>
-            <p>
-              Services, Professionalism, Integrity, Respect, Innovation, Team
-              Spirit
-            </p>
+            <ul>
+              <li>
+                <span>
+                  <RiCustomerService2Fill />
+                </span>{" "}
+                Services
+              </li>
+              <li>
+                <span>
+                  <TbHeartHandshake />
+                </span>{" "}
+                Professionalism
+              </li>
+              <li>
+                <span>
+                  <CiDumbbell />
+                </span>{" "}
+                Integrity
+              </li>
+              <li>
+                <span>
+                  <RiScalesFill />
+                </span>{" "}
+                Respect
+              </li>
+              <li>
+                <span>
+                  <TbBulb />
+                </span>{" "}
+                Innovation
+              </li>
+              <li>
+                <span>
+                  <FaPeopleCarry />
+                </span>{" "}
+                Team Spirit
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <section className="section-three" id="team">
-        <h2>Team</h2>
-        <div className="people">
-          <div className="person">
-            <h3 className="name">Olumide Osadugba </h3>
-            <p className="role">CHIEF OPERATING OFFICER (COO) </p>
-            <p className="company">SAGE </p>
+      <Team />
+      <section className="value-proposition">
+        <h1>Value Propositions</h1>
+        <div className="values">
+          <div className="value">
+            <span>1</span>
+            <p>Quick Turnaround Time</p>{" "}
           </div>
-          <div className="person">
-            <h3 className="name">Cladius Eromosele </h3>
-            <p className="role">LABORATORY MANAGER </p>
-            <p className="company">SAGE DIAGNOSTICS </p>
+          <div className="value">
+            <span>2</span>
+            <p>Online reporting </p>{" "}
           </div>
-          <div className="person">
-            <h3 className="name">Adedokun Adedayo Adewunmi </h3>
-            <p className="role">ACCOUNT MANAGER </p>
-            <p className="company">SAGE DIAGNOSTICS </p>
+          <div className="value">
+            <span>3</span>
+            <p>Dispatch services/Home service </p>{" "}
           </div>
-          <div className="person">
-            <h3 className="name">Dr. Oluwagbogo Christiana Oyebade </h3>
-            <p className="role">MEDICAL OFFICER</p>
-            <p className="company">SAGE DIAGNOSTICS</p>
-          </div>
-          <div className="person">
-            <h3 className="name">Nancy Clement</h3>
-            <p className="role">HR/ADMIN OFFICER</p>
-            <p className="company">AFRILIFE</p>
+          <div className="value">
+            <span>4</span>
+            <p>Follow up services </p>{" "}
           </div>
         </div>
       </section>
