@@ -22,9 +22,10 @@ const SectionThree = () => {
               <li>Hematology</li>
               <li>Clinical chemistry</li>
               <li>
-                <Link to="/services" className="read-more">
-                  Read more...
-                </Link>
+                {/* <Link to="/services" className="read-more">
+                  <a href="/services#test">Read more...</a>
+                </Link> */}
+                <a href="/services#test">read more</a>
               </li>
             </ul>
           </div>

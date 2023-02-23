@@ -19,12 +19,6 @@ const About = () => {
         <div className="top" style={{ backgroundImage: `url(${items})` }}>
           <h3> Improving health & wellness, impacting lives.</h3>
           <p>Cutting-Edge Molecular Lab Solutions.</p>
-          <p>
-            <span>
-              <GoLocation />
-            </span>{" "}
-            Plot10, Block 64, Fola Osibo Street, Lekki Phase 1, Lagos
-          </p>
         </div>
         <div className="group">
           <div className="center">
@@ -34,20 +28,6 @@ const About = () => {
               inclusive of a molecular lab center to service the growing demand
               for diagnostics both for occupational health safety and for
               medical diagnostics requirements to aid treatment.{" "}
-            </p>
-          </div>
-          <div className="center">
-            <h3>Vision</h3>
-            <p>
-              The preferred and trusted medical diagnostics partner — improving
-              health & wellness, impacting lives.
-            </p>
-          </div>
-          <div className="center">
-            <h3>Mission</h3>
-            <p>
-              Provide innovative, timely, and quality medical diagnostics
-              services.{" "}
             </p>
           </div>
           <div className="center values">
@@ -91,27 +71,49 @@ const About = () => {
               </li>
             </ul>
           </div>
+          <div className="center">
+            <h3>Vision</h3>
+            <p>
+              The preferred and trusted medical diagnostics partner — improving
+              health & wellness, impacting lives.
+            </p>
+          </div>
+          <div className="center">
+            <h3>Mission</h3>
+            <p>
+              Provide innovative, timely, and quality medical diagnostics
+              services.{" "}
+            </p>
+          </div>
         </div>
       </section>
       <Team />
       <section className="value-proposition">
         <h1>Value Propositions</h1>
         <div className="values">
-          <div className="value">
-            <span>1</span>
-            <p>Quick Turnaround Time</p>{" "}
+          <div className="value-center">
+            <div className="value">
+              <span>1</span>
+              <p>Quick Turnaround Time</p>{" "}
+            </div>
           </div>
-          <div className="value">
-            <span>2</span>
-            <p>Online reporting </p>{" "}
+          <div className="value-center">
+            <div className="value">
+              <span>2</span>
+              <p>Online reporting </p>{" "}
+            </div>
           </div>
-          <div className="value">
-            <span>3</span>
-            <p>Dispatch services/Home service </p>{" "}
+          <div className="value-center">
+            <div className="value">
+              <span>3</span>
+              <p>Dispatch services/Home service </p>{" "}
+            </div>
           </div>
-          <div className="value">
-            <span>4</span>
-            <p>Follow up services </p>{" "}
+          <div className="value-center">
+            <div className="value">
+              <span>4</span>
+              <p>Follow up services </p>{" "}
+            </div>
           </div>
         </div>
       </section>
@@ -134,6 +136,12 @@ const About = () => {
             <p>Specialized PCR Tests</p>
           </div>
         </div>
+        <h2>
+          <span>
+            Location <GoLocation /> -
+          </span>{" "}
+          Plot 10, Block 64, Fola Osibo Street, Lekki Phase 1, Lagos
+        </h2>
       </section>
     </>
   );

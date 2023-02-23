@@ -17,4 +17,5 @@ body,
   --primary-white: #ffffff;
   --transition: all 0.2s linear;
   --transition-slow: all 0.4s ease-out;
+  --padding-main: 130px;
 }

@@ -6,7 +6,13 @@ const ServiceItem = ({ image, text }) => {
       <div className="image">
         <img src={image} alt="hematology" />
       </div>
-      <p>{text} </p>
+      <h4>{text} </h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid
+        officia porro autem quasi fugiat culpa necessitatibus dignissimos
+        dolorem cupiditate dolorum, obcaecati quas. Numquam deleniti quas,
+        suscipit consequuntur earum iure.
+      </p>
     </div>
   );
 };
