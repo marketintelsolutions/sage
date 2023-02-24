@@ -33,8 +33,10 @@ const Services = () => {
 
   return (
     <section className="services-main">
-      <h1>Services</h1>
-      <h3>The preferred and trusted medical diagnostics partner</h3>
+      <div>
+        <h1>Services</h1>
+        <h3>The preferred and trusted medical diagnostics partner</h3>
+      </div>
 
       {services.map((item) => {
         return <Service key={item.id} {...item} />;

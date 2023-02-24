@@ -3,7 +3,7 @@
   padding: 70px var(--padding-main);
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
   background: white;
 
   & h1 {
@@ -11,6 +11,7 @@
     letter-spacing: 2px;
     text-transform: capitalize;
     font-weight: 700;
+    margin-bottom: 30px;
   }
 
   & h3 {
@@ -42,7 +43,7 @@
       // grid-template-columns: 1fr 1fr 1fr;
       grid-template-columns: repeat(6, 1fr);
       gap: 30px;
-      row-gap: 40px;
+      row-gap: 100px;
       grid-auto-rows: auto;
       //   position: relative;
 
@@ -87,6 +88,7 @@
           // font-weight: 700;
           font-size: 16px;
           letter-spacing: 2px;
+          text-align: justify;
           //   text-transform: capitalize;
           //   color: var(--primary-blue);
         }
@@ -101,9 +103,9 @@
         }
 
         /* Dealing with single orphan */
-        &:last-child:nth-child(3n - 2) {
-          grid-column-end: 5;
-        }
+        // &:last-child:nth-child(3n - 2) {
+        //   grid-column-end: 5;
+        // }
       }
     }
   }

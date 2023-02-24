@@ -11,6 +11,9 @@ const PreNav = () => {
           <GoLocation /> Plot 10, Block 64, Fola Osibo Street, Lekki Phase 1,
           Lagos{" "}
         </p>
+        <a href="#">
+          <button>Test Results</button>
+        </a>
       </div>
     </section>
   );

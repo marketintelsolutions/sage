@@ -69,4 +69,27 @@
   top: 0;
   left: 0;
   z-index: 99999999;
+  font-size: 12px;
+
+  & .center {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  & button {
+    padding: 10px;
+    background: var(--primary-purple);
+    color: white;
+    border: none;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  & p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 }

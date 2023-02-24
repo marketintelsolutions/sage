@@ -163,15 +163,17 @@
   & .values {
     // border: 2px solid blue;
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
+
     // gap: 30px;
     row-gap: 60px;
+    padding: 0 150px;
 
     & .value-center {
       // border: 2px solid red;
       display: flex;
-      justify-content: center;
+      // justify-content: center;
     }
 
     & .value {
@@ -179,10 +181,11 @@
       display: flex;
       align-items: center;
       // justify-content: center;
+      padding-left: 60px;
       gap: 20px;
       font-size: 18px;
       font-weight: 700;
-      width: 70%;
+      width: 100%;
 
       & span {
         width: 50px;
