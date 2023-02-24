@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 // import {
 //   histology,
 //   microbiology,
@@ -10,9 +11,25 @@ import Service from "../components/Service";
 import { services } from "../utils/data";
 
 const Services = () => {
+  const { state } = useLocation();
+  const { targetId } = state || {};
+
   useEffect(() => {
-    window.scroll(0, 0);
-  }, []);
+    if (!targetId) {
+      window.scroll(0, 0);
+      return;
+    }
+
+    const el = document.getElementById(targetId);
+
+    if (el) {
+      const scrolledY = window.scrollY;
+      const { top } = el.getBoundingClientRect();
+
+      const position = top + scrolledY - 200;
+      window.scroll(0, position);
+    }
+  }, [targetId]);
 
   return (
     <section className="services-main">
@@ -22,23 +39,6 @@ const Services = () => {
       {services.map((item) => {
         return <Service key={item.id} {...item} />;
       })}
-      <div className="service" id="test">
-        <h1>test</h1>
-        <div className="center">
-          <div className="item">
-            <div className="image">
-              <img src="" alt="hematology" />
-            </div>
-            <h4>hello </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              aliquid officia porro autem quasi fugiat culpa necessitatibus
-              dignissimos dolorem cupiditate dolorum, obcaecati quas. Numquam
-              deleniti quas, suscipit consequuntur earum iure.
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };

@@ -4,6 +4,17 @@ import {
   pathology,
   hematology,
   chemistry,
+  xray,
+  ecg,
+  ultrasound,
+  mammogram,
+  echocardiogram,
+  spirometry,
+  audiometry,
+  healthCheck,
+  healthScreen,
+  homeService,
+  hmo,
 } from "../assets/images";
 
 export const services = [
@@ -44,27 +55,27 @@ export const services = [
     items: [
       {
         id: 1,
-        image: hematology,
+        image: xray,
         text: "X-Ray",
       },
       {
         id: 2,
-        image: chemistry,
+        image: ecg,
         text: "ECG",
       },
       {
         id: 3,
-        image: microbiology,
+        image: ultrasound,
         text: "Ultrasound",
       },
       {
         id: 4,
-        image: histology,
+        image: mammogram,
         text: "Mammogram",
       },
       {
         id: 5,
-        image: pathology,
+        image: echocardiogram,
         text: "Echocardiogram",
       },
     ],
@@ -75,12 +86,12 @@ export const services = [
     items: [
       {
         id: 1,
-        image: hematology,
+        image: spirometry,
         text: "Spirometry",
       },
       {
         id: 2,
-        image: chemistry,
+        image: audiometry,
         text: "Audiometry",
       },
     ],
@@ -91,22 +102,22 @@ export const services = [
     items: [
       {
         id: 1,
-        image: hematology,
+        image: healthCheck,
         text: "Individual Health checks",
       },
       {
         id: 2,
-        image: chemistry,
+        image: healthScreen,
         text: "Occupational Health Screenings",
       },
       {
         id: 3,
-        image: microbiology,
+        image: homeService,
         text: "Home service collection",
       },
       {
         id: 4,
-        image: histology,
+        image: hmo,
         text: "HMO",
       },
     ],

@@ -1,9 +1,9 @@
 import React from "react";
 import ServiceItem from "./ServiceItem";
 
-const Service = ({ title, items }) => {
+const Service = ({ id, title, items }) => {
   return (
-    <div className="service" id={title}>
+    <div className="service" id={id}>
       <h1>{title}</h1>
       <div className="center">
         {items.map((item) => {

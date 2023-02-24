@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaDisease } from "react-icons/fa";
 import { MdOutlineImageSearch } from "react-icons/md";
 import { TbVirusSearch } from "react-icons/tb";
 import { GoPackage } from "react-icons/go";
+import { BiTestTube } from "react-icons/bi";
 
 const SectionThree = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="services" id="team">
       <h1>Services</h1>
@@ -14,18 +17,19 @@ const SectionThree = () => {
           <div className="item">
             <h2>
               <span>
-                <FaDisease />
+                <BiTestTube />
               </span>{" "}
               Pathology
             </h2>
             <ul>
               <li>Hematology</li>
               <li>Clinical chemistry</li>
-              <li>
-                {/* <Link to="/services" className="read-more">
-                  <a href="/services#test">Read more...</a>
-                </Link> */}
-                <a href="/services#test">read more</a>
+              <li
+                onClick={() => {
+                  navigate("/services", { state: { targetId: 1 } });
+                }}
+              >
+                <p className="read-more">read more...</p>
               </li>
             </ul>
           </div>
@@ -41,10 +45,12 @@ const SectionThree = () => {
             <ul>
               <li>X-Ray</li>
               <li>ECG</li>
-              <li>
-                <Link to="/services#Imaging" className="read-more">
-                  Read more...
-                </Link>
+              <li
+                onClick={() => {
+                  navigate("/services", { state: { targetId: 2 } });
+                }}
+              >
+                <p className="read-more">read more...</p>
               </li>
             </ul>
           </div>
@@ -60,10 +66,12 @@ const SectionThree = () => {
             <ul>
               <li>Spirometry</li>
               <li>Audiometry</li>
-              <li>
-                <Link to="/services" className="read-more">
-                  Read more...
-                </Link>
+              <li
+                onClick={() => {
+                  navigate("/services", { state: { targetId: 3 } });
+                }}
+              >
+                <p className="read-more">read more...</p>
               </li>
             </ul>
           </div>
@@ -79,10 +87,12 @@ const SectionThree = () => {
             <ul>
               <li>Individual Health Checks</li>
               <li>Occupational Health Screenings</li>
-              <li>
-                <Link to="/services" className="read-more">
-                  Read more...
-                </Link>
+              <li
+                onClick={() => {
+                  navigate("/services", { state: { targetId: 4 } });
+                }}
+              >
+                <p className="read-more">read more...</p>
               </li>
             </ul>
           </div>

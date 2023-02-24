@@ -4,15 +4,16 @@
   // padding-right: 90px;
   padding: 0 var(--padding-main);
   height: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
   //   gap: 40px;
   justify-content: space-between;
   background: var(--primary-white);
   box-shadow: 2px 1px 10px 0.5px rgb(143, 141, 141);
-  position: sticky;
+  position: fixed;
   z-index: 9999999;
-  top: 0;
+  top: 50;
   left: 0;
 
   & .logo {
@@ -53,4 +54,19 @@
       color: var(--primary-purple);
     }
   }
+}
+
+.pre-nav {
+  height: 50px;
+  width: 100%;
+  background: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 20px var(--padding-main);
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
 }
