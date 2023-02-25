@@ -123,3 +123,30 @@ export const services = [
     ],
   },
 ];
+
+export const faqData = [
+  {
+    id: 1,
+    question: "What do we do?",
+    answer:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia adipisci consequatur voluptatibus, tempore, eum nam iusto cupiditate corrupti facilis odio voluptate. Dolor laborum hic              commodi beatae cupiditate. Esse, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, numquam suscipit! Quod magni maiores eum praesentium expedita nobis et, est suscipit tempore ratione adipisci, sed neque quibusdam quasi. Praesentium, distinctio",
+  },
+  {
+    id: 2,
+    question: "How long does a membership last?",
+    answer:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia adipisci consequatur voluptatibus, tempore, eum nam iusto cupiditate corrupti facilis odio voluptate. Dolor laborum hic              commodi beatae cupiditate. Esse, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, numquam suscipit! Quod magni maiores eum praesentium expedita nobis et, est suscipit tempore ratione adipisci, sed neque quibusdam quasi. Praesentium, distinctio",
+  },
+  {
+    id: 3,
+    question: "Where is our office?",
+    answer:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia adipisci consequatur voluptatibus, tempore, eum nam iusto cupiditate corrupti facilis odio voluptate. Dolor laborum hic              commodi beatae cupiditate. Esse, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, numquam suscipit! Quod magni maiores eum praesentium expedita nobis et, est suscipit tempore ratione adipisci, sed neque quibusdam quasi. Praesentium, distinctio",
+  },
+  {
+    id: 4,
+    question: "How soon is a feedback guaranteed?",
+    answer:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia adipisci consequatur voluptatibus, tempore, eum nam iusto cupiditate corrupti facilis odio voluptate. Dolor laborum hic              commodi beatae cupiditate. Esse, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, numquam suscipit! Quod magni maiores eum praesentium expedita nobis et, est suscipit tempore ratione adipisci, sed neque quibusdam quasi. Praesentium, distinctio",
+  },
+];

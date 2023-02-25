@@ -1,22 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+import { faqData } from "../utils/data";
 
 const SectionFour = () => {
+  const [isAccordion, setIsAccordion] = useState(null);
+
+  const toggle = (value) => {
+    if (isAccordion === value) {
+      setIsAccordion(null);
+      return;
+    }
+    setIsAccordion(value);
+  };
+
   return (
     <section className="section-four">
+      <h1>FAQ</h1>
       <div className="center">
-        <div className="item">
-          <div className="question">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </div>
-          <div className="answer">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              mollitia adipisci consequatur voluptatibus, tempore, eum nam iusto
-              cupiditate corrupti facilis odio voluptate. Dolor laborum hic
-              commodi beatae cupiditate. Esse, consequatur.
-            </p>
-          </div>
-        </div>
+        {faqData.map((item) => {
+          const { id, question, answer } = item;
+          return (
+            <div className={`${isAccordion === id ? "item active" : "item"}`}>
+              <div className="question" onClick={() => toggle(id)}>
+                <p>{question}</p>
+              </div>
+              <div className="answer">
+                <p>{answer}</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

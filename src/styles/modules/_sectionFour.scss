@@ -1,3 +1,76 @@
 .section-four {
-  height: 70vh;
+  // height: 70vh;
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 40px var(--padding-main);
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+
+  & h1 {
+    font-size: 30px;
+    color: var(--primary-blue);
+    text-align: center;
+  }
+
+  & .center {
+    width: 70%;
+    // border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & .item {
+      // border: 2px solid green;
+      border-radius: 10px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      // gap: 40px;
+
+      & .question {
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px 2px rgb(180, 179, 179);
+        padding: 20px 40px;
+        cursor: pointer;
+        color: var(--primary-blue);
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 20px;
+
+        // & p {
+        //   text-align: center;
+        // }
+      }
+
+      & .answer {
+        height: 0;
+        opacity: 0;
+        padding: 0;
+        // padding: 20px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-align: justify;
+        transition: var(--transition);
+
+        & p {
+          display: none;
+        }
+      }
+    }
+
+    & .active {
+      & .answer {
+        height: auto;
+        opacity: 1;
+        padding: 20px 40px;
+        transition: var(--transition);
+
+        & p {
+          display: block;
+        }
+      }
+    }
+  }
 }
