@@ -19,6 +19,7 @@ import healthCheck from "./healthCheck.jpg";
 import healthScreen from "./healthScreen.jpg";
 import homeService from "./homeService.jpg";
 import hmo from "./hmo.jpg";
+import booking from "./booking.jpg";
 
 export {
   adedokun,
@@ -42,4 +43,5 @@ export {
   healthScreen,
   homeService,
   hmo,
+  booking,
 };
