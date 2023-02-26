@@ -1,4 +1,4 @@
-.patients {
+.booking {
   //   border: 2px solid red;
   padding: 40px var(--padding-main);
   background: white;
@@ -103,10 +103,11 @@
       & .name {
         // border: 2px solid red;
         display: grid;
-        grid-template-columns: 10% 1fr 1fr;
+        grid-template-columns: 13% 1fr 1fr;
         gap: 15px;
 
-        & input {
+        & input,
+        select {
           padding: 7px;
         }
       }
@@ -117,8 +118,17 @@
         grid-template-columns: 1fr 1fr;
         gap: 30px;
 
-        & input {
+        & input,
+        select {
           padding: 7px;
+        }
+
+        & .number {
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
         }
       }
 
@@ -135,6 +145,79 @@
         &:hover {
           transform: scale(0.98);
           transition: var(--transition);
+        }
+      }
+    }
+  }
+}
+
+.home-service {
+  height: 100vh;
+  background-repeat: no-repeat;
+  //   object-fit: contain;
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  & .form {
+    position: relative;
+    z-index: 9999;
+    color: white;
+    // border: 2px solid red;
+    width: 50%;
+    // height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 40px;
+
+    & h1 {
+      text-align: center;
+      font-size: 25px;
+      //   color: var(--primary-blue);
+    }
+
+    & .center {
+      //   border: 2px solid blue;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      & .item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & label {
+          color: rgb(148, 146, 146);
+        }
+
+        & input {
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+        }
+
+        & .number {
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
         }
       }
     }
