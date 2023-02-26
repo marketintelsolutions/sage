@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { booking, home } from "../assets/images";
 
 const Patients = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <div>
       <section className="booking">
@@ -86,7 +89,7 @@ const Patients = () => {
               <input
                 type="number"
                 placeholder="Mobile No."
-                name="mobileno"
+                name="phone"
                 className="number"
               />
               <input type="email" placeholder="Email ID" name="email" />
@@ -125,7 +128,7 @@ const Patients = () => {
               <label htmlFor="number">Phone number</label>
               <input
                 type="number"
-                name="number"
+                name="phone"
                 id="number"
                 className="number"
                 placeholder="Phone number"
