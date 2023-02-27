@@ -135,6 +135,7 @@ const Patients = () => {
               />
             </div>
           </div>
+          <button type="button">Submit</button>
         </form>
       </div>
     </div>

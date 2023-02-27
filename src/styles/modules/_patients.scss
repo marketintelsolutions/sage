@@ -221,5 +221,22 @@
         }
       }
     }
+    & button {
+      width: 40%;
+      padding: 15px 20px;
+      background: var(--primary-blue);
+      color: white;
+      margin: 0 auto;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+
+      &:hover {
+        background: white;
+        color: black;
+        transition: var(--transition);
+      }
+    }
   }
 }

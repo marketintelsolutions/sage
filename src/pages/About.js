@@ -5,7 +5,6 @@ import { RiCustomerService2Fill, RiScalesFill } from "react-icons/ri";
 import { TbHeartHandshake, TbBulb } from "react-icons/tb";
 import { CiDumbbell } from "react-icons/ci";
 import { FaPeopleCarry } from "react-icons/fa";
-import { MdAddLocation } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 
 const About = () => {
