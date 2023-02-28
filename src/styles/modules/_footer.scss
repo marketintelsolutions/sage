@@ -5,10 +5,17 @@ footer {
   color: white;
 
   display: flex;
-  flex-direction: row;
-  // padding: 60px 0;
+  flex-direction: column;
+  padding: 60px 0;
   gap: 60px;
-  padding: 80px var(--padding-main);
+  padding: 100px 0;
+
+  & .content {
+    display: flex;
+    flex-direction: row;
+    padding: 0px var(--padding-main);
+    gap: 80px;
+  }
 
   & .top {
     // border: 2px solid red;
@@ -47,9 +54,11 @@ footer {
 
   & .bottom {
     // border: 2px solid red;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    // gap: 30px;
+    justify-content: space-between;
     // padding: 0px var(--padding-main);
 
     & .item {
@@ -59,7 +68,7 @@ footer {
       gap: 15px;
 
       & h1 {
-        font-size: 12px;
+        font-size: 15px;
         text-transform: uppercase;
         letter-spacing: 1px;
         color: rgba(255, 255, 255, 0.75);
@@ -75,14 +84,15 @@ footer {
 
       & .icons {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        gap: 20px;
         font-size: 20px;
       }
     }
   }
 
   & .copyright {
-    // padding: 0px var(--padding-main);
+    padding: 0px var(--padding-main);
     text-transform: unset;
     color: rgba(255, 255, 255, 0.6);
     font-size: 12px;

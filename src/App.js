@@ -7,6 +7,8 @@ import Error from "./pages/Error";
 import Packages from "./pages/Packages";
 import Patients from "./pages/Patients";
 import Contact from "./pages/Contact";
+import Corporate from "./pages/Corporate";
+import Individual from "./pages/Individual";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/packages" index element={<Packages />} />
         <Route path="/patients" index element={<Patients />} />
         <Route path="/contact" index element={<Contact />} />
+        <Route path="/corporate" index element={<Corporate />} />
+        <Route path="/individual" index element={<Individual />} />
         <Route path="*" index element={<Error />} />
       </Routes>
     </SharedLayout>

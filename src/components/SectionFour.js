@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { faqData } from "../utils/data";
+import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 
 const SectionFour = () => {
-  const [isAccordion, setIsAccordion] = useState(1);
+  const [isAccordion, setIsAccordion] = useState(null);
 
   const toggle = (value) => {
     if (isAccordion === value) {
@@ -21,7 +22,14 @@ const SectionFour = () => {
           return (
             <div className={`${isAccordion === id ? "item active" : "item"}`}>
               <div className="question" onClick={() => toggle(id)}>
-                <p>{question}</p>
+                <p>
+                  {question}{" "}
+                  {isAccordion === id ? (
+                    <AiOutlineMinusCircle />
+                  ) : (
+                    <AiOutlinePlusCircle />
+                  )}
+                </p>
               </div>
               <div className="answer">
                 <p>{answer}</p>

@@ -21,6 +21,8 @@ import homeService from "./homeService.jpg";
 import hmo from "./hmo.jpg";
 import booking from "./booking.jpg";
 import home from "./home.jpg";
+import corporate from "./corporate.jpg";
+import individual from "./individual.jpg";
 
 export {
   adedokun,
@@ -46,4 +48,6 @@ export {
   hmo,
   booking,
   home,
+  corporate,
+  individual,
 };
