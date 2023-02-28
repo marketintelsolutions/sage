@@ -57,14 +57,14 @@
 }
 
 .pre-nav {
-  height: 50px;
+  height: 60px;
   width: 100%;
   background: var(--primary-blue);
   display: flex;
   align-items: center;
   color: white;
   padding: 20px var(--padding-main);
-  justify-content: flex-end;
+  // justify-content: space-between;
   position: sticky;
   top: 0;
   left: 0;
@@ -75,16 +75,43 @@
     display: flex;
     gap: 40px;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
+  & .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 
+    & .socials {
+      font-size: 22px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+  & a {
+    text-decoration: none;
+  }
   & button {
-    padding: 10px;
+    // padding: 15px;
+    width: 120px;
+    height: 40px;
     background: var(--primary-purple);
     color: white;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+
+    &:hover {
+      opacity: 0.9;
+      transition: var(--transition);
+    }
   }
 
   & p {
