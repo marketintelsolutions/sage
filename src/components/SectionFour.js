@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { faqData } from "../utils/data";
 
 const SectionFour = () => {
-  const [isAccordion, setIsAccordion] = useState(null);
+  const [isAccordion, setIsAccordion] = useState(1);
 
   const toggle = (value) => {
     if (isAccordion === value) {

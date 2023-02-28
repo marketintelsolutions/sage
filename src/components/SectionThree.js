@@ -5,6 +5,7 @@ import { MdOutlineImageSearch } from "react-icons/md";
 import { TbVirusSearch } from "react-icons/tb";
 import { GoPackage } from "react-icons/go";
 import { BiTestTube } from "react-icons/bi";
+import { BsArrowRightShort } from "react-icons/bs";
 
 const SectionThree = () => {
   const navigate = useNavigate();
@@ -29,7 +30,9 @@ const SectionThree = () => {
                   navigate("/services", { state: { targetId: 1 } });
                 }}
               >
-                <p className="read-more">read more...</p>
+                <p className="read-more">
+                  read more <BsArrowRightShort />
+                </p>
               </li>
             </ul>
           </div>
@@ -50,7 +53,9 @@ const SectionThree = () => {
                   navigate("/services", { state: { targetId: 2 } });
                 }}
               >
-                <p className="read-more">read more...</p>
+                <p className="read-more">
+                  read more <BsArrowRightShort />
+                </p>
               </li>
             </ul>
           </div>
@@ -71,7 +76,9 @@ const SectionThree = () => {
                   navigate("/services", { state: { targetId: 3 } });
                 }}
               >
-                <p className="read-more">read more...</p>
+                <p className="read-more">
+                  read more <BsArrowRightShort />
+                </p>
               </li>
             </ul>
           </div>
@@ -92,7 +99,9 @@ const SectionThree = () => {
                   navigate("/services", { state: { targetId: 4 } });
                 }}
               >
-                <p className="read-more">read more...</p>
+                <p className="read-more">
+                  read more <BsArrowRightShort />
+                </p>
               </li>
             </ul>
           </div>

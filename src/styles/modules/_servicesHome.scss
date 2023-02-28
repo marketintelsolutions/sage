@@ -47,6 +47,7 @@
       // padding-bottom: 40px;
       transition: var(--transition-slow);
       height: 190px;
+      // border: 2px solid red;
       display: flex;
       flex-direction: column;
       // justify-content: center;
@@ -67,8 +68,7 @@
         font-size: 20px;
         letter-spacing: 2px;
         text-transform: uppercase;
-        // color: var(--primary-blue);
-        color: white;
+        color: var(--primary-blue);
         // opacity: 0.8;
         font-weight: 200;
         font-family: Baumans;
@@ -79,8 +79,8 @@
         & span {
           display: flex;
           align-items: center;
-          // color: var(--primary-purple);
-          color: white;
+          color: var(--primary-blue);
+          // color: white;
         }
       }
 
@@ -100,23 +100,33 @@
           // opacity: 0.7;
           color: white;
           // color: var(--primary-blue);
+          // border: 2px solid red;
+          width: fit-content;
 
           & .read-more {
             text-decoration: none;
-            border-bottom: 1px solid black;
+            // border: 1px solid var(--primary-blue);
             text-transform: uppercase;
             // color: var(--primary-blue);
-            color: black;
+            padding: 5px;
+            border-radius: 5px;
             font-size: 15px;
             cursor: pointer;
             transition: var(--transition);
             width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+
+            border: 1px solid var(--primary-blue);
+            color: var(--primary-blue);
           }
 
           & .read-more:hover {
             transition: var(--transition);
-            border-bottom: 1px solid var(--primary-blue);
-            color: var(--primary-blue);
+            // border-bottom: 1px solid var(--primary-blue);
+            border: 1px solid black;
+            color: black;
           }
         }
       }

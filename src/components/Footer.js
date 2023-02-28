@@ -17,10 +17,12 @@ const Footer = () => {
           <span>
             <GoLocation />
           </span>
-          <p>Plot 10, Block 64, Fola Osibo Street, Lekki Phase 1, Lagos</p>
+          <p>
+            Plot 10, Block 64, <br />
+            Fola Osibo Street, Lekki Phase 1, Lagos
+          </p>
         </div>
       </div>
-      <hr />
       <div className="bottom">
         <div className="item">
           <h1>quick links</h1>
@@ -46,6 +48,18 @@ const Footer = () => {
           </p>
         </div>
         <div className="item">
+          <h1>centers</h1>
+          <div className="icons">
+            <p>
+              {" "}
+              Plot 10, Block 64, <br />
+              Fola Osibo Street,
+              <br /> Lekki Phase 1, Lagos
+            </p>
+          </div>
+          <p>+2348030030033</p>
+        </div>
+        <div className="item">
           <h1>get connected</h1>
           <div className="icons">
             <BsTwitter />
@@ -55,7 +69,6 @@ const Footer = () => {
           <p>+2348030030033</p>
         </div>
       </div>
-      <hr />
       <p className="copyright">© SAGE Nigeria Copyright {date}</p>
     </footer>
   );
