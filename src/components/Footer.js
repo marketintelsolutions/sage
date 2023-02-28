@@ -69,6 +69,7 @@ const Footer = () => {
               <BsInstagram />
             </div>
             <p>info@sagedsl.com</p>
+            <p>enquiries@sagedsl.com</p>
           </div>
         </div>
       </div>

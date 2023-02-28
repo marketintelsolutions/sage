@@ -43,7 +43,7 @@ const Corporate = () => {
             </div>
             <div className="input-item">
               <label htmlFor="mail">Email Address</label>
-              <input type="email" name="mail" id="mail" />
+              <input type="email" name="email" id="mail" />
             </div>
           </div>
           <div className="center">

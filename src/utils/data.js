@@ -15,6 +15,7 @@ import {
   healthScreen,
   homeService,
   hmo,
+  immunoassay,
 } from "../assets/images";
 
 export const services = [
@@ -35,15 +36,20 @@ export const services = [
       {
         id: 3,
         image: microbiology,
-        text: "Immunoassays",
+        text: "Medical microbiology",
       },
       {
         id: 4,
+        image: immunoassay,
+        text: "Immunoassays",
+      },
+      {
+        id: 5,
         image: histology,
         text: "Histology, Cytology",
       },
       {
-        id: 5,
+        id: 6,
         image: pathology,
         text: "Molecular Pathology (VIRAL LOADS, DNA, etc.)",
       },

@@ -23,6 +23,7 @@ import booking from "./booking.jpg";
 import home from "./home.jpg";
 import corporate from "./corporate.jpg";
 import individual from "./individual.jpg";
+import immunoassay from "./immunoassay.jpg";
 
 export {
   adedokun,
@@ -50,4 +51,5 @@ export {
   home,
   corporate,
   individual,
+  immunoassay,
 };

@@ -24,13 +24,14 @@ const Patients = () => {
               </div>
               <div className="item date">
                 <label htmlFor="date">Appointment Date</label>
-                <select name="department" id="date">
+                {/* <select name="department" id="date">
                   <option value="">Select Date</option>
                   <option value="01-03-2023">01-03-2023</option>
                   <option value="03-03-2023">03-03-2023</option>
                   <option value="05-03-2023">05-03-2023</option>
                   <option value="12-03-2023">12-03-2023</option>
-                </select>
+                </select> */}
+                <input type="date" name="date" id="date" />
               </div>
             </div>
             <div className="slot">
@@ -61,7 +62,7 @@ const Patients = () => {
                   <p>Available</p>
                 </div>
                 <div className="item">
-                  <p>17:30</p>
+                  <p>18:00</p>
                   <p>Available</p>
                 </div>
               </div>
