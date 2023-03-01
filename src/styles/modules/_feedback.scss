@@ -1,0 +1,193 @@
+.feedback {
+  // border: 2px solid red;
+  min-height: 100vh;
+  background: white;
+  padding: 50px var(--padding-main);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  & hr {
+    border: none;
+    background: rgb(209, 206, 206);
+    height: 1px;
+  }
+
+  & .heading {
+    text-align: center;
+    color: var(--primary-blue);
+  }
+
+  & .heading-text {
+    width: 75%;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  & .content {
+    // border: 2px solid green;
+    width: 75%;
+    padding: 50px;
+    box-shadow: 1px 1px 7px 2px rgb(179, 176, 176);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    & .top,
+    .opinion-options {
+      // border: 2px solid blue;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      & .item {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & label {
+          color: rgba(0, 0, 0, 0.7);
+          // padding: 10px;
+        }
+
+        & input,
+        select {
+          // padding: 0 10px 5px;
+          padding-bottom: 10px;
+          border: none;
+          border-bottom: 1px solid var(--primary-blue);
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        & label {
+          font-size: 14px;
+        }
+      }
+    }
+
+    & .laboratories {
+      // border: 2px solid red;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+
+      & label {
+        font-weight: 400;
+        font-size: 14px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--primary-purple);
+        width: fit-content;
+        text-transform: uppercase;
+      }
+
+      & .item {
+        display: flex;
+        gap: 5px;
+        font-size: 14px;
+      }
+    }
+
+    & .diagnostics,
+    .quickly,
+    .motivates,
+    .result,
+    .opinion {
+      // border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      & .label {
+        font-weight: 400;
+        font-size: 14px;
+        padding-bottom: 5px;
+        // border-bottom: 1px solid var(--primary-purple);
+        width: fit-content;
+        text-transform: capitalize;
+      }
+
+      & select {
+        padding-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid var(--primary-blue);
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    & .quickly,
+    .motivates,
+    .result,
+    .opinion {
+      & .label {
+        border-bottom: 1px solid var(--primary-purple);
+        text-transform: uppercase;
+      }
+    }
+
+    & .motivates,
+    .result {
+      & .options {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        row-gap: 20px;
+
+        & .item {
+          display: flex;
+          gap: 5px;
+          font-size: 14px;
+          align-items: center;
+        }
+      }
+    }
+
+    & .issue {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      align-items: center;
+
+      & div {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+    }
+
+    & .response,
+    .patronage {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      & label {
+        width: fit-content;
+        // border-bottom: 1px solid var(--primary-purple);
+        padding-bottom: 5px;
+      }
+      & select,
+      textarea {
+        border: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--primary-blue);
+        resize: vertical;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
