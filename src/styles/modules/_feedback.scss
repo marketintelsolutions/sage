@@ -2,7 +2,7 @@
   // border: 2px solid red;
   min-height: 100vh;
   background: white;
-  padding: 50px var(--padding-main);
+  padding: 80px var(--padding-main);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -11,7 +11,7 @@
 
   & hr {
     border: none;
-    background: rgb(209, 206, 206);
+    background: rgba(209, 206, 206, 0.4);
     height: 1px;
   }
 
@@ -87,6 +87,7 @@
         border-bottom: 1px solid var(--primary-purple);
         width: fit-content;
         text-transform: uppercase;
+        color: var(--primary-blue);
       }
 
       & .item {
@@ -112,7 +113,8 @@
         padding-bottom: 5px;
         // border-bottom: 1px solid var(--primary-purple);
         width: fit-content;
-        text-transform: capitalize;
+        text-transform: uppercase;
+        color: var(--primary-blue);
       }
 
       & select {
@@ -174,8 +176,11 @@
 
       & label {
         width: fit-content;
-        // border-bottom: 1px solid var(--primary-purple);
+        border-bottom: 1px solid var(--primary-purple);
         padding-bottom: 5px;
+        color: var(--primary-blue);
+        text-transform: uppercase;
+        font-size: 14px;
       }
       & select,
       textarea {
@@ -187,6 +192,26 @@
         &:focus {
           outline: none;
         }
+      }
+    }
+
+    & button {
+      padding: 10px;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      background: var(--primary-blue);
+      color: white;
+      // width: fit-content;
+      border: 1px solid var(--primary-blue);
+      transition: var(--transition);
+      border-radius: 7px;
+      cursor: pointer;
+
+      &:hover {
+        background: white;
+        color: black;
+        transition: var(--transition);
       }
     }
   }

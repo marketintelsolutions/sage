@@ -1,15 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { corporateData, nigeriaStates } from "../utils/packagesData";
 import { corporate } from "../assets/images";
 
 const Corporate = () => {
+  const [text, setText] = useState(true);
+
   useEffect(() => {
     window.scroll(0, 0);
+    setText(false);
   }, []);
 
   return (
     <section className="corporate">
-      <div className="image" style={{ backgroundImage: `url(${corporate})` }}>
+      <div
+        className={`${text ? "image translated" : "image"}`}
+        style={{ backgroundImage: `url(${corporate})` }}
+      >
         <h1>Corporate</h1>
       </div>
       <div className="content">
@@ -74,7 +80,7 @@ const Corporate = () => {
                 name="phone"
                 id="phone"
                 className="number"
-                placeholder="+234xxx"
+                placeholder="080xxx"
               />
             </div>
             <div className="input-item">

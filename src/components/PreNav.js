@@ -24,7 +24,7 @@ const PreNav = () => {
               <HiMail />
             </span>
             <div className="text">
-              <p className="head">For Enquiries</p>
+              {/* <p className="head">For Enquiries</p> */}
               <p className="desc">enquiries@sagedsl.com</p>
             </div>
           </div>
@@ -40,16 +40,17 @@ const PreNav = () => {
               <BsFillTelephoneFill />
             </span>
             <div className="text">
-              <p className="head">Customer Care</p>
+              {/* <p className="head">Customer Care</p> */}
               <p className="desc">08139289067</p>
             </div>
           </div>
           <div className="item">
             <span>
-              <BsClock />
+              {/* <BsClock /> */}
+              <GoLocation />
             </span>
             <div className="text">
-              <p className="head">We Are Open 24 Hours</p>
+              {/* <p className="head">We Are Open 24 Hours</p> */}
               <p className="desc">
                 Plot 10, Block 64, Fola Osibo Street, Lekki Phase 1, Lagos{" "}
               </p>

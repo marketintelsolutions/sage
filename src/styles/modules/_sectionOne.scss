@@ -27,10 +27,29 @@
       text-transform: capitalize;
       letter-spacing: 2px;
       line-height: 60px;
+      transform: translateX(0);
+      opacity: 1;
+      transition: var(--transition-text);
     }
 
     & p {
       font-size: 23px;
+      transform: translateX(0);
+      opacity: 1;
+      transition: var(--transition-text-slow);
+    }
+  }
+
+  & .translated {
+    & h3 {
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: var(--transition-text);
+    }
+    & p {
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: var(--transition-text-slow);
     }
   }
 }

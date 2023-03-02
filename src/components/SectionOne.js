@@ -1,14 +1,23 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import microscope from "../assets/microscope.jpg";
 
 const SectionOne = () => {
+  const [text, setText] = useState(true);
+
+  useEffect(() => {
+    setText(false);
+  }, []);
+
   return (
     <section
       className="section-one"
       style={{ backgroundImage: `url(${microscope})` }}
     >
-      <div className="text">
-        <h3>Cutting-edge molecular lab solutions.</h3>
+      <div className={`${text ? "text translated" : "text"}`}>
+        <h3>
+          Cutting-edge molecular
+          <br /> lab solutions.
+        </h3>
         <p>
           Provide innovative, timely, and quality medical diagnostics services.{" "}
         </p>

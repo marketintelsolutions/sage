@@ -51,16 +51,17 @@ const Contact = () => {
           </div>
           <div className="long">
             <div className="item">
-              <select name="subject" id="subject">
+              {/* <select name="subject" id="subject">
                 <option value="feedback" selected hidden>
                   Feedback on Our Reporting
                 </option>
-                {/* <option value="whistleblowing">Whistleblowing</option>
+               <option value="whistleblowing">Whistleblowing</option>
                 <option value="staff complaint">Staff complaint</option>
                 <option value="mistreatment">Mistreatment</option>
                 <option value="Bad service">Bad service</option>
-                <option value="others">Others</option> */}
-              </select>
+                <option value="others">Others</option> 
+              </select> */}
+              <input type="text" name="subject" />
               <label htmlFor="subject">Subject *</label>
             </div>
             <div className="item">

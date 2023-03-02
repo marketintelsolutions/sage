@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logos/logo2.jpg";
+import { AiOutlineCaretDown } from "react-icons/ai";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +12,7 @@ const Navbar = () => {
       setIsOpen(false);
     }, 5000);
 
-    return () => {
-      clearTimeout(timeout);
-    };
+    return () => clearTimeout(timeout);
   }, [isOpen]);
 
   return (
@@ -37,7 +36,9 @@ const Navbar = () => {
           Patients
         </Link>
         <div className="packages">
-          <p onClick={() => setIsOpen(!isOpen)}>Health Packages</p>
+          <p onClick={() => setIsOpen(!isOpen)}>
+            Health Packages <AiOutlineCaretDown />
+          </p>
           <span className={`${isOpen && "open"}`}>
             <Link to="/corporate" onClick={() => setIsOpen(false)}>
               Corporate

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import items from "../assets/items.jpg";
 import Team from "../components/Team";
 import { RiCustomerService2Fill, RiScalesFill } from "react-icons/ri";
@@ -8,14 +8,23 @@ import { FaPeopleCarry } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
 
 const About = () => {
+  const [text, setText] = useState(true);
+
   useEffect(() => {
     window.scroll(0, 0);
+    setText(false);
   }, []);
+
+  // useEffect(() => {
+  // }, []);
 
   return (
     <>
       <section className="about">
-        <div className="top" style={{ backgroundImage: `url(${items})` }}>
+        <div
+          className={`${text ? "top translated" : "top"}`}
+          style={{ backgroundImage: `url(${items})` }}
+        >
           <h3> Improving health & wellness, impacting lives.</h3>
           <p>Cutting-Edge Molecular Lab Solutions.</p>
         </div>
@@ -126,21 +135,23 @@ const About = () => {
               etc)
             </p>
           </div>
+          <hr />
           <div className="item">
             <p>
               Comprehensive laboratory, Basic Imaging, Other complimentary tests
             </p>
           </div>
+          <hr />
           <div className="item">
             <p>Specialized PCR Tests</p>
           </div>
         </div>
-        <h2>
+        {/* <h2>
           <span>
             Location <GoLocation /> -
           </span>{" "}
           Plot 10, Block 64, Fola Osibo Street, Lekki Phase 1, Lagos
-        </h2>
+        </h2> */}
       </section>
     </>
   );

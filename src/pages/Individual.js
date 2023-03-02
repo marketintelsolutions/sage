@@ -1,19 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { individual } from "../assets/images";
 import { individualData } from "../utils/packagesData";
 
 const Individual = () => {
+  const [text, setText] = useState(true);
+
   useEffect(() => {
     window.scroll(0, 0);
+    setText(false);
   }, []);
   return (
     <section className="individual">
-      <div className="image" style={{ backgroundImage: `url(${individual})` }}>
+      <div
+        className={`${text ? "image translated" : "image"}`}
+        style={{ backgroundImage: `url(${individual})` }}
+      >
         <h1>Individual</h1>
       </div>
 
       <div className="content">
-        <h2>Health Packages</h2>
+        <h2>Individual Health Packages</h2>
         <div className="packages">
           {individualData.map((item) => {
             const { name, items } = item;

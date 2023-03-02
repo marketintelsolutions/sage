@@ -24,6 +24,8 @@ import home from "./home.jpg";
 import corporate from "./corporate.jpg";
 import individual from "./individual.jpg";
 import immunoassay from "./immunoassay.jpg";
+import service from "./services.jpg";
+import error from "./error.jpg";
 
 export {
   adedokun,
@@ -52,4 +54,6 @@ export {
   corporate,
   individual,
   immunoassay,
+  service,
+  error,
 };

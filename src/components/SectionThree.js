@@ -1,6 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { FaDisease } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import { MdOutlineImageSearch } from "react-icons/md";
 import { TbVirusSearch } from "react-icons/tb";
 import { GoPackage } from "react-icons/go";

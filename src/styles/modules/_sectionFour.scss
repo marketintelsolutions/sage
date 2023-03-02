@@ -7,6 +7,8 @@
   flex-direction: column;
   gap: 40px;
   align-items: center;
+  // background: rgba(203, 108, 230, 0.02);
+  background: var(--primary-purple-light);
 
   & h1 {
     font-size: 30px;
@@ -16,6 +18,7 @@
 
   & .center {
     width: 70%;
+    max-width: 700px;
     // border: 2px solid blue;
     display: flex;
     flex-direction: column;

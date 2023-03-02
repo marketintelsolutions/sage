@@ -3,21 +3,26 @@
   height: fit-content;
   padding: 60px var(--padding-main);
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
+  justify-content: center;
   width: 100%;
-  background: rgb(217, 217, 216);
-  background: linear-gradient(
-    180deg,
-    rgba(217, 217, 216, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  // background: rgb(217, 217, 216);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(217, 217, 216, 1) 0%,
+  //   rgba(255, 255, 255, 1) 100%
+  // );
+  background: white;
 
   & .center {
     // border: 2px solid blue;
+    margin-left: 200px;
+
     background: white;
     width: 85%;
+    max-width: 1000px;
     position: relative;
-    box-shadow: 1px 1px 7px 3px rgb(151, 151, 153);
+    box-shadow: 1px 1px 5px 2px rgb(230, 230, 231);
     border-radius: 10px;
     height: fit-content;
     overflow: visible;
@@ -134,7 +139,8 @@
           flex-direction: column;
           gap: 5px;
 
-          & select {
+          & select,
+          input {
             height: 40px;
             font-size: 15px;
             border: none;

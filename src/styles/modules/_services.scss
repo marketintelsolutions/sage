@@ -1,11 +1,84 @@
 .services-main {
   //   border: 2px solid red;
-  padding: 70px var(--padding-main);
+  // padding: 70px var(--padding-main);
   display: flex;
   flex-direction: column;
   gap: 60px;
   background: white;
 
+  & .top {
+    // border: 2px solid red;
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    color: white;
+    position: relative;
+    // z-index: 1;
+    padding: 40px var(--padding-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      // z-index: 2;
+      // background: rgba(0, 0, 0, 0.4);
+      top: 0;
+      left: 0;
+      background: rgb(46, 54, 143);
+      background: linear-gradient(
+        90deg,
+        rgba(46, 54, 143, 0.6) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+      );
+    }
+
+    & h2 {
+      position: relative;
+      z-index: 99999;
+      font-size: 40px;
+      width: 50%;
+      transform: translateX(0);
+      opacity: 1;
+      transition: var(--transition-text);
+    }
+
+    & p {
+      z-index: 99999;
+      position: relative;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transform: translateX(0);
+      opacity: 1;
+      transition: var(--transition-text-slow);
+    }
+  }
+
+  & .translated {
+    & h2 {
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: var(--transition-text);
+    }
+    & p {
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: var(--transition-text-slow);
+    }
+  }
+
+  & .services-center {
+    padding: 40px var(--padding-main);
+    // border: 2px solid red;
+  }
   & h1 {
     font-size: 35px;
     letter-spacing: 2px;
@@ -46,18 +119,28 @@
       row-gap: 100px;
       grid-auto-rows: auto;
       //   position: relative;
+      // align-items: center;
+      // justify-content: center;
 
       & .item {
         // border: 2px solid red;
+        box-shadow: 1px 1px 5px 2px rgb(224, 223, 223);
         // height: 150px;
         // width: 150px;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        // gap: 25px;
         grid-column: span 2;
+        position: relative;
+        max-width: 350px;
+        transition: var(--transition);
 
         & .image {
           position: relative;
+          // border: 2px solid red;
+          height: 210px;
+          max-width: 400px;
+          transition: var(--transition);
 
           &:after {
             content: "";
@@ -66,31 +149,42 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 250px;
+            height: 100%;
             background: rgba(0, 0, 0, 0.5);
           }
         }
 
         & img {
-          height: 250px;
+          height: 100%;
           width: 100%;
           object-fit: cover;
         }
 
-        & h3 {
+        & h4 {
           font-weight: 700;
           font-size: 16px;
           letter-spacing: 2px;
           //   text-transform: capitalize;
           //   color: var(--primary-blue);
+          padding: 30px;
+          // border: 2px solid red;
+          transition: var(--transition);
+          // transition-delay: 0.1s;
+          opacity: 1;
         }
         & p {
           // font-weight: 700;
           font-size: 16px;
           letter-spacing: 2px;
           text-align: justify;
+          line-height: 25px;
+          padding: 20px;
+          position: absolute;
+          transition: var(--transition);
+          opacity: 0;
+          height: 100%;
           //   text-transform: capitalize;
-          //   color: var(--primary-blue);
+          // color: var(--primary-blue);
         }
 
         /* Dealing with 2 orphan items */
@@ -106,6 +200,18 @@
         // &:last-child:nth-child(3n - 2) {
         //   grid-column-end: 5;
         // }
+
+        &:hover {
+          & .image,
+          h4 {
+            opacity: 0;
+            transition: var(--transition);
+          }
+          & p {
+            opacity: 1;
+            transition: var(--transition);
+          }
+        }
       }
     }
   }

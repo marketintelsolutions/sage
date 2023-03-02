@@ -101,6 +101,7 @@ function FeedbackForm() {
           <div className="item">
             <input
               type="text"
+              name="doctor"
               value={doctorName}
               onChange={(e) => setDoctorName(e.target.value)}
             />
@@ -108,7 +109,8 @@ function FeedbackForm() {
           </div>
           <div className="item">
             <input
-              type="text"
+              type="number"
+              name="phone"
               value={contactNumber}
               onChange={(e) => setContactNumber(e.target.value)}
             />
@@ -117,6 +119,7 @@ function FeedbackForm() {
           <div className="item">
             <input
               type="text"
+              name="address"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
             />
@@ -125,6 +128,7 @@ function FeedbackForm() {
           <div className="item">
             <input
               type="email"
+              name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -172,7 +176,9 @@ function FeedbackForm() {
         {knowSageDiagnostics === "Very Well" ||
         knowSageDiagnostics === "Somewhat" ? (
           <div className="diagnostics">
-            <label>How long have you used SAGE DIAGNOSTICS?</label>
+            <label className="label">
+              How long have you used SAGE DIAGNOSTICS?
+            </label>
 
             <select
               value={sageDiagnosticsUsage}

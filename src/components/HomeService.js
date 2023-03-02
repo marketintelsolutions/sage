@@ -1,13 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { home } from "../assets/images";
 
 const HomeService = () => {
+  const [name, setName] = useState("wike");
+  const [email, setEmail] = useState("igbagboleye@gmail.com");
+  const [message, setMessage] = useState("testing");
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("sent");
+    fetch("http://localhost:5000/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          setStatus("Email sent successfully");
+        } else {
+          setStatus("Error sending email");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        setStatus("Error sending email");
+      });
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <section
       className="home-service"
       style={{ backgroundImage: `url(${home})` }}
     >
-      <form action="" className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <h1>Apply for Home Service</h1>
         <div className="center">
           <div className="item">
@@ -42,7 +71,7 @@ const HomeService = () => {
             />
           </div>
         </div>
-        <button type="button">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   );

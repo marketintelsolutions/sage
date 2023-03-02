@@ -11,11 +11,16 @@ body,
 }
 
 :root {
-  --primary-blue: #2e368f;
-  --primary-purple: #cb6ce6;
+  --primary-blue: #2e368f; /*rgb(46, 54, 143)*/
+  --primary-purple: #cb6ce6; /*rgb(203, 108, 230)*/
+  /* --primary-purple-light: rgb(226, 215, 228); rgb(203, 108, 230) */
+  --primary-purple-light: rgb(221, 213, 223);
+  --primary-purple-400: rgba(203, 108, 230, 0.4); /*rgb(203, 108, 230)*/
   --primary-grey: #d9d9d8;
   --primary-white: #ffffff;
   --transition: all 0.2s linear;
   --transition-slow: all 0.4s ease-out;
+  --transition-text: all 0.7s ease-in-out;
+  --transition-text-slow: all 0.9s ease-in-out;
   --padding-main: 130px;
 }

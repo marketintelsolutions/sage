@@ -30,7 +30,7 @@
   & .right {
     // border: 2px solid green;
     display: flex;
-    gap: 20px;
+    gap: 50px;
 
     & a {
       text-decoration: none;
@@ -48,7 +48,6 @@
     }
 
     & .packages {
-      // border: 2px solid red;
       position: relative;
       display: flex;
       align-items: center;
@@ -58,33 +57,41 @@
         font-size: 14px;
         font-weight: 700;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
       }
 
       & span {
+        // border: 2px solid red;
         position: absolute;
         // height: 100%;
-        width: 200%;
+        width: 120%;
         background: white;
-        top: 60px;
-        left: 0;
+        top: 58.7px;
+        left: 50%;
         box-shadow: 1px 1px 3px 0px grey;
         // padding: 20px 0px;
-        display: flex;
+        // display: grid;
+        grid-template-columns: 1fr;
         // gap: 10px;
         flex-direction: column;
         text-transform: capitalize;
         align-items: center;
         justify-content: center;
-        margin-left: -50%;
+        margin-left: -60%;
         color: var(--primary-blue);
         font-size: 14px;
         font-weight: 700;
+        display: none;
         opacity: 0;
         height: 0;
 
         & a {
           // font-size: ;
-          padding: 15px 40px;
+          padding: 15px;
+          // display: flex;
+
           width: 100%;
           text-align: center;
           cursor: pointer;
@@ -98,6 +105,7 @@
 
       & .open {
         // height:
+        display: grid;
         opacity: 1;
         height: auto;
       }
@@ -142,12 +150,14 @@
       gap: 5px;
 
       & span {
-        padding: 6.5px;
-        background: var(--primary-purple);
+        padding: 5.5px;
+        color: var(--primary-purple);
+        background: white;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 14px;
       }
 
       & p {
@@ -178,8 +188,8 @@
     // padding: 15px;
     width: 120px;
     height: 40px;
-    background: var(--primary-purple);
-    color: white;
+    color: var(--primary-purple);
+    background: white;
     border: none;
     font-size: 14px;
     border-radius: 20px;
