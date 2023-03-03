@@ -12,7 +12,7 @@ const HomeService = () => {
     console.log("sent");
     fetch("http://localhost:5000/send-email", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", mode: "no-cors" },
       body: JSON.stringify({ name, email, message }),
     })
       .then((response) => {
