@@ -202,7 +202,9 @@
     letter-spacing: 1px;
 
     &:hover {
-      opacity: 0.9;
+      // opacity: 0.9;
+      color: white;
+      background: var(--primary-purple);
       transition: var(--transition);
     }
   }

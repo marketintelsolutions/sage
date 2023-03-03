@@ -15,9 +15,6 @@ const About = () => {
     setText(false);
   }, []);
 
-  // useEffect(() => {
-  // }, []);
-
   return (
     <>
       <section className="about">

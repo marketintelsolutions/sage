@@ -46,17 +46,17 @@
     min-width: 250px;
 
     width: 30%;
-    max-width: 520px;
+    max-width: 450px;
 
-    & img {
-      height: 90px;
-      width: 90px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+    // & img {
+    //   height: 70px;
+    //   width: 70px;
+    //   border-radius: 50%;
+    //   object-fit: cover;
+    // }
     & .image {
-      height: 90px;
-      width: 90px;
+      height: 75px;
+      width: 75px;
       border-radius: 50%;
       // border: 2px solid red;
       background-size: 100% 100%;
@@ -95,7 +95,7 @@
       min-width: 250px;
 
       width: 30%;
-      max-width: 520px;
+      max-width: 450px;
     }
   }
 }

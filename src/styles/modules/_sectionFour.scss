@@ -8,7 +8,13 @@
   gap: 40px;
   align-items: center;
   // background: rgba(203, 108, 230, 0.02);
-  background: var(--primary-purple-light);
+  // background: var(--primary-purple-light);
+  background: rgb(224, 208, 228);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    var(--primary-purple-light) 65%
+  );
 
   & h1 {
     font-size: 30px;

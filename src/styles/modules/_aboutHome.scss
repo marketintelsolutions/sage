@@ -35,7 +35,11 @@
     // width: 40%;
     position: relative;
     // width: 80%;
-    width: fit-content;
+    width: 650px;
+    // margin: 0 auto;
+    margin-left: 200px;
+
+    // width: fit-content;
   }
 
   & h2 {
@@ -63,7 +67,8 @@
     // transform: translateX(90px);
     // transform: translateY(-40px);
     top: -10%;
-    left: -10%;
+    // left: -50%;
+    left: -200px;
     padding: 3rem 1.5rem;
 
     & h4 {
