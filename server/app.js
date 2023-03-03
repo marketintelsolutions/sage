@@ -14,7 +14,17 @@ app.use((req, res, next) => {
   next();
 });
 
-function sendEmail({ recipient_email, subject, message }) {
+function sendEmail({
+  recipient_email,
+  firstname,
+  lastname,
+  email,
+  phone,
+  subject,
+  message,
+  formName,
+  fields,
+}) {
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
       service: "gmail",
@@ -28,7 +38,18 @@ function sendEmail({ recipient_email, subject, message }) {
       from: "igbagboleye@gmail.com",
       to: recipient_email,
       subject: subject,
-      text: message,
+      text: formName,
+      html: `<body>
+      <h2>${subject}</h2>
+      <ul style="font-size:1.1em">
+       <li><span style="padding:4px 0;color:#aaa;font-size:1.2em;font-weight:400"><b>${fields[0]}</b>: ${firstname}</span></li><br/>
+       <li><span style="padding:4px 0;color:#aaa;font-size:1.2em;font-weight:400"><b>${fields[1]}</b>: ${lastname}</span></li><br/>
+       <li><span style="padding:4px 0;color:#aaa;font-size:1.2em;font-weight:400"><b>${fields[2]}</b>: ${email}</span></li><br/>
+       <li><span style="padding:4px 0;color:#aaa;font-size:1.2em;font-weight:400"><b>${fields[3]}</b>: ${phone}</span></li><br/>
+       <li><span style="padding:4px 0;color:#aaa;font-size:1.2em;font-weight:400"><b>${fields[4]}</b>: ${subject}</span></li><br/>
+       <li><span style="padding:4px 0;color:#aaa;font-size:1.2em;font-weight:400"><b>${fields[5]}</b>: ${message}</span></li><br/>
+       </ul>
+       </body>`,
     };
 
     transporter.sendMail(mail_configs, function (error, info) {
