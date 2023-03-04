@@ -9,16 +9,18 @@
   align-items: center;
   // background: rgba(203, 108, 230, 0.02);
   // background: var(--primary-purple-light);
-  background: rgb(224, 208, 228);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    var(--primary-purple-light) 65%
-  );
+  background: rgb(226, 221, 228);
+
+  // background: rgb(224, 208, 228);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(255, 255, 255, 1) 0%,
+  //   var(--primary-purple-light) 65%
+  // );
 
   & h1 {
     font-size: 30px;
-    color: var(--primary-blue);
+    color: var(--primary-purple);
     text-align: center;
   }
 
@@ -40,7 +42,8 @@
 
       & .question {
         border-radius: 10px;
-        box-shadow: 1px 1px 3px 2px rgb(180, 179, 179);
+        // box-shadow: 1px 1px 3px 2px rgb(180, 179, 179);
+        border: 1px solid var(--primary-purple);
         padding: 20px 40px;
         cursor: pointer;
         color: var(--primary-blue);

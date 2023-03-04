@@ -9,7 +9,16 @@
   display: flex;
   align-items: center;
   padding-left: var(--padding-main);
+  position: relative;
   //   back
+
+  & .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 
   & .text {
     position: relative;

@@ -35,7 +35,7 @@ const About = () => {
               medical diagnostics requirements to aid treatment.{" "}
             </p>
           </div>
-          <div className="center values">
+          <div className="center values center-spaced">
             <h3>Core values</h3>
             <ul>
               <li>
@@ -76,14 +76,14 @@ const About = () => {
               </li>
             </ul>
           </div>
-          <div className="center">
+          <div className="center center-spaced">
             <h3>Vision</h3>
             <p>
               The preferred and trusted medical diagnostics partner — improving
               health & wellness, impacting lives.
             </p>
           </div>
-          <div className="center">
+          <div className="center center-spaced">
             <h3>Mission</h3>
             <p>
               Provide innovative, timely, and quality medical diagnostics
@@ -98,25 +98,25 @@ const About = () => {
         <div className="values">
           <div className="value-center">
             <div className="value">
-              <span>1</span>
+              <span></span>
               <p>Quick Turnaround Time</p>{" "}
             </div>
           </div>
           <div className="value-center">
             <div className="value">
-              <span>2</span>
+              <span></span>
               <p>Online reporting </p>{" "}
             </div>
           </div>
           <div className="value-center">
             <div className="value">
-              <span>3</span>
+              <span></span>
               <p>Dispatch services/Home service </p>{" "}
             </div>
           </div>
           <div className="value-center">
             <div className="value">
-              <span>4</span>
+              <span></span>
               <p>Follow up services </p>{" "}
             </div>
           </div>

@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { booking } from "../assets/images";
 
+const investigations = [
+  "X-Ray",
+  "Ultrasound",
+  "Mammogram",
+  "Echocardiogram",
+  "ECG",
+  "Spirometry",
+  "Audiometry",
+];
+
+const time = [
+  "8:00",
+  "9:00",
+  "10:00",
+  "11:00",
+  "12:00",
+  "13:00",
+  "14:00",
+  "15:00",
+  "16:00",
+];
+
 const Booking = () => {
+  const [slotActive, setSlotActive] = useState("");
+
   return (
     <section className="booking">
       <h1>Appointment Booking</h1>
@@ -11,11 +35,14 @@ const Booking = () => {
         <form className="form">
           <div className="top">
             <div className="item department">
-              <label htmlFor="department">Department</label>
-              <select name="department" id="department">
-                <option value="">Select Department</option>
-                <option value="CT SCAN">CT SCAN</option>
-                <option value="MRI">MRI</option>
+              <label htmlFor="investigation">Investigation</label>
+              <select name="investigation" id="investigation">
+                <option value="">Select Investigation</option>
+                {investigations.map((item, index) => (
+                  <option value={item} key={index}>
+                    {item}
+                  </option>
+                ))}
               </select>
             </div>
             <div className="item date">
@@ -30,37 +57,23 @@ const Booking = () => {
               <input type="date" name="date" id="date" />
             </div>
           </div>
+          <div className="more">
+            <label htmlFor="more">More Details on Investigation</label>
+            <textarea name="more" id="more"></textarea>
+          </div>
           <div className="slot">
             <h2>Slot</h2>
             <div className="items">
-              <div className="item">
-                <p>14:00</p>
-                <p>Available</p>
-              </div>
-              <div className="item">
-                <p>14:30</p>
-                <p>Available</p>
-              </div>
-              <div className="item">
-                <p>16:00</p>
-                <p>Available</p>
-              </div>
-              <div className="item">
-                <p>16:30</p>
-                <p>Available</p>
-              </div>
-              <div className="item">
-                <p>17:00</p>
-                <p>Available</p>
-              </div>
-              <div className="item">
-                <p>17:30</p>
-                <p>Available</p>
-              </div>
-              <div className="item">
-                <p>18:00</p>
-                <p>Available</p>
-              </div>
+              {time.map((item, index) => (
+                <div
+                  className={`${slotActive === index ? "item active" : "item"}`}
+                  onClick={() => setSlotActive(index)}
+                  key={index}
+                >
+                  <p>{item}</p>
+                  <p>Available</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="name">

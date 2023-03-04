@@ -6,7 +6,8 @@ body,
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Urbanist;
+  /* font-family: Urbanist; */
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -14,7 +15,8 @@ body,
   --primary-blue: #2e368f; /*rgb(46, 54, 143)*/
   --primary-purple: #cb6ce6; /*rgb(203, 108, 230)*/
   /* --primary-purple-light: rgb(226, 215, 228); rgb(203, 108, 230) */
-  --primary-purple-light: rgb(221, 213, 223);
+  /* --primary-purple-light: rgb(221, 213, 223); */
+  --primary-purple-light: rgb(226, 221, 228);
   --primary-purple-400: rgba(203, 108, 230, 0.4); /*rgb(203, 108, 230)*/
   --primary-grey: #d9d9d8;
   --primary-white: #ffffff;

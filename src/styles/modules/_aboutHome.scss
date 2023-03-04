@@ -7,12 +7,14 @@
   align-items: center;
   justify-content: center;
   // background: rgb(217, 217, 216);
-  background: rgb(224, 208, 228);
-  background: linear-gradient(
-    180deg,
-    var(--primary-purple-light) 40%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  // background: rgb(224, 208, 228);
+  // background: linear-gradient(
+  //   180deg,
+  //   var(--primary-purple-light) 40%,
+  //   rgba(255, 255, 255, 1) 100%
+  // );
+  background: rgb(226, 221, 228);
+  // background: rgb(234, 230, 235);
   // background: linear-gradient(
   //   180deg,
   //   rgba(203, 108, 230, 0.05) 30%,
@@ -44,7 +46,7 @@
 
   & h2 {
     text-align: center;
-    color: var(--primary-blue);
+    color: var(--primary-purple);
     font-size: 28px;
     letter-spacing: 1px;
   }
@@ -76,7 +78,7 @@
       // line-height: 40px;
       font-weight: 100;
       font-size: 20px;
-      border-bottom: 1px solid var(--primary-blue);
+      border-bottom: 1px solid var(--primary-purple);
       padding: 5px;
       // margin: 0 20px;
       opacity: 0.6;
@@ -128,9 +130,13 @@
 
     // width: 30vw;
 
-    & img {
+    & .image {
       height: 100%;
       width: 100%;
     }
+  }
+  & img {
+    height: 100%;
+    width: 100%;
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import company from "../assets/company.jpg";
 import { BsArrowRightShort } from "react-icons/bs";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SectionTwo = () => {
   return (
@@ -25,7 +26,16 @@ const SectionTwo = () => {
           </Link>
         </div>
         <div className="right">
-          <img src={company} alt="company" />
+          {/* <img src={company} alt="company" /> */}
+          <div className="image">
+            <LazyLoadImage
+              src={company}
+              alt="company"
+              effect="blur"
+              height="100%"
+              width="100%"
+            />
+          </div>
         </div>
       </div>
     </section>
