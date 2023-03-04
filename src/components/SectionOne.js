@@ -13,32 +13,29 @@ const SectionOne = () => {
   }, []);
 
   return (
-    <LazyLoadComponent>
-      <section
-        className="section-one"
-        // style={{ backgroundImage: `url(${microscope})` }}
-      >
-        <div className="image">
-          <LazyLoadImage
-            alt="microscope"
-            effect="blur"
-            src={microscope}
-            height="100%"
-            width="100%"
-          />
-        </div>
-        <div className={`${text ? "text translated" : "text"}`}>
-          <h3>
-            Cutting-edge molecular
-            <br /> lab solutions.
-          </h3>
-          <p>
-            Provide innovative, timely, and quality medical diagnostics
-            services.{" "}
-          </p>
-        </div>
-      </section>
-    </LazyLoadComponent>
+    <section
+      className="section-one"
+      // style={{ backgroundImage: `url(${microscope})` }}
+    >
+      <div className="image">
+        <LazyLoadImage
+          alt="microscope"
+          effect="blur"
+          src={microscope}
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div className={`${text ? "text translated" : "text"}`}>
+        <h3>
+          Cutting-edge molecular
+          <br /> lab solutions.
+        </h3>
+        <p>
+          Provide innovative, timely, and quality medical diagnostics services.{" "}
+        </p>
+      </div>
+    </section>
   );
 };
 

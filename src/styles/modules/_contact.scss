@@ -108,7 +108,7 @@
             height: 40px;
             font-size: 15px;
             border: none;
-            border-bottom: 1px solid var(--primary-blue);
+            border-bottom: 1px solid var(--primary-purple);
             // padding-bottom: 2px;
 
             &:focus {
@@ -144,7 +144,7 @@
             height: 40px;
             font-size: 15px;
             border: none;
-            border-bottom: 1px solid var(--primary-blue);
+            border-bottom: 1px solid var(--primary-purple);
 
             &:focus {
               outline: none;
@@ -154,7 +154,7 @@
           & textarea {
             width: 100%;
             border: none;
-            border-bottom: 1px solid var(--primary-blue);
+            border-bottom: 1px solid var(--primary-purple);
             height: 75px;
             font-size: 15px;
             resize: vertical;

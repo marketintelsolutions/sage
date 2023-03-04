@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { corporateData, nigeriaStates } from "../utils/packagesData";
 import { corporate } from "../assets/images";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Corporate = () => {
   const [text, setText] = useState(true);
@@ -13,9 +14,18 @@ const Corporate = () => {
   return (
     <section className="corporate">
       <div
-        className={`${text ? "image translated" : "image"}`}
-        style={{ backgroundImage: `url(${corporate})` }}
+        className={`${text ? "topmost translated" : "topmost"}`}
+        // style={{ backgroundImage: `url(${corporate})` }}
       >
+        <div className="image">
+          <LazyLoadImage
+            alt="microscope"
+            effect="blur"
+            src={corporate}
+            height="100%"
+            width="100%"
+          />
+        </div>
         <h1>Corporate</h1>
       </div>
       <div className="content">

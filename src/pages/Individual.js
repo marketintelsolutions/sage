@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { individual } from "../assets/images";
 import { individualData } from "../utils/packagesData";
 
@@ -12,9 +13,18 @@ const Individual = () => {
   return (
     <section className="individual">
       <div
-        className={`${text ? "image translated" : "image"}`}
-        style={{ backgroundImage: `url(${individual})` }}
+        className={`${text ? "top translated" : "top"}`}
+        // style={{ backgroundImage: `url(${individual})` }}
       >
+        <div className="image">
+          <LazyLoadImage
+            alt="microscope"
+            effect="blur"
+            src={individual}
+            height="100%"
+            width="100%"
+          />
+        </div>
         <h1>Individual</h1>
       </div>
 

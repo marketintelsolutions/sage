@@ -3,7 +3,7 @@
   min-height: 100vh;
   background: white;
 
-  & .image {
+  & .top {
     // border: 2px solid blue;
     height: 50vh;
     width: 100%;
@@ -15,6 +15,18 @@
     position: relative;
     display: flex;
     align-items: center;
+
+    & .image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+
+      & img {
+        object-fit: cover;
+      }
+    }
 
     & h1 {
       position: relative;

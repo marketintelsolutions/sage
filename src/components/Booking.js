@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { booking } from "../assets/images";
 
 const investigations = [
@@ -31,7 +32,16 @@ const Booking = () => {
       <h1>Appointment Booking</h1>
       <h3>Simple booking process with exclusive benefits.</h3>
       <div className="center">
-        <img src={booking} alt="booking" />
+        {/* <img src={booking} alt="booking" /> */}
+        <div className="image">
+          <LazyLoadImage
+            alt="microscope"
+            effect="blur"
+            src={booking}
+            height="100%"
+            width="100%"
+          />
+        </div>
         <form className="form">
           <div className="top">
             <div className="item department">

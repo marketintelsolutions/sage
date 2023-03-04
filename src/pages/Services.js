@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import {
+  LazyLoadImage,
+  trackWindowScroll,
+} from "react-lazy-load-image-component";
 import { useLocation } from "react-router-dom";
 import { service } from "../assets/images";
 // import {
@@ -11,9 +15,10 @@ import { service } from "../assets/images";
 import Service from "../components/Service";
 import { services } from "../utils/data";
 
-const Services = () => {
-  const [text, setText] = useState(true);
+const Services = ({ _, scrollPosition }) => {
+  //  'scrollPosition' is from the package "react-lazy-load-image-component", the export statememnt is wrapped with 'trackWindowScroll()'
 
+  const [text, setText] = useState(true);
   const { state } = useLocation();
   const { targetId } = state || {};
 
@@ -42,8 +47,17 @@ const Services = () => {
     <section className="services-main">
       <div
         className={`${text ? "top translated" : "top"}`}
-        style={{ backgroundImage: `url(${service})` }}
+        // style={{ backgroundImage: `url(${service})` }}
       >
+        <div className="image">
+          <LazyLoadImage
+            alt="microscope"
+            effect="blur"
+            src={service}
+            height="100%"
+            width="100%"
+          />
+        </div>
         <h2>
           Provide innovative, timely,
           <br /> and quality medical diagnostics services..
@@ -57,11 +71,13 @@ const Services = () => {
         </div>
 
         {services.map((item) => {
-          return <Service key={item.id} {...item} />;
+          return (
+            <Service key={item.id} {...item} scrollPosition={scrollPosition} />
+          );
         })}
       </div>
     </section>
   );
 };
 
-export default Services;
+export default trackWindowScroll(Services);
