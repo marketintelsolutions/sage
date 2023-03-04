@@ -131,7 +131,7 @@
 
           & .item {
             padding: 10px 0;
-            border: 1px solid black;
+            border: 1px solid var(--primary-purple);
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -280,7 +280,8 @@
     & button {
       width: 40%;
       padding: 15px 20px;
-      background: var(--primary-blue);
+      background: var(--primary-purple);
+      border: 1px solid var(--primary-purple);
       color: white;
       margin: 0 auto;
       border-radius: 10px;

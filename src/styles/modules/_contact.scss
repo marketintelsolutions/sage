@@ -40,7 +40,7 @@
       justify-content: center;
       gap: 20px;
       flex-direction: column;
-      background: var(--primary-blue);
+      background: var(--primary-purple);
       color: white;
       top: 50%;
       width: 400px;
@@ -89,7 +89,7 @@
       & h3 {
         font-size: 25px;
         letter-spacing: 1px;
-        color: var(--primary-blue);
+        color: var(--primary-purple);
       }
 
       & .inputs {
@@ -171,14 +171,14 @@
       }
 
       & button {
-        background: var(--primary-blue);
+        background: var(--primary-purple);
         color: white;
         padding: 15px;
         width: 30%;
         cursor: pointer;
         border: none;
         border-radius: 5px;
-        border: 1px solid var(--primary-blue);
+        border: 1px solid var(--primary-purple);
         transition: var(--transition);
         display: flex;
         align-items: center;
@@ -190,7 +190,7 @@
           background: white;
           color: black;
           transition: var(--transition);
-          border: 1px solid var(--primary-blue);
+          border: 1px solid var(--primary-purple);
         }
       }
     }

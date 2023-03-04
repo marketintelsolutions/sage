@@ -70,7 +70,7 @@
 
     & h1 {
       font-size: 25px;
-      color: var(--primary-blue);
+      color: var(--primary-purple);
     }
 
     & .items {
@@ -92,7 +92,7 @@
         font-weight: 400;
 
         & div {
-          background: var(--primary-blue);
+          background: var(--primary-purple);
           //   padding: 5px 5px;
           height: 10px;
           width: 10px;
@@ -188,12 +188,12 @@
         padding: 10px 20px;
         text-align: center;
         font-size: 15px;
-        background: var(--primary-blue);
+        background: var(--primary-purple);
         border-radius: 5px;
         // width: 30%;
         margin: 0 auto;
         transition: var(--transition);
-        border: 1px solid var(--primary-blue);
+        border: 1px solid var(--primary-purple);
         color: white;
         cursor: pointer;
 
