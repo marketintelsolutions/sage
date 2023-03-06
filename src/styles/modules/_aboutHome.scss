@@ -22,6 +22,12 @@
   // );
   padding: 100px var(--padding-main) 25px;
 
+  @media (max-width: $breakpoint-tablet) {
+    padding: 50px var(--padding-tablet);
+  }
+  @media (max-width: $breakpoint-small) {
+    padding: 50px var(--padding-small);
+  }
   & .group {
     // border: 1px solid blue;
     box-shadow: 1px 1px 6px 1px rgb(209, 208, 208);
@@ -42,6 +48,18 @@
     margin-left: 200px;
 
     // width: fit-content;
+
+    @media (max-width: $breakpoint-tablet) {
+      margin-left: 0px;
+      box-shadow: none;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: $breakpoint-small) {
+        height: fit-content;
+        width: fit-content;
+      }
+    }
   }
 
   & h2 {
@@ -49,6 +67,10 @@
     color: var(--primary-purple);
     font-size: 28px;
     letter-spacing: 1px;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 22px;
+    }
   }
 
   & .left {
@@ -73,6 +95,18 @@
     left: -200px;
     padding: 3rem 1.5rem;
 
+    @media (max-width: $breakpoint-tablet) {
+      position: static;
+    }
+    @media (max-width: $breakpoint-small) {
+      // position: static;
+      padding: 15px;
+      gap: 15px;
+      width: 300px;
+      // padding: 2rem;
+      height: 80%;
+    }
+
     & h4 {
       text-align: center;
       // line-height: 40px;
@@ -82,6 +116,10 @@
       padding: 5px;
       // margin: 0 20px;
       opacity: 0.6;
+
+      @media (max-width: $breakpoint-small) {
+        font-size: 16px;
+      }
     }
 
     // & hr {
@@ -97,6 +135,10 @@
       letter-spacing: 1px;
       line-height: 25px;
       text-align: justify;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 12px;
+      }
     }
 
     & .read-more {
@@ -113,6 +155,10 @@
         align-items: center;
         transition: var(--transition-slow);
         gap: 5px;
+
+        @media (max-width: $breakpoint-tablet) {
+          padding: 7px 16px;
+        }
       }
       & button:hover {
         color: white;
@@ -128,7 +174,9 @@
     height: 100%;
     max-width: 650px;
 
-    // width: 30vw;
+    @media (max-width: $breakpoint-tablet) {
+      display: none;
+    }
 
     & .image {
       height: 100%;

@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logos/logo2.jpg";
-import { AiOutlineCaretDown } from "react-icons/ai";
+import {
+  AiOutlineCaretDown,
+  AiOutlineMenu,
+  AiOutlineClose,
+} from "react-icons/ai";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [menu, isMenu] = useState(false);
 
   useEffect(() => {
     if (isOpen === false) return;
@@ -22,7 +27,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </Link>
       </div>
-      <div className="right">
+      <div className={`${menu ? "right menu-open" : "right"}`}>
         <Link to="/" onClick={() => setIsOpen(false)}>
           Home
         </Link>
@@ -49,6 +54,9 @@ const Navbar = () => {
           </span>
         </div>
         <Link to="/contact">Contact</Link>
+      </div>
+      <div className="menu-logo" onClick={() => isMenu(!menu)}>
+        {menu ? <AiOutlineClose /> : <AiOutlineMenu />}
       </div>
     </nav>
   );

@@ -79,13 +79,14 @@
     }
 
     & .role {
-      text-transform: capitalize;
-    }
-
-    & .company {
       color: var(--primary-purple);
       text-transform: capitalize;
     }
+
+    // & .company {
+    //   color: var(--primary-purple);
+    //   text-transform: capitalize;
+    // }
   }
 
   & .bottom {

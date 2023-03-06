@@ -25,4 +25,6 @@ body,
   --transition-text: all 0.7s ease-in-out;
   --transition-text-slow: all 0.9s ease-in-out;
   --padding-main: 130px;
+  --padding-tablet: 50px;
+  --padding-small: 25px;
 }

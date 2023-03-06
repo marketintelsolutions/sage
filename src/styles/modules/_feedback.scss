@@ -197,20 +197,22 @@
 
     & button {
       padding: 10px;
-      font-size: 20px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: 500;
       font-weight: 400;
       text-transform: uppercase;
-      background: var(--primary-purple);
-      color: white;
       // width: fit-content;
       border: 1px solid var(--primary-purple);
       transition: var(--transition);
       border-radius: 7px;
       cursor: pointer;
+      background: white;
+      color: black;
 
       &:hover {
-        background: white;
-        color: black;
+        color: white;
+        background: var(--primary-purple);
         transition: var(--transition);
       }
     }

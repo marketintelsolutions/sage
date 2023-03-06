@@ -38,6 +38,12 @@
     // padding-bottom: 80px;
     // height: 80vh;
 
+    @media (max-width: $breakpoint-tablet) {
+      // padding: 50px var(--padding-tablet);
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     & .item-center {
       // border: 2px solid red;
       transition: var(--transition-slow);
@@ -69,6 +75,12 @@
       border: 1px solid rgba(203, 108, 230, 0.4);
       // box-shadow: 1px 1px 6px 2px rgb(83, 82, 82);
 
+      @media (max-width: $breakpoint-small) {
+        // padding: 30px var(--padding-small);
+        width: 300px;
+        height: fit-content;
+      }
+
       & h2 {
         font-size: 20px;
         letter-spacing: 2px;
@@ -80,6 +92,10 @@
         display: flex;
         align-items: center;
         gap: 8px;
+
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 17px;
+        }
 
         & span {
           display: flex;
@@ -108,6 +124,13 @@
           // border: 2px solid red;
           width: fit-content;
 
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 17px;
+          }
+          @media (max-width: $breakpoint-small) {
+            font-size: 15px;
+          }
+
           & .read-more {
             text-decoration: none;
             // border: 1px solid var(--primary-blue);
@@ -125,6 +148,10 @@
 
             // border: 1px solid var(--primary-blue);
             color: var(--primary-purple);
+
+            @media (max-width: $breakpoint-tablet) {
+              font-size: 13px;
+            }
           }
 
           & .read-more:hover {

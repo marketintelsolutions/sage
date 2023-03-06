@@ -18,10 +18,21 @@
   //   var(--primary-purple-light) 65%
   // );
 
+  @media (max-width: $breakpoint-tablet) {
+    padding: 30px var(--padding-tablet);
+  }
+  @media (max-width: $breakpoint-small) {
+    padding: 30px var(--padding-small);
+  }
+
   & h1 {
     font-size: 30px;
     color: var(--primary-purple);
     text-align: center;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 25px;
+    }
   }
 
   & .center {
@@ -31,6 +42,13 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @media (max-width: $breakpoint-large) {
+      width: 100%;
+    }
+    @media (max-width: $breakpoint-small) {
+      width: 100%;
+    }
 
     & .item {
       // border: 2px solid green;
@@ -51,6 +69,15 @@
         text-transform: capitalize;
         font-size: 20px;
 
+        @media (max-width: $breakpoint-tablet) {
+          padding: 15px 30px;
+          font-size: 16px;
+        }
+        @media (max-width: $breakpoint-tablet) {
+          padding: 13px 27px;
+          font-size: 14px;
+        }
+
         & p {
           // text-align: center;
           display: flex;
@@ -68,6 +95,13 @@
         letter-spacing: 1px;
         text-align: justify;
         transition: var(--transition);
+
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 15px;
+        }
+        @media (max-width: $breakpoint-small) {
+          font-size: 13px;
+        }
 
         & p {
           display: none;

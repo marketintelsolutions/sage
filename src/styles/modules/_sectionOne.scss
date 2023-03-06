@@ -12,12 +12,22 @@
   position: relative;
   //   back
 
+  @media (max-width: $breakpoint-tablet) {
+    padding-left: var(--padding-tablet);
+  }
+
   & .image {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
+
+    & img {
+      @media (max-width: $breakpoint-large) {
+        object-fit: cover;
+      }
+    }
   }
 
   & .text {
@@ -31,6 +41,10 @@
     flex-direction: column;
     gap: 40px;
 
+    @media (max-width: $breakpoint-small) {
+      width: 90%;
+    }
+
     & h3 {
       font-size: 55px;
       text-transform: capitalize;
@@ -39,6 +53,14 @@
       transform: translateX(0);
       opacity: 1;
       transition: var(--transition-text);
+
+      @media (max-width: $breakpoint-large) {
+        font-size: 40px;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        line-height: 35px;
+        font-size: 35px;
+      }
     }
 
     & p {
@@ -46,6 +68,13 @@
       transform: translateX(0);
       opacity: 1;
       transition: var(--transition-text-slow);
+
+      @media (max-width: $breakpoint-large) {
+        font-size: 20px;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 18px;
+      }
     }
   }
 

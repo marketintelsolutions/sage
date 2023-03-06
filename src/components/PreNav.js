@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logos/logo2.jpg";
 import { GoLocation } from "react-icons/go";
+import { MdLocationPin } from "react-icons/md";
 import {
   BsTwitter,
   BsFacebook,
@@ -44,14 +45,14 @@ const PreNav = () => {
               <p className="desc">08139289067</p>
             </div>
           </div>
-          <div className="item">
+          <div className="item location">
             <span>
               {/* <BsClock /> */}
-              <GoLocation />
+              <MdLocationPin />
             </span>
             <div className="text">
               {/* <p className="head">We Are Open 24 Hours</p> */}
-              <p className="desc">
+              <p className="desc ">
                 Plot 10, Block 64, Fola Osibo Street, Lekki Phase 1, Lagos{" "}
               </p>
             </div>

@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Error from "./pages/Error";
-import Packages from "./pages/Packages";
 import Patients from "./pages/Patients";
 import Contact from "./pages/Contact";
 import Corporate from "./pages/Corporate";
@@ -17,7 +16,6 @@ function App() {
         <Route path="/" index element={<Home />} />
         <Route path="/about" index element={<About />} />
         <Route path="/services" index element={<Services />} />
-        <Route path="/packages" index element={<Packages />} />
         <Route path="/patients" index element={<Patients />} />
         <Route path="/contact" index element={<Contact />} />
         <Route path="/corporate" index element={<Corporate />} />

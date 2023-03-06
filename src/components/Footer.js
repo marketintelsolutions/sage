@@ -43,8 +43,13 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link to="/packages" className="links">
-              Health Packages
+            <Link to="/individual" className="links">
+              Individual Packages
+            </Link>
+          </p>
+          <p>
+            <Link to="/corporate" className="links">
+              Corporate Packages
             </Link>
           </p>
           <p>

@@ -201,15 +201,22 @@
       & button {
         padding: 16px 0;
         text-align: center;
-        background: var(--primary-purple);
         border: none;
         border-radius: 5px;
-        color: white;
+        // color: var(--primary-purple);
+        color: black;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
         cursor: pointer;
         transition: var(--transition);
+        background: white;
+        border: 1px solid var(--primary-purple);
 
         &:hover {
-          transform: scale(0.98);
+          background: var(--primary-purple);
+          // transform: scale(0.98);
+          color: white;
           transition: var(--transition);
         }
       }
@@ -294,18 +301,21 @@
     & button {
       width: 40%;
       padding: 15px 20px;
-      background: var(--primary-purple);
       border: 1px solid var(--primary-purple);
-      color: white;
+      color: black;
       margin: 0 auto;
       border-radius: 10px;
-      border: none;
       cursor: pointer;
       transition: var(--transition);
+      background: white;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
 
       &:hover {
-        background: white;
-        color: black;
+        background: var(--primary-purple);
+        color: white;
         transition: var(--transition);
       }
     }
