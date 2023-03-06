@@ -1,10 +1,11 @@
 .booking {
   // border: 2px solid red;
   padding: 70px var(--padding-main);
-  // padding: 70px 215px;
   background: white;
-  // min-height: 120vh;
-  // margin-bottom: 30px;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 70px var(--padding-tablet);
+  }
 
   & h1 {
     font-size: 1.6rem;
@@ -24,31 +25,29 @@
     margin-bottom: 20px;
     width: 1012px;
     margin: 20px auto;
+
+    @media (max-width: $breakpoint-large) {
+      width: 100%;
+    }
   }
 
   & .center {
     // border: 2px solid blue;
-    // height: 100vh;
-    // max-height: 670px;
     margin: 0 auto;
-    // max-width: 900px;
-    // width: fit-content;
-    // height: fit-content;
     width: 1012px;
     height: 724px;
-
     display: grid;
     grid-template-columns: auto 1fr;
-    // display: flex;
 
-    // & img {
-    //   // height: 100vh;
-    //   // width: 100%;
-    //   height: 676px;
-    //   // height: 100%;
-    //   width: 440px;
-    //   // object-fit: contain;
-    // }
+    @media (max-width: $breakpoint-large) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: fit-content;
+    }
+    @media (max-width: $breakpoint-tablet) {
+      border: 1px solid var(--primary-purple);
+    }
 
     & .image {
       // position: absolute;
@@ -56,6 +55,9 @@
       width: 100%;
       top: 0;
       left: 0;
+      @media (max-width: $breakpoint-large) {
+        display: none;
+      }
 
       & img {
         object-fit: cover;
@@ -77,6 +79,12 @@
       justify-content: space-between;
       width: 100%;
 
+      @media (max-width: $breakpoint-tablet) {
+        min-height: 676px;
+        height: fit-content;
+        gap: 30px;
+      }
+
       & .top {
         // border: 2px solid red;
         // display: flex;
@@ -85,10 +93,21 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
 
+        @media (max-width: $breakpoint-tablet) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
         & .item {
           display: flex;
           flex-direction: column;
           gap: 20px;
+          min-width: 45%;
+
+          @media (max-width: $breakpoint-small) {
+            width: 100%;
+          }
 
           & label {
             font-size: 14px;
@@ -121,7 +140,7 @@
 
         & textarea {
           padding: 7px;
-          height: 30px;
+          height: 45px;
           resize: none;
         }
       }
@@ -133,6 +152,10 @@
         font-size: 14px;
         gap: 10px;
 
+        @media (max-width: $breakpoint-small) {
+          gap: 15px;
+        }
+
         & h2 {
           font-size: 14px;
         }
@@ -143,8 +166,18 @@
           grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
           gap: 10px;
 
+          @media (max-width: $breakpoint-small) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          @media (max-width: $breakpoint-mobile) {
+            gap: 25px;
+            // justify-content: space-between;
+          }
+
           & .item {
-            padding: 10px 0;
+            padding: 10px;
             border: 1px solid var(--primary-purple);
             text-align: center;
             display: flex;
@@ -172,6 +205,18 @@
         grid-template-columns: 20% 1fr 1fr;
         gap: 15px;
 
+        @media (max-width: $breakpoint-tablet) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        @media (max-width: $breakpoint-small) {
+          display: grid;
+          grid-template-columns: none;
+          grid-auto-flow: row;
+          justify-content: unset;
+        }
+
         & input,
         select {
           padding: 7px;
@@ -184,9 +229,18 @@
         grid-template-columns: 1fr 1fr;
         gap: 30px;
 
+        @media (max-width: $breakpoint-tablet) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
         & input,
         select {
           padding: 7px;
+
+          @media (max-width: $breakpoint-small) {
+            width: 100%;
+          }
         }
 
         & .number {
@@ -261,11 +315,26 @@
     border-radius: 10px;
     padding: 40px;
 
+    @media (max-width: $breakpoint-large) {
+      min-width: 50%;
+      width: fit-content;
+    }
+
     & h1 {
       text-align: center;
       font-size: 25px;
       // color: var(--primary-blue);
       letter-spacing: 1px;
+
+      @media (max-width: $breakpoint-large) {
+        font-size: 22px;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 20px;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 18px;
+      }
     }
 
     & .center {
@@ -274,6 +343,10 @@
       grid-template-columns: 1fr 1fr;
       gap: 20px;
 
+      @media (max-width: $breakpoint-mobile) {
+        grid-template-columns: 1fr;
+      }
+
       & .item {
         display: flex;
         flex-direction: column;
@@ -281,12 +354,31 @@
 
         & label {
           color: rgb(148, 146, 146);
+
+          @media (max-width: $breakpoint-large) {
+            font-size: 17px;
+          }
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 15px;
+          }
+          @media (max-width: $breakpoint-small) {
+            font-size: 13px;
+          }
         }
 
         & input {
           padding: 10px;
           border-radius: 5px;
           border: none;
+
+          @media (max-width: $breakpoint-tablet) {
+            padding: 8px;
+            font-size: 15px;
+          }
+          @media (max-width: $breakpoint-small) {
+            font-size: 13px;
+            padding: 8px;
+          }
         }
 
         & .number {
@@ -312,6 +404,16 @@
       font-weight: 400;
       letter-spacing: 1px;
       text-transform: uppercase;
+
+      @media (max-width: $breakpoint-tablet) {
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 11px;
+        padding: 8px;
+      }
 
       &:hover {
         background: var(--primary-purple);

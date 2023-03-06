@@ -12,9 +12,9 @@ footer {
   @media (max-width: $breakpoint-tablet) {
     padding: 100px var(--padding-tablet) 50px;
   }
-  @media (max-width: $breakpoint-small) {
-    padding: 100px var(--padding-small) 50px;
-  }
+  // @media (max-width: $breakpoint-small) {
+  //   padding: 100px var(--padding-small) 50px;
+  // }
 
   & .content {
     // border: 2px solid red;
@@ -129,10 +129,11 @@ footer {
     letter-spacing: 1px;
 
     @media (max-width: $breakpoint-tablet) {
-      padding: 0px var(--padding-tablet);
+      // padding: 0px var(--padding-tablet);
+      padding: 0;
     }
-    @media (max-width: $breakpoint-small) {
-      padding: 0px var(--padding-small);
-    }
+    // @media (max-width: $breakpoint-small) {
+    //   padding: 0px var(--padding-small);
+    // }
   }
 }
