@@ -19,6 +19,13 @@
     color: var(--primary-purple);
     font-size: 40px;
     letter-spacing: 1px;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 35px;
+    }
+    @media (max-width: $breakpoint-small) {
+      font-size: 30px;
+    }
   }
 
   & .people {
@@ -71,11 +78,25 @@
       // border: 2px solid red;
       // color: var(--primary-purple);
       text-transform: uppercase;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 0.8rem;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 0.65rem;
+      }
     }
 
     & p {
       font-size: 0.7rem;
       text-align: center;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 0.6rem;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 0.5rem;
+      }
     }
 
     & .role {

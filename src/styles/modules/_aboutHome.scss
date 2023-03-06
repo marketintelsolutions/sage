@@ -54,11 +54,10 @@
       box-shadow: none;
       display: flex;
       justify-content: center;
-
-      @media (max-width: $breakpoint-small) {
-        height: fit-content;
-        width: fit-content;
-      }
+    }
+    @media (max-width: $breakpoint-small) {
+      height: fit-content;
+      width: fit-content;
     }
   }
 
