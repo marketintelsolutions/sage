@@ -304,13 +304,12 @@
       font-weight: 500;
       font-weight: 400;
       text-transform: uppercase;
-      // width: fit-content;
       border: 1px solid var(--primary-purple);
       transition: var(--transition);
       border-radius: 7px;
       cursor: pointer;
-      background: white;
-      color: black;
+      color: white;
+      background: var(--primary-purple);
 
       @media (max-width: $breakpoint-tablet) {
         font-size: 14px;
@@ -320,8 +319,8 @@
       }
 
       &:hover {
-        color: white;
-        background: var(--primary-purple);
+        background: white;
+        color: black;
         transition: var(--transition);
       }
     }

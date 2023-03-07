@@ -147,7 +147,8 @@
       & button {
         border: 1px solid var(--primary-purple);
         padding: 10px 20px;
-        background: white;
+        color: white;
+        background: var(--primary-purple);
         border-radius: 5px;
         cursor: pointer;
         display: flex;
@@ -160,9 +161,9 @@
         }
       }
       & button:hover {
-        color: white;
-        background: var(--primary-purple);
         transition: var(--transition-slow);
+        background: white;
+        color: black;
       }
     }
   }

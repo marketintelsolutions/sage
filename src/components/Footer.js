@@ -20,7 +20,10 @@ const Footer = () => {
             </span>
             <p>
               Plot 10, Block 64, <br />
-              Fola Osibo Street, Lekki Phase 1, Lagos
+              Fola Osibo Street,
+              <br />
+              By road 15 Junction.
+              <br /> Lekki Phase 1, Lagos
             </p>
           </div>
         </div>
@@ -28,8 +31,8 @@ const Footer = () => {
         <div className="item">
           <h1>quick links</h1>
           <p>
-            <Link to="/patients" className="links">
-              Patients
+            <Link to="/book-a-test" className="links">
+              Book a Test
             </Link>
           </p>
           <p>

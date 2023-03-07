@@ -38,6 +38,14 @@
       transform: translateX(0);
       opacity: 1;
       transition: var(--transition-text);
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 30px;
+        padding: 0 var(--padding-tablet);
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 25px;
+      }
     }
     &:before {
       content: "";
@@ -75,14 +83,30 @@
     // border: 2px solid red;
     display: flex;
     // justify-content: center;
+    padding: 50px 0;
     align-items: center;
-    padding: 40px 0;
     flex-direction: column;
     gap: 30px;
+
+    @media (max-width: $breakpoint-tablet) {
+      padding: 50px var(--padding-tablet);
+    }
 
     & h1 {
       font-size: 25px;
       color: var(--primary-purple);
+      // border: 1px solid red;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 23px;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 20px;
+      }
+
+      @media (max-width: $breakpoint-small) {
+        width: 100%;
+      }
     }
 
     & .items {
@@ -94,6 +118,19 @@
       align-items: center;
       justify-content: center;
 
+      @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      @media (max-width: $breakpoint-small) {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
       & .item {
         // border: 2px solid red;
         display: inline-flex;
@@ -103,6 +140,13 @@
         font-size: 14px;
         font-weight: 400;
 
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 12px;
+        }
+        @media (max-width: $breakpoint-small) {
+          font-size: 10px;
+        }
+
         & div {
           background: var(--primary-purple);
           //   padding: 5px 5px;
@@ -110,6 +154,17 @@
           width: 10px;
           border-radius: 50%;
         }
+      }
+    }
+
+    & p {
+      font-size: 14px;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 12px;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 10px;
       }
     }
 
@@ -122,11 +177,25 @@
       flex-direction: column;
       gap: 20px;
 
+      @media (max-width: $breakpoint-large) {
+        width: 80%;
+        // margin: 0 var(--padding-main);
+      }
+      @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+        padding: 15px;
+      }
+
       & .top {
         // border: 2px solid blue;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+
+        @media (max-width: $breakpoint-small) {
+          // width: 100%;
+          grid-template-columns: 1fr;
+        }
 
         & .input-item {
           display: flex;
@@ -135,6 +204,13 @@
 
           & label {
             font-size: 14px;
+
+            @media (max-width: $breakpoint-tablet) {
+              font-size: 12px;
+            }
+            @media (max-width: $breakpoint-small) {
+              font-size: 10px;
+            }
           }
 
           & input {
@@ -153,6 +229,15 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
 
+        @media (max-width: $breakpoint-large) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        @media (max-width: $breakpoint-small) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
         & .number {
           &::-webkit-outer-spin-button,
           &::-webkit-inner-spin-button {
@@ -166,8 +251,22 @@
           flex-direction: column;
           gap: 10px;
 
+          @media (max-width: $breakpoint-large) {
+            width: 30%;
+          }
+          @media (max-width: $breakpoint-small) {
+            width: auto;
+          }
+
           & label {
             font-size: 14px;
+
+            @media (max-width: $breakpoint-tablet) {
+              font-size: 12px;
+            }
+            @media (max-width: $breakpoint-small) {
+              font-size: 10px;
+            }
           }
 
           & input,
@@ -187,6 +286,13 @@
         gap: 20px;
         & label {
           font-size: 14px;
+
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 12px;
+          }
+          @media (max-width: $breakpoint-small) {
+            font-size: 10px;
+          }
         }
 
         & textarea {
@@ -208,6 +314,14 @@
         border: 1px solid var(--primary-purple);
         color: white;
         cursor: pointer;
+
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 12px;
+        }
+        @media (max-width: $breakpoint-small) {
+          font-size: 10px;
+          padding: 8px 20px;
+        }
 
         &:hover {
           background: white;

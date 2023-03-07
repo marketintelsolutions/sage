@@ -258,19 +258,19 @@
         border: none;
         border-radius: 5px;
         // color: var(--primary-purple);
-        color: black;
         font-size: 15px;
         font-weight: 400;
         letter-spacing: 1px;
         cursor: pointer;
         transition: var(--transition);
-        background: white;
         border: 1px solid var(--primary-purple);
+        background: var(--primary-purple);
+        color: white;
 
         &:hover {
-          background: var(--primary-purple);
+          background: white;
+          color: black;
           // transform: scale(0.98);
-          color: white;
           transition: var(--transition);
         }
       }
@@ -394,16 +394,17 @@
       width: 40%;
       padding: 15px 20px;
       border: 1px solid var(--primary-purple);
-      color: black;
       margin: 0 auto;
       border-radius: 10px;
       cursor: pointer;
       transition: var(--transition);
-      background: white;
+
       font-size: 14px;
       font-weight: 400;
       letter-spacing: 1px;
       text-transform: uppercase;
+      background: var(--primary-purple);
+      color: white;
 
       @media (max-width: $breakpoint-tablet) {
         padding: 12px 20px;
@@ -416,9 +417,9 @@
       }
 
       &:hover {
-        background: var(--primary-purple);
-        color: white;
         transition: var(--transition);
+        background: white;
+        color: black;
       }
     }
   }

@@ -27,6 +27,9 @@
       @media (max-width: $breakpoint-large) {
         object-fit: cover;
       }
+      @media (max-width: $breakpoint-tablet) {
+        object-fit: fill;
+      }
     }
   }
 

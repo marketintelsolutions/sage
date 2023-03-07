@@ -38,6 +38,14 @@
       transform: translateX(0);
       opacity: 1;
       transition: var(--transition-text);
+
+      @media (max-width: $breakpoint-tablet) {
+        padding: 0 var(--padding-tablet);
+        font-size: 30px;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 25px;
+      }
     }
     &:before {
       content: "";
@@ -79,19 +87,53 @@
     padding: 50px var(--padding-main);
     gap: 40px;
 
+    @media (max-width: $breakpoint-tablet) {
+      padding: 50px var(--padding-tablet);
+      gap: 30px;
+    }
+    @media (max-width: $breakpoint-small) {
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
+
     & h2 {
       color: var(--primary-purple);
       font-size: 30px;
       letter-spacing: 1px;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 25px;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 20px;
+      }
     }
 
     & .packages {
-      //   border: 2px solid green;
+      // border: 2px solid green;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-auto-rows: auto;
       gap: 40px;
       row-gap: 80px;
+
+      @media (max-width: $breakpoint-large) {
+        gap: 35px;
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        gap: 30px;
+      }
+
+      @media (max-width: $breakpoint-small) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+      }
 
       & .item {
         border: 1px solid var(--primary-purple-400);
@@ -103,18 +145,37 @@
         border-radius: 10px;
         transition: var(--transition);
 
+        @media (max-width: $breakpoint-small) {
+          padding: 30px 20px;
+          width: 90%;
+        }
+
         & h2 {
           background: var(--primary-purple);
           padding: 10px;
           font-size: 21px;
           color: white;
           letter-spacing: 1px;
+
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 19px;
+          }
+          @media (max-width: $breakpoint-small) {
+            font-size: 17px;
+          }
         }
 
         & h3 {
           font-size: 32px;
           padding-bottom: 20px;
           border-bottom: 1px solid var(--primary-blue);
+
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 30px;
+          }
+          @media (max-width: $breakpoint-small) {
+            font-size: 25px;
+          }
         }
 
         & .text {
@@ -122,8 +183,22 @@
           flex-direction: column;
           gap: 20px;
 
+          @media (max-width: $breakpoint-tablet) {
+            gap: 18px;
+          }
+          @media (max-width: $breakpoint-small) {
+            gap: 16px;
+          }
+
           & p {
             font-size: 14px;
+
+            @media (max-width: $breakpoint-tablet) {
+              font-size: 12px;
+            }
+            @media (max-width: $breakpoint-small) {
+              font-size: 10px;
+            }
           }
 
           & hr {

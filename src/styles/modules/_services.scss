@@ -300,14 +300,17 @@
         & p {
           // font-weight: 700;
           font-size: 16px;
-          letter-spacing: 2px;
+          letter-spacing: 1px;
           text-align: justify;
-          line-height: 25px;
+          line-height: 23px;
           padding: 20px;
           position: absolute;
           transition: var(--transition);
           opacity: 0;
           height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           @media (max-width: $breakpoint-large) {
             font-size: 15px;

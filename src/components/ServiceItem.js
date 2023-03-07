@@ -1,7 +1,7 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const ServiceItem = ({ image, text, scrollPosition }) => {
+const ServiceItem = ({ image, text, description, scrollPosition }) => {
   // console.log(scrollPosition);
   return (
     <div className="item">
@@ -20,10 +20,8 @@ const ServiceItem = ({ image, text, scrollPosition }) => {
       <h4>{text} </h4>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid
-        officia porro autem quasi fugiat culpa necessitatibus dignissimos
-        dolorem cupiditate dolorum, obcaecati quas. Numquam deleniti quas,
-        suscipit consequuntur earum iure.
+        {description ||
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci dolor aliquid. Molestias id numquam possimus inventore iusto, nihil mollitia."}
       </p>
     </div>
   );

@@ -9,7 +9,7 @@ import {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [menu, isMenu] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   useEffect(() => {
     if (isOpen === false) return;
@@ -20,6 +20,11 @@ const Navbar = () => {
     return () => clearTimeout(timeout);
   }, [isOpen]);
 
+  const toggle = () => {
+    setIsOpen(false);
+    setMenu(false);
+  };
+
   return (
     <nav className="nav-bar">
       <div className="logo">
@@ -28,34 +33,36 @@ const Navbar = () => {
         </Link>
       </div>
       <div className={`${menu ? "right menu-open" : "right"}`}>
-        <Link to="/" onClick={() => setIsOpen(false)}>
+        <Link to="/" onClick={toggle}>
           Home
         </Link>
-        <Link to="/about" onClick={() => setIsOpen(false)}>
+        <Link to="/about" onClick={toggle}>
           About Us
         </Link>
-        <Link to="services" onClick={() => setIsOpen(false)}>
+        <Link to="services" onClick={toggle}>
           Services
         </Link>
-        <Link to="/patients" onClick={() => setIsOpen(false)}>
-          Patients
+        <Link to="/book-a-test" onClick={toggle}>
+          Book a Test
         </Link>
         <div className="packages">
           <p onClick={() => setIsOpen(!isOpen)}>
             Health Packages <AiOutlineCaretDown />
           </p>
           <span className={`${isOpen && "open"}`}>
-            <Link to="/corporate" onClick={() => setIsOpen(false)}>
+            <Link to="/corporate" onClick={toggle}>
               Corporate
             </Link>
-            <Link to="/individual" onClick={() => setIsOpen(false)}>
+            <Link to="/individual" onClick={toggle}>
               individual
             </Link>
           </span>
         </div>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact" onClick={toggle}>
+          Contact
+        </Link>
       </div>
-      <div className="menu-logo" onClick={() => isMenu(!menu)}>
+      <div className="menu-logo" onClick={() => setMenu(!menu)}>
         {menu ? <AiOutlineClose /> : <AiOutlineMenu />}
       </div>
     </nav>

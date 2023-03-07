@@ -91,10 +91,9 @@ function FeedbackForm() {
       <p className="heading-text">
         Thank you for your support and patronage. <br />
         <br />
-        In order to improve our services we are conducting a survey therefore we
-        humbly request you to provide your valuable feedback on our services and
-        help us to fill this Feedback Report. Your time and feedback is greatly
-        appreciated.
+        To improve our services, we are conducting a survey and humbly request
+        your valuable feedback on our services. Kindly help us fill out this
+        report. Your time and feedback is greatly appreciated.
       </p>
       <div className="content">
         <div className="top">
