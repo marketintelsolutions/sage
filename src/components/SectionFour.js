@@ -24,11 +24,13 @@ const SectionFour = () => {
               <div className="question" onClick={() => toggle(id)}>
                 <p>
                   {question}{" "}
-                  {isAccordion === id ? (
-                    <AiOutlineMinusCircle />
-                  ) : (
-                    <AiOutlinePlusCircle />
-                  )}
+                  <span>
+                    {isAccordion === id ? (
+                      <AiOutlineMinusCircle />
+                    ) : (
+                      <AiOutlinePlusCircle />
+                    )}
+                  </span>
                 </p>
               </div>
               <div className="answer">

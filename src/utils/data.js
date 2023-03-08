@@ -159,26 +159,88 @@ export const services = [
 export const faqData = [
   {
     id: 1,
-    question: "What do we do?",
+    question: "Ease of scheduling an appointment. Can I book for test online?",
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia adipisci consequatur voluptatibus, tempore, eum nam iusto cupiditate corrupti facilis odio voluptate. Dolor laborum hic              commodi beatae cupiditate. Esse, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, numquam suscipit! Quod magni maiores eum praesentium expedita nobis et, est suscipit tempore ratione adipisci, sed neque quibusdam quasi. Praesentium, distinctio",
+      "Yes. We have provision for that, just check the test packages then pick one of your choices.",
   },
   {
     id: 2,
-    question: "How long does a membership last?",
+    question:
+      "Accuracy of test results. Are your tests results reliable and accurate?",
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia adipisci consequatur voluptatibus, tempore, eum nam iusto cupiditate corrupti facilis odio voluptate. Dolor laborum hic              commodi beatae cupiditate. Esse, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, numquam suscipit! Quod magni maiores eum praesentium expedita nobis et, est suscipit tempore ratione adipisci, sed neque quibusdam quasi. Praesentium, distinctio",
+      "Yes. Our facility is ISO certified. Hence our results are reliable.",
   },
   {
     id: 3,
-    question: "Where is our office?",
+    question: "Turn around time. How soon can I get my test results?",
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia adipisci consequatur voluptatibus, tempore, eum nam iusto cupiditate corrupti facilis odio voluptate. Dolor laborum hic              commodi beatae cupiditate. Esse, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, numquam suscipit! Quod magni maiores eum praesentium expedita nobis et, est suscipit tempore ratione adipisci, sed neque quibusdam quasi. Praesentium, distinctio",
+      "The time for our test results ranges from 2hrs- 6hrs, however, depending on the type of test you selected, some might take 3-5 days.",
   },
   {
     id: 4,
-    question: "How soon is a feedback guaranteed?",
+    question:
+      "Test package and availability of tests. Do you have any test packages for detecting diseases?",
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia adipisci consequatur voluptatibus, tempore, eum nam iusto cupiditate corrupti facilis odio voluptate. Dolor laborum hic              commodi beatae cupiditate. Esse, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, numquam suscipit! Quod magni maiores eum praesentium expedita nobis et, est suscipit tempore ratione adipisci, sed neque quibusdam quasi. Praesentium, distinctio",
+      "Yes. We have several packages that can detect diseases just click on our search page to know the one that suits you.",
+  },
+  {
+    id: 5,
+    question: "Are your services quality?",
+    answer:
+      "Yes. All our all services are of international standard with competent personnel in charge.",
+  },
+  {
+    id: 6,
+    question:
+      "Qualifications of the medical personnel. Are your personnel well trained?",
+    answer:
+      "Yes. All our medical staff are licensed by their respective councils and are rich in working experience.",
+  },
+  {
+    id: 7,
+    question: "Are you using the latest techniques?",
+    answer:
+      "Yes. All our equipments are automated and current brands in the market.",
+  },
+  {
+    id: 8,
+    question: "How can I know the prices of tests you are running?",
+    answer:
+      "It's very simple just login to our page, the tests and their respective prices will come up.",
+  },
+  {
+    id: 9,
+    question: "Do you have payment facility?",
+    answer: "Yes, we have POS and you can as well pay in cash.",
+  },
+  {
+    id: 10,
+    question: "Is there home service?",
+    answer:
+      "Yes. We render home services login to our page, make a request and submit.",
+  },
+  {
+    id: 11,
+    question: "Do you have HMO?",
+    answer:
+      "YES. we do. Sage Diagnostics partners with the topmost HMOs in the country.",
+  },
+  {
+    id: 12,
+    question: "Is there any promo that I can benefit from?",
+    answer:
+      "Yes. There are numerous promos, just log in to our page and check the one that best suits you.",
+  },
+  {
+    id: 13,
+    question: "Is your facility clean?",
+    answer:
+      "Yes. Our facility is topnotch with state of art equipments in a clean and serene environment. We pay much attention to the well-being of our clients, hence our facility is always clean.",
+  },
+  {
+    id: 14,
+    question: "Is your facility accessible?",
+    answer:
+      "Yes. Our facility is located by the roadside in the heart of Lekki Phase 1,(Plot 10 Fola Osibo, by road 15 junction Lekki phase 1) very easy to locate.",
   },
 ];

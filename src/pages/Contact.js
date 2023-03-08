@@ -60,8 +60,8 @@ const Contact = () => {
               <span>
                 <GoLocation />
               </span>{" "}
-              Plot 10, Block 64, Fola Osibo Street, <br /> By road 15 Junction,{" "}
-              Lekki Phase 1, Lagos
+              Plot 10, Fola Osibo Street (by road 15 junction), Lekki Phase 1,
+              Lagos
             </p>
 
             <h3>We value your feedback.</h3>

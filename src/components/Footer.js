@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "../assets/logos/logo2.png";
 import { GoLocation } from "react-icons/go";
-import { BsTwitter, BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsTwitter, BsFacebook, BsInstagram, BsTiktok } from "react-icons/bs";
+import { SiTiktok } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -19,11 +20,8 @@ const Footer = () => {
               <GoLocation />
             </span>
             <p>
-              Plot 10, Block 64, <br />
-              Fola Osibo Street,
-              <br />
-              By road 15 Junction.
-              <br /> Lekki Phase 1, Lagos
+              Plot 10, Fola Osibo Street <br /> (by road 15 junction), <br />
+              Lekki Phase 1, Lagos
             </p>
           </div>
         </div>
@@ -65,10 +63,8 @@ const Footer = () => {
           <h1>centers</h1>
           <div className="icons">
             <p>
-              {" "}
-              Plot 10, Block 64, Fola Osibo Street,
-              <br />
-              Lekki Phase 1, Lagos
+              Plot 10, Fola Osibo Street <br /> (by road 15 junction), Lekki
+              Phase 1, Lagos
             </p>
           </div>
           <p>08139289067</p>
@@ -80,6 +76,7 @@ const Footer = () => {
             <BsTwitter />
             <BsFacebook />
             <BsInstagram />
+            <SiTiktok />
           </div>
           <p>info@sagedsl.com</p>
           <p>enquiries@sagedsl.com</p>

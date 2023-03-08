@@ -8,8 +8,8 @@ import {
   BsFacebook,
   BsInstagram,
   BsFillTelephoneFill,
-  BsClock,
 } from "react-icons/bs";
+import { SiTiktok } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
 
 const PreNav = () => {
@@ -53,7 +53,8 @@ const PreNav = () => {
             <div className="text">
               {/* <p className="head">We Are Open 24 Hours</p> */}
               <p className="desc ">
-                Plot 10, Block 64, Fola Osibo Street, Lekki Phase 1, Lagos{" "}
+                Plot 10, Fola Osibo Street (by road 15 junction), Lekki Phase 1,
+                Lagos{" "}
               </p>
             </div>
           </div>
@@ -63,6 +64,7 @@ const PreNav = () => {
             <BsTwitter />
             <BsFacebook />
             <BsInstagram />
+            <SiTiktok />
           </div>
           <a href="#">
             <button>Test Results</button>
