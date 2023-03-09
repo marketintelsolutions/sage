@@ -13,7 +13,6 @@ const SharedLayout = ({ children }) => {
       <PreNav />
       <Navbar />
       {children}
-      <WhatsAppWidget CompanyIcon={logo} phoneNumber="2347061196917" />
       <Footer />
     </>
   );

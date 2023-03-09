@@ -50,7 +50,7 @@ const PreNav = () => {
               {/* <BsClock /> */}
               <MdLocationPin />
             </span>
-            <div className="text">
+            <div className="text address">
               {/* <p className="head">We Are Open 24 Hours</p> */}
               <p className="desc ">
                 Plot 10, Fola Osibo Street (by road 15 junction), Lekki Phase 1,

@@ -128,32 +128,32 @@ export const services = [
       },
     ],
   },
-  {
-    id: 4,
-    title: "Healthcare packages",
-    items: [
-      {
-        id: 1,
-        image: healthCheck,
-        text: "Individual Health checks",
-      },
-      {
-        id: 2,
-        image: healthScreen,
-        text: "Occupational Health Screenings",
-      },
-      {
-        id: 3,
-        image: homeService,
-        text: "Home service collection",
-      },
-      {
-        id: 4,
-        image: hmo,
-        text: "HMO",
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: "Healthcare packages",
+  //   items: [
+  //     {
+  //       id: 1,
+  //       image: healthCheck,
+  //       text: "Individual Health checks",
+  //     },
+  //     {
+  //       id: 2,
+  //       image: healthScreen,
+  //       text: "Occupational Health Screenings",
+  //     },
+  //     {
+  //       id: 3,
+  //       image: homeService,
+  //       text: "Home service collection",
+  //     },
+  //     {
+  //       id: 4,
+  //       image: hmo,
+  //       text: "HMO",
+  //     },
+  //   ],
+  // },
 ];
 
 export const faqData = [

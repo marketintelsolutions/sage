@@ -81,7 +81,6 @@ const Footer = () => {
           <p>info@sagedsl.com</p>
           <p>enquiries@sagedsl.com</p>
         </div>
-        {/* </div> */}
       </div>
       <hr />
       <p className="copyright">© SAGE Nigeria Copyright {date}</p>
