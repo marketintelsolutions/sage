@@ -28,3 +28,11 @@ body,
   --padding-tablet: 50px;
   --padding-small: 25px;
 }
+
+.whatsapp-widget ._1yCVn,
+._--3fm,
+._2qp0Z {
+  right: 0;
+  left: 25px;
+  z-index: 9999999999;
+}

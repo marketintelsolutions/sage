@@ -14,6 +14,14 @@ const SharedLayout = ({ children }) => {
       <Navbar />
       {children}
       <Footer />
+      <div className="whatsapp-widget">
+        <WhatsAppWidget
+          CompanyIcon={logo}
+          companyName="Sage Diagnostics"
+          message="Hello, how can we help you today?"
+          phoneNumber="+2349160409450"
+        />
+      </div>
     </>
   );
 };

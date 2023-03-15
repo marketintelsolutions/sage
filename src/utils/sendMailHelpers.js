@@ -13,7 +13,6 @@ export const sendmail = ({
 }) => {
   if (firstname && lastname && email && phone && subject && message) {
     axios
-      // .post("http://localhost:5000/send_email", {
       .post("https://sage-go1t.onrender.com/send_email", {
         firstname,
         lastname,

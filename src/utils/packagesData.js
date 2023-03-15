@@ -27,29 +27,31 @@ export const corporateData = [
 
 export const individualData = [
   {
-    name: "Basic Domestic Staff",
+    name: "Support Staff package (mini)",
     items: [
       "PCV",
       "Hepatitis B Surface Antigen (HBsAg) Rapid",
       "HIV I & II Rapid",
       "BHCG- Qualitative (Pregnancy Test)",
+      "Widal test",
       "Sputum AFB - Tuberculosis test",
     ],
   },
   {
-    name: "Standard Domestic Staff",
+    name: "Support Staff package (maxi)",
     items: [
       "Hb Electrophoresis /Genotype (Quantitative)",
-      "PCV",
+      "Full blood count",
+      "Widal test",
       "Hepatitis B Surface Antigen (HBsAg) Rapid",
-      "HIV I & II Antibody+ p24 Antigen (Quantitative)",
+      "HIV I & II Antibody",
       "BHCG- Qualitative (Pregnancy Test)",
       "Hepatitis C Virus Ab (Rapid)",
       "Sputm AFB - Tuberculosis test",
     ],
   },
   {
-    name: "Cardiac Screening",
+    name: "Cardiac Screen",
     items: [
       "Creatine Kinase-MB (CK-MB)",
       "Lipid Profile (Lipogram)",
@@ -71,7 +73,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Sexual health",
+    name: "Social package",
     items: [
       "Full Blood Count",
       "Malaria (Thick and Thin Films)",
@@ -80,12 +82,11 @@ export const individualData = [
       "Hepatitis B Surface Antigen (HBsAg) Rapid",
       "HIV I & II Rapid",
       "Syphilis Screening",
-      "Urinalysis",
       "Neisseria Gonorrhea Rapid (Detection)",
     ],
   },
   {
-    name: "Wellness Checkup (Basic)",
+    name: "Vitality package (Basic)",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -96,7 +97,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Female Full Body Checkup (Silver)",
+    name: "Emerald package (mini)",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Lipid Profile (Lipogram)",
@@ -111,7 +112,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Female Full Body Checkup (Gold)",
+    name: "Emerald package (maxi)",
     items: [
       "HbA1C",
       "Inorganic Phosphate",
@@ -133,7 +134,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Pre-Wedding Test (Philia)",
+    name: "Pre-Nuptial",
     items: [
       "Blood Grouping (ABO & Rh Typing)",
       "Hb Electrophoresis /Genotype (Quantitative)",
@@ -143,7 +144,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Basic Fertility Profile (Female)",
+    name: "Emerald fertility profile (mini)",
     items: [
       "Estradiol",
       "Follicule Stimulating Hormone (FSH)",
@@ -153,7 +154,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Comprehensive Fertility Profile (Female)",
+    name: "Emerald fertility profile (maxi)",
     items: [
       "Thyroid Stimulating Hormone (TSH)",
       "Estradiol",
@@ -166,7 +167,7 @@ export const individualData = [
     ],
   },
   {
-    name: "PCOS test",
+    name: "PCOS(mini)",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -177,7 +178,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Comprehensive PCOS Test",
+    name: "PCOS(maxi)",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Thyroid Stimulating Hormone (TSH)",
@@ -193,18 +194,19 @@ export const individualData = [
     ],
   },
   {
-    name: "Cervical Cancer Screening",
+    name: "Cervical Cancer Screening ",
     items: ["Liquid Based Cytology (LBC)"],
   },
   {
-    name: "Basic Fertility Package (Male)",
+    name: "Topaz fertility profile (mini)",
     items: [
       "Seminal Fluid Analysis (SFA)",
       "Semen: Microscopy, Culture & Sensitivity (MCS)",
     ],
   },
+
   {
-    name: "Conprehensive Fertility Package (Male)",
+    name: "Topaz fertility profile (maxi)",
     items: [
       "Follicule Stimulating Hormone (FSH)",
       "Luteinizing Hormone (LH)",
@@ -215,7 +217,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Basic Wellness Package(Male)",
+    name: "Vitality package (Basic)",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -226,7 +228,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Comprehensive Wellness Package (Male)",
+    name: "Topaz package (mini)",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Lipid Profile (Lipogram)",
@@ -241,7 +243,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Premium Wellness Package (Male)",
+    name: "Topaz package (maxi)",
     items: [
       "HbA1C",
       "Inorganic Phosphate",
@@ -260,6 +262,18 @@ export const individualData = [
       "Stool Occult Blood",
       "Stool Microscopy",
       "Urinalysis",
+    ],
+  },
+  {
+    name: "Pre Employment",
+    items: [
+      "Sputum AFB - Tuberculosis test",
+      "HIV I & II Rapid",
+      "HBsAG",
+      "Full Blood Count",
+      "Genotype test",
+      "Drug of Abuse",
+      "Medical history & complete Examination",
     ],
   },
 ];
