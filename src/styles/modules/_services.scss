@@ -271,13 +271,9 @@
         & h4 {
           font-weight: 700;
           font-size: 16px;
-          letter-spacing: 2px;
-          //   text-transform: capitalize;
-          //   color: var(--primary-blue);
+          text-align: center;
           padding: 30px;
-          // border: 2px solid red;
           transition: var(--transition);
-          // transition-delay: 0.1s;
           opacity: 1;
 
           @media (max-width: $breakpoint-large) {
@@ -301,7 +297,7 @@
           // font-weight: 700;
           font-size: 16px;
           letter-spacing: 1px;
-          text-align: justify;
+          text-align: center;
           line-height: 23px;
           padding: 20px;
           position: absolute;

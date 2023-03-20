@@ -36,7 +36,8 @@ const Individual = () => {
             return (
               <div className="item">
                 <h2>{name}</h2>
-                <h3>₦00,000</h3>
+                {/* <h3>₦00,000</h3> */}
+                <hr />
                 <div className="text">
                   {items.map((text) => {
                     return (

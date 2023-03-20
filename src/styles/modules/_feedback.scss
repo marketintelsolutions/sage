@@ -7,7 +7,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 35px;
 
   @media (max-width: $breakpoint-tablet) {
     padding: 80px var(--padding-tablet);

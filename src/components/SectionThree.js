@@ -5,6 +5,7 @@ import { TbVirusSearch } from "react-icons/tb";
 import { GoPackage } from "react-icons/go";
 import { BiTestTube } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
+import { hematology, xray, spirometry, healthCheck } from "../assets/images";
 
 const SectionThree = () => {
   const navigate = useNavigate();
@@ -13,7 +14,10 @@ const SectionThree = () => {
     <section className="services" id="team">
       <h1>Services</h1>
       <div className="center">
-        <div className="item-center">
+        <div
+          className="item-center"
+          style={{ backgroundImage: `url(${hematology})` }}
+        >
           <div className="item">
             <h2>
               <span>
@@ -36,7 +40,10 @@ const SectionThree = () => {
             </ul>
           </div>
         </div>
-        <div className="item-center">
+        <div
+          className="item-center"
+          style={{ backgroundImage: `url(${xray})` }}
+        >
           <div className="item">
             <h2>
               <span>
@@ -59,7 +66,10 @@ const SectionThree = () => {
             </ul>
           </div>
         </div>
-        <div className="item-center">
+        <div
+          className="item-center"
+          style={{ backgroundImage: `url(${spirometry})` }}
+        >
           <div className="item">
             <h2>
               <span>
@@ -82,7 +92,10 @@ const SectionThree = () => {
             </ul>
           </div>
         </div>
-        <div className="item-center">
+        <div
+          className="item-center"
+          style={{ backgroundImage: `url(${healthCheck})` }}
+        >
           <div className="item">
             <h2>
               <span>

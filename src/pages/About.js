@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import items from "../assets/items.jpg";
 import Team from "../components/Team";
 import { RiCustomerService2Fill, RiScalesFill } from "react-icons/ri";
+import {
+  BsFillClockFill,
+  BsFillSignpost2Fill,
+  BsBagDashFill,
+  BsFillStickiesFill,
+} from "react-icons/bs";
 import { TbHeartHandshake, TbBulb } from "react-icons/tb";
 import { CiDumbbell } from "react-icons/ci";
 import { FaPeopleCarry } from "react-icons/fa";
@@ -108,25 +114,33 @@ const About = () => {
         <div className="values">
           <div className="value-center">
             <div className="value">
-              <span></span>
+              <span>
+                <BsFillClockFill />
+              </span>
               <p>Quick Turnaround Time</p>{" "}
             </div>
           </div>
           <div className="value-center">
             <div className="value">
-              <span></span>
+              <span>
+                <BsFillSignpost2Fill />
+              </span>
               <p>Online reporting </p>{" "}
             </div>
           </div>
           <div className="value-center">
             <div className="value">
-              <span></span>
+              <span>
+                <BsBagDashFill />
+              </span>
               <p>Dispatch services/Home service </p>{" "}
             </div>
           </div>
           <div className="value-center">
             <div className="value">
-              <span></span>
+              <span>
+                <BsFillStickiesFill />
+              </span>
               <p>Follow up services </p>{" "}
             </div>
           </div>
@@ -153,12 +167,6 @@ const About = () => {
             <p>Specialized PCR Tests</p>
           </div>
         </div>
-        {/* <h2>
-          <span>
-            Location <GoLocation /> -
-          </span>{" "}
-          Plot 10, Block 64, Fola Osibo Street, Lekki Phase 1, Lagos
-        </h2> */}
       </section>
     </>
   );

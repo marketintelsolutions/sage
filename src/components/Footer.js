@@ -1,7 +1,13 @@
 import React from "react";
 import logo from "../assets/logos/logo2.png";
 import { GoLocation } from "react-icons/go";
-import { BsTwitter, BsFacebook, BsInstagram, BsTiktok } from "react-icons/bs";
+import {
+  BsTwitter,
+  BsFacebook,
+  BsInstagram,
+  BsTiktok,
+  BsFillTelephoneFill,
+} from "react-icons/bs";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "react-router-dom";
 
@@ -63,12 +69,16 @@ const Footer = () => {
           <h1>centers</h1>
           <div className="icons">
             <p>
-              Plot 10, Fola Osibo Street <br /> (by road 15 junction), Lekki
-              Phase 1, Lagos
+              <GoLocation /> Plot 10, Fola Osibo Street <br /> (by road 15
+              junction), Lekki Phase 1, Lagos
             </p>
           </div>
-          <p>08139289067</p>
-          <p>08139239147</p>
+          <p>
+            <BsFillTelephoneFill /> 08139289067
+          </p>
+          <p>
+            <BsFillTelephoneFill /> 08139239147
+          </p>
         </div>
         <div className="item">
           <h1>get connected</h1>

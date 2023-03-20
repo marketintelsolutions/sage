@@ -19,12 +19,12 @@ const people = [
     image: claudius,
   },
   {
-    name: "Oluwagbogo Christiana Oyebade",
+    name: "Oluwagbogo Christiana O.",
     role: "medical officer",
     image: oluwagbogo,
   },
   {
-    name: "Adedokun Adedayo Adewunmi",
+    name: "Adedokun Adedayo A.",
     role: "account manager",
     image: adedokun,
   },
@@ -55,8 +55,11 @@ const Team = () => {
                 style={{ backgroundImage: `url(${image})` }}
               ></div>
               {/* <img src={osadugba} alt="osadugba" /> */}
-              <h3 className="name">{name}</h3>
-              <p className="role">{role}</p>
+              <div className="info">
+                <h3 className="name">{name}</h3>
+                <span></span>
+                <p className="role">{role}</p>
+              </div>
             </div>
           );
         })}
