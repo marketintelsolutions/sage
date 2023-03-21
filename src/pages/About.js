@@ -13,6 +13,7 @@ import { CiDumbbell } from "react-icons/ci";
 import { FaPeopleCarry } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { ultrasound, microbiology, spirometry } from "../assets/images";
 
 const About = () => {
   const [text, setText] = useState(true);
@@ -149,22 +150,34 @@ const About = () => {
       <section className="service-offering">
         <h1>Service offering</h1>
         <div className="center">
-          <div className="item">
+          <div
+            className="item"
+            style={{ backgroundImage: `url(${ultrasound})` }}
+          >
             <p>
+              <hr />
               Comprehensive wellness packages: Occupational Health screenings
               (Annual Health Checks, Fit To Fly tests, Medical Fitness Tests
               etc)
             </p>
           </div>
-          <hr />
-          <div className="item">
+          <div
+            className="item"
+            style={{ backgroundImage: `url(${microbiology})` }}
+          >
             <p>
+              <hr />
               Comprehensive laboratory, Basic Imaging, Other complimentary tests
             </p>
           </div>
-          <hr />
-          <div className="item">
-            <p>Specialized PCR Tests</p>
+          <div
+            className="item"
+            style={{ backgroundImage: `url(${spirometry})` }}
+          >
+            <p>
+              <hr />
+              Specialized PCR Tests
+            </p>
           </div>
         </div>
       </section>

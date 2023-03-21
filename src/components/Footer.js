@@ -7,6 +7,7 @@ import {
   BsInstagram,
   BsTiktok,
   BsFillTelephoneFill,
+  BsTelephone,
 } from "react-icons/bs";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "react-router-dom";
@@ -69,15 +70,24 @@ const Footer = () => {
           <h1>centers</h1>
           <div className="icons">
             <p>
-              <GoLocation /> Plot 10, Fola Osibo Street <br /> (by road 15
-              junction), Lekki Phase 1, Lagos
+              <span>
+                <GoLocation />
+              </span>{" "}
+              Plot 10, Fola Osibo Street <br /> (by road 15 junction), Lekki
+              Phase 1, Lagos
             </p>
           </div>
           <p>
-            <BsFillTelephoneFill /> 08139289067
+            <span>
+              <BsTelephone />
+            </span>{" "}
+            08139289067
           </p>
           <p>
-            <BsFillTelephoneFill /> 08139239147
+            <span>
+              <BsTelephone />
+            </span>{" "}
+            08139239147
           </p>
         </div>
         <div className="item">

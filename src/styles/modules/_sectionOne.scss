@@ -83,12 +83,12 @@
 
   & .translated {
     & h3 {
-      transform: translateX(-50%);
+      transform: translateY(70%);
       opacity: 0;
       transition: var(--transition-text);
     }
     & p {
-      transform: translateX(-50%);
+      transform: translateY(85%);
       opacity: 0;
       transition: var(--transition-text-slow);
     }

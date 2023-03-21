@@ -1,7 +1,7 @@
 .contact {
   //   border: 2px solid red;
   height: fit-content;
-  padding: 60px var(--padding-main);
+  padding: 60px var(--padding-main) 100px;
   display: flex;
   // justify-content: flex-end;
   justify-content: center;
@@ -13,6 +13,8 @@
   //   rgba(255, 255, 255, 1) 100%
   // );
   background: white;
+  flex-direction: column;
+  gap: 40px;
 
   @media (max-width: $breakpoint-tablet) {
     padding: 60px var(--padding-tablet);
@@ -275,5 +277,10 @@
         }
       }
     }
+  }
+
+  & .map {
+    height: 400px;
+    width: 100%;
   }
 }

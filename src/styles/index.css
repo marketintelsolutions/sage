@@ -22,8 +22,8 @@ body,
   --primary-white: #ffffff;
   --transition: all 0.2s linear;
   --transition-slow: all 0.6s ease-out;
-  --transition-text: all 0.7s ease-in-out;
-  --transition-text-slow: all 0.9s ease-in-out;
+  --transition-text: all 1.2s ease-in-out;
+  --transition-text-slow: all 1.4s ease-in-out;
   --padding-main: 130px;
   --padding-tablet: 50px;
   --padding-small: 25px;

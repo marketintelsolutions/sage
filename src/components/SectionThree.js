@@ -5,7 +5,7 @@ import { TbVirusSearch } from "react-icons/tb";
 import { GoPackage } from "react-icons/go";
 import { BiTestTube } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
-import { hematology, xray, spirometry, healthCheck } from "../assets/images";
+import { pathology, xray, spirometry, healthCheck } from "../assets/images";
 
 const SectionThree = () => {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const SectionThree = () => {
       <div className="center">
         <div
           className="item-center"
-          style={{ backgroundImage: `url(${hematology})` }}
+          style={{ backgroundImage: `url(${pathology})` }}
         >
           <div className="item">
             <h2>
