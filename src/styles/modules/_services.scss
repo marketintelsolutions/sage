@@ -109,12 +109,12 @@
 
   & .translated {
     & h2 {
-      transform: translateX(-50%);
+      transform: translateY(70%);
       opacity: 0;
       transition: var(--transition-text);
     }
     & p {
-      transform: translateX(-50%);
+      transform: translateY(85%);
       opacity: 0;
       transition: var(--transition-text-slow);
     }
@@ -153,7 +153,7 @@
     color: var(--primary-blue);
     font-size: 20px;
     font-weight: 500;
-    border-bottom: 1px solid var(--primary-purple);
+    // border-bottom: 1px solid var(--primary-purple);
     padding-bottom: 15px;
     width: fit-content;
 
@@ -183,6 +183,7 @@
       color: white;
       padding: 10px 15px;
       letter-spacing: 3px;
+      border-radius: 5px;
 
       @media (max-width: $breakpoint-large) {
         font-size: 18px;

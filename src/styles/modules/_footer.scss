@@ -126,6 +126,8 @@ footer {
 
     & p {
       font-size: 14px;
+      display: flex;
+      gap: 10px;
 
       @media (max-width: $breakpoint-tablet) {
         font-size: 12px;
@@ -145,6 +147,11 @@ footer {
       // justify-content: space-between;
       gap: 20px;
       font-size: 20px;
+
+      & p {
+        display: flex;
+        gap: 10px;
+      }
     }
   }
   // }
