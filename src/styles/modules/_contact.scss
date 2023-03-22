@@ -20,267 +20,267 @@
     padding: 60px var(--padding-tablet);
   }
 
-  & .center {
-    // border: 2px solid blue;
-    margin-left: 200px;
+  & .map {
+    height: 400px;
+    width: 100%;
+  }
+}
 
-    background: white;
-    width: 85%;
-    max-width: 1000px;
-    position: relative;
-    box-shadow: 1px 1px 5px 2px rgb(230, 230, 231);
-    border-radius: 10px;
-    height: fit-content;
-    overflow: visible;
+.contact-form-center {
+  // border: 2px solid blue;
+  margin-left: 200px;
+
+  background: white;
+  width: 85%;
+  max-width: 1000px;
+  position: relative;
+  box-shadow: 1px 1px 5px 2px rgb(230, 230, 231);
+  border-radius: 10px;
+  height: fit-content;
+  overflow: visible;
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px;
+
+  @media (max-width: $breakpoint-large) {
+    justify-content: center;
+    margin-left: 0px;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+
+  & .details {
+    position: absolute;
+    //   border: 2px solid green;
+    //   padding: 70px;
     display: flex;
-    justify-content: flex-end;
-    padding: 40px;
+    //   align-items: center;
+    //   padding: 20px auto;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    background: var(--primary-purple);
+    color: white;
+    top: 50%;
+    width: 400px;
+    height: 300px;
+    left: 0;
+    margin-top: -150px;
+    margin-left: -200px;
+    border-radius: 10px;
 
     @media (max-width: $breakpoint-large) {
-      justify-content: center;
+      display: none;
+      margin-top: 0px;
       margin-left: 0px;
     }
-    @media (max-width: $breakpoint-tablet) {
+
+    & div {
+      margin: 0 auto;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px;
+
+      & h2 {
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        width: fit-content;
+      }
+
+      & p {
+        line-height: 35px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        display: flex;
+        gap: 10px;
+
+        @media (max-width: $breakpoint-tablet) {
+          line-height: 30px;
+          font-size: 13px;
+        }
+        @media (max-width: $breakpoint-small) {
+          line-height: 28px;
+          font-size: 11px;
+        }
+      }
+
+      & h3 {
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 1px;
+
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 15px;
+        }
+        @media (max-width: $breakpoint-small) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  & form {
+    //   border: 2px solid red;
+    width: 70%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    @media (max-width: $breakpoint-large) {
       width: 100%;
     }
-
-    & .details {
-      position: absolute;
-      //   border: 2px solid green;
-      //   padding: 70px;
-      display: flex;
-      //   align-items: center;
-      //   padding: 20px auto;
-      justify-content: center;
+    @media (max-width: $breakpoint-tablet) {
+      gap: 25px;
+    }
+    @media (max-width: $breakpoint-small) {
       gap: 20px;
-      flex-direction: column;
-      background: var(--primary-purple);
-      color: white;
-      top: 50%;
-      width: 400px;
-      height: 300px;
-      left: 0;
-      margin-top: -150px;
-      margin-left: -200px;
-      border-radius: 10px;
+    }
 
-      @media (max-width: $breakpoint-large) {
-        display: none;
-        margin-top: 0px;
-        margin-left: 0px;
+    & h3 {
+      font-size: 25px;
+      letter-spacing: 1px;
+      color: var(--primary-purple);
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 22px;
       }
-
-      & div {
-        margin: 0 auto;
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 30px;
-
-        & h2 {
-          border-bottom: 1px solid white;
-          padding-bottom: 10px;
-          width: fit-content;
-        }
-
-        & p {
-          line-height: 35px;
-          letter-spacing: 1px;
-          font-size: 15px;
-          display: flex;
-          gap: 10px;
-
-          @media (max-width: $breakpoint-tablet) {
-            line-height: 30px;
-            font-size: 13px;
-          }
-          @media (max-width: $breakpoint-small) {
-            line-height: 28px;
-            font-size: 11px;
-          }
-        }
-
-        & h3 {
-          font-size: 17px;
-          font-weight: 500;
-          letter-spacing: 1px;
-
-          @media (max-width: $breakpoint-tablet) {
-            font-size: 15px;
-          }
-          @media (max-width: $breakpoint-small) {
-            font-size: 13px;
-          }
-        }
+      @media (max-width: $breakpoint-small) {
+        font-size: 18px;
       }
     }
 
-    & form {
-      //   border: 2px solid red;
-      width: 70%;
-      display: flex;
+    & .inputs {
+      // border: 2px solid blue;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 30px;
-      flex-direction: column;
 
-      @media (max-width: $breakpoint-large) {
-        width: 100%;
-      }
       @media (max-width: $breakpoint-tablet) {
+        grid-template-columns: 1fr;
         gap: 25px;
       }
       @media (max-width: $breakpoint-small) {
         gap: 20px;
       }
 
-      & h3 {
-        font-size: 25px;
-        letter-spacing: 1px;
-        color: var(--primary-purple);
-
-        @media (max-width: $breakpoint-tablet) {
-          font-size: 22px;
-        }
-        @media (max-width: $breakpoint-small) {
-          font-size: 18px;
-        }
-      }
-
-      & .inputs {
-        // border: 2px solid blue;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-
-        @media (max-width: $breakpoint-tablet) {
-          grid-template-columns: 1fr;
-          gap: 25px;
-        }
-        @media (max-width: $breakpoint-small) {
-          gap: 20px;
-        }
-
-        & .item {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-
-          & input {
-            padding: 0;
-            height: 40px;
-            font-size: 15px;
-            border: none;
-            border-bottom: 1px solid var(--primary-purple);
-            // padding-bottom: 2px;
-
-            &:focus {
-              outline: none;
-            }
-          }
-          & label {
-            font-size: 14px;
-
-            @media (max-width: $breakpoint-tablet) {
-              font-size: 12px;
-            }
-            @media (max-width: $breakpoint-small) {
-              font-size: 11px;
-            }
-          }
-        }
-
-        & .number {
-          &::-webkit-outer-spin-button,
-          &::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-          }
-        }
-      }
-
-      & .long {
+      & .item {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 5px;
 
-        & .item {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
+        & input {
+          padding: 0;
+          height: 40px;
+          font-size: 15px;
+          border: none;
+          border-bottom: 1px solid var(--primary-purple);
+          // padding-bottom: 2px;
 
-          & select,
-          input {
-            height: 40px;
-            font-size: 15px;
-            border: none;
-            border-bottom: 1px solid var(--primary-purple);
-
-            &:focus {
-              outline: none;
-            }
+          &:focus {
+            outline: none;
           }
+        }
+        & label {
+          font-size: 14px;
 
-          & textarea {
-            width: 100%;
-            border: none;
-            border-bottom: 1px solid var(--primary-purple);
-            height: 75px;
-            font-size: 15px;
-            resize: vertical;
-
-            &:focus {
-              outline: none;
-            }
+          @media (max-width: $breakpoint-tablet) {
+            font-size: 12px;
           }
-
-          & label {
-            font-size: 14px;
+          @media (max-width: $breakpoint-small) {
+            font-size: 11px;
           }
         }
       }
 
-      & button {
-        background: var(--primary-purple);
-        color: white;
-        padding: 15px;
-        width: 30%;
-        cursor: pointer;
-        border: none;
-        border-radius: 5px;
-        border: 1px solid var(--primary-purple);
-        transition: var(--transition);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        font-size: 17px;
-
-        @media (max-width: $breakpoint-large) {
-          margin: 0 auto;
-        }
-        @media (max-width: $breakpoint-tablet) {
-          font-size: 15px;
-          padding: 13px;
-          width: 150px;
-        }
-        @media (max-width: $breakpoint-small) {
-          font-size: 12px;
-          width: 120px;
-          padding: 11px;
-        }
-
-        &:hover {
-          background: white;
-          color: black;
-          transition: var(--transition);
-          border: 1px solid var(--primary-purple);
+      & .number {
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
         }
       }
     }
-  }
 
-  & .map {
-    height: 400px;
-    width: 100%;
+    & .long {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      & .item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        & select,
+        input {
+          height: 40px;
+          font-size: 15px;
+          border: none;
+          border-bottom: 1px solid var(--primary-purple);
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        & textarea {
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid var(--primary-purple);
+          height: 75px;
+          font-size: 15px;
+          resize: vertical;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        & label {
+          font-size: 14px;
+        }
+      }
+    }
+
+    & button {
+      background: var(--primary-purple);
+      color: white;
+      padding: 15px;
+      width: 30%;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      border: 1px solid var(--primary-purple);
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 17px;
+
+      @media (max-width: $breakpoint-large) {
+        margin: 0 auto;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 15px;
+        padding: 13px;
+        width: 150px;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 12px;
+        width: 120px;
+        padding: 11px;
+      }
+
+      &:hover {
+        background: white;
+        color: black;
+        transition: var(--transition);
+        border: 1px solid var(--primary-purple);
+      }
+    }
   }
 }

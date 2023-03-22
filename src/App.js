@@ -8,6 +8,7 @@ import Patients from "./pages/Patients";
 import Contact from "./pages/Contact";
 import Corporate from "./pages/Corporate";
 import Individual from "./pages/Individual";
+import Faq from "./pages/Faq";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" index element={<Contact />} />
         <Route path="/corporate" index element={<Corporate />} />
         <Route path="/individual" index element={<Individual />} />
+        <Route path="/faq" index element={<Faq />} />
         <Route path="*" index element={<Error />} />
       </Routes>
     </SharedLayout>

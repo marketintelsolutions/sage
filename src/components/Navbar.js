@@ -58,6 +58,9 @@ const Navbar = () => {
             </Link>
           </span>
         </div>
+        <Link to="/faq" onClick={toggle}>
+          FAQ
+        </Link>
         <Link to="/contact" onClick={toggle}>
           Contact
         </Link>

@@ -26,6 +26,7 @@ import individual from "./individual.jpg";
 import immunoassay from "./immunoassay.jpg";
 import service from "./services.jpg";
 import error from "./error.jpg";
+import faqblue from "./faqblue.png";
 
 export {
   adedokun,
@@ -56,4 +57,5 @@ export {
   immunoassay,
   service,
   error,
+  faqblue,
 };

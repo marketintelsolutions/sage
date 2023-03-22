@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { faqData } from "../utils/data";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 
-const SectionFour = () => {
+const SectionFour = ({ targetId }) => {
   const [isAccordion, setIsAccordion] = useState(null);
 
   const toggle = (value) => {
@@ -11,7 +11,14 @@ const SectionFour = () => {
       return;
     }
     setIsAccordion(value);
+    // setClassname("item");
   };
+
+  useEffect(() => {
+    if (targetId) {
+      setIsAccordion(targetId);
+    }
+  }, [targetId]);
 
   return (
     <section className="section-four">
@@ -19,8 +26,13 @@ const SectionFour = () => {
       <div className="center">
         {faqData.map((item) => {
           const { id, question, answer } = item;
+
           return (
-            <div className={`${isAccordion === id ? "item active" : "item"}`}>
+            <div
+              className={`${isAccordion === id ? "item active" : "item"}`}
+              id={id}
+              key={id}
+            >
               <div className="question" onClick={() => toggle(id)}>
                 <p>
                   {question}{" "}
