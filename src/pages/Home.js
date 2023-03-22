@@ -9,7 +9,7 @@ import { faqData } from "../utils/data";
 const Home = () => {
   const questions = faqData.map((item) => item.question);
 
-  const newData = questions.slice(0, 4);
+  const newData = questions.slice(0, 5);
   const [faqSearch, setFaqSearch] = useState("");
   const [searchData, setSearchData] = useState(newData);
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import { faqblue } from "../assets/images";
@@ -9,11 +9,24 @@ const FaqSearch = ({ dropdown, setFaqSearch, faqSearch, searchData }) => {
 
   const [isQuestions, setIsQuestions] = useState(false);
   // console.log(searchData);
+
+  useEffect(() => {
+    if (isQuestions === true && !faqSearch) {
+      const timeout = setTimeout(() => {
+        setIsQuestions(false);
+      }, 6000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [isQuestions, faqSearch]);
+
   return (
     <div
       className="faqtop"
       style={{ backgroundImage: `url(${faqblue})` }}
-      // onClick={() => setIsQuestions(false)}
+      onClick={(e) => {
+        if (e.target.classList.contains("faqtop")) setIsQuestions(false);
+      }}
     >
       <h1>Can we help you?</h1>
       <div className="input">
@@ -21,7 +34,10 @@ const FaqSearch = ({ dropdown, setFaqSearch, faqSearch, searchData }) => {
           type="text"
           placeholder="Search"
           value={faqSearch}
-          onChange={(e) => setFaqSearch(e.target.value)}
+          onChange={(e) => {
+            setFaqSearch(e.target.value);
+            setIsQuestions(true);
+          }}
           onFocus={() => setIsQuestions(true)}
         />
         <span>

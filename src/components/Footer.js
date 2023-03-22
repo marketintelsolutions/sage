@@ -61,6 +61,11 @@ const Footer = () => {
             </Link>
           </p>
           <p>
+            <Link to="/faq" className="links">
+              FAQ
+            </Link>
+          </p>
+          <p>
             <Link to="/contact" className="links">
               Contact
             </Link>
