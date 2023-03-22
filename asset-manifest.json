@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8c244464.css",
-    "main.js": "/static/js/main.03366af3.js",
+    "main.js": "/static/js/main.a2977f63.js",
     "static/media/microscope.jpg": "/static/media/microscope.ff54f726eec182353280.jpg",
     "static/media/microbiology.jpg": "/static/media/microbiology.915d492a69982f0cf2b8.jpg",
     "static/media/xray.jpg": "/static/media/xray.573e3865de364409da23.jpg",
@@ -39,10 +39,10 @@
     "static/media/logo-icon.svg": "/static/media/logo-icon.80d26e6fcc2d7cdaf1c1f20598c707c7.svg",
     "index.html": "/index.html",
     "main.8c244464.css.map": "/static/css/main.8c244464.css.map",
-    "main.03366af3.js.map": "/static/js/main.03366af3.js.map"
+    "main.a2977f63.js.map": "/static/js/main.a2977f63.js.map"
   },
   "entrypoints": [
     "static/css/main.8c244464.css",
-    "static/js/main.03366af3.js"
+    "static/js/main.a2977f63.js"
   ]
 }
