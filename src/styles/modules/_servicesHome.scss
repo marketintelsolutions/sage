@@ -67,7 +67,7 @@
         }
 
         & h2 {
-          font-size: 40px;
+          font-size: 49px;
           letter-spacing: 2px;
           text-transform: uppercase;
           color: white;
@@ -75,8 +75,9 @@
           font-family: Baumans;
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 1px;
           z-index: 3;
+          text-align: center;
 
           @media (max-width: $breakpoint-tablet) {
             font-size: 17px;
@@ -86,6 +87,7 @@
             display: flex;
             align-items: center;
             color: white;
+            display: none;
           }
         }
 
@@ -98,6 +100,8 @@
           flex-direction: column;
           gap: 13px;
           z-index: 3;
+          align-items: center;
+          justify-content: center;
 
           & li {
             font-size: 30px;
@@ -161,7 +165,7 @@
         }
 
         &:before {
-          background: rgba(203, 108, 230, 0.9);
+          background: rgba(46, 54, 143, 0.9);
           transition: var(--transition);
           // z-index: 3;
         }

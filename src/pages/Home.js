@@ -9,24 +9,26 @@ import { faqData } from "../utils/data";
 const Home = () => {
   const questions = faqData.map((item) => item.question);
 
-  const newData = questions.slice(0, 5);
+  // const newData = questions.slice(0, 5);
+  const newData = questions;
   const [faqSearch, setFaqSearch] = useState("");
   const [searchData, setSearchData] = useState(newData);
 
   useEffect(() => {
     if (faqSearch) {
       const match = questions.map((item) =>
-        item.toLowerCase().match(faqSearch)
+        item.toLowerCase().match(faqSearch.toLowerCase())
       );
       // .filter((i) => i !== null);
-      const data = match.map((item) => item?.input).slice(0, 5);
+      // const data = match.map((item) => item?.input).slice(0, 5);
+      const data = match.map((item) => item?.input);
       // console.log(match);
       const check = data.filter((item) => item !== undefined);
       if (check.length > 0) {
-        console.log(check);
-        setSearchData(data);
+        // console.log(check);
+        setSearchData([...data, "others"]);
       } else {
-        console.log("hellod");
+        console.log("hello");
         setSearchData(["Others"]);
       }
     } else {

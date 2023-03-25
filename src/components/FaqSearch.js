@@ -14,7 +14,7 @@ const FaqSearch = ({ dropdown, setFaqSearch, faqSearch, searchData }) => {
     if (isQuestions === true && !faqSearch) {
       const timeout = setTimeout(() => {
         setIsQuestions(false);
-      }, 6000);
+      }, 12000);
 
       return () => clearTimeout(timeout);
     }

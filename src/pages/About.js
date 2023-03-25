@@ -118,7 +118,9 @@ const About = () => {
               <span>
                 <BsFillClockFill />
               </span>
-              <p>Quick Turnaround Time</p>{" "}
+              <p>
+                Quick Turnaround <br /> Time
+              </p>{" "}
             </div>
           </div>
           <div className="value-center">
@@ -134,7 +136,11 @@ const About = () => {
               <span>
                 <BsBagDashFill />
               </span>
-              <p>Dispatch services/Home service </p>{" "}
+              <p>
+                Dispatch services/
+                <br />
+                Home service{" "}
+              </p>{" "}
             </div>
           </div>
           <div className="value-center">
@@ -142,7 +148,9 @@ const About = () => {
               <span>
                 <BsFillStickiesFill />
               </span>
-              <p>Follow up services </p>{" "}
+              <p>
+                Follow up <br /> services{" "}
+              </p>{" "}
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@
 
 .faqtop {
   // min-height: 400px;
-  height: 455px;
+  height: 495px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,9 +83,12 @@
       //   padding: 20px;
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
+      max-height: 180px;
+      overflow-y: scroll;
 
       & p {
         padding: 20px;
+        height: 60px;
         font-size: 15px;
         border-bottom: 1px solid var(--primary-grey);
         cursor: pointer;
