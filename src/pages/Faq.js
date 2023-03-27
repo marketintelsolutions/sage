@@ -67,17 +67,23 @@ const Faq = () => {
         item.question.toLowerCase().match(search.toLowerCase())
       );
 
-      const data = match.map((item) => item?.input);
-      const check = data.filter((item) => item !== undefined);
+      // const data = match.map((item) => item?.input);
+      // const check = data.filter((item) => item !== undefined);
 
-      console.log(match, "match");
-      console.log(data, "data");
+      // console.log(match, "match");
+      // console.log(data, "data");
 
-      if (check.length > 0) {
-        setData([...data]);
+      if (match.length > 0) {
+        setData([...match]);
       } else {
         console.log("hello");
-        setData(["Others"]);
+        setData([
+          {
+            id: "others",
+            question: "Others",
+            answer: "Kindly fill the form below and we will be in touch",
+          },
+        ]);
       }
     } else {
       setData(faqData);
