@@ -19,14 +19,12 @@ const Home = () => {
       const match = questions.map((item) =>
         item.toLowerCase().match(faqSearch.toLowerCase())
       );
-      // .filter((i) => i !== null);
-      // const data = match.map((item) => item?.input).slice(0, 5);
+
       const data = match.map((item) => item?.input);
-      // console.log(match);
       const check = data.filter((item) => item !== undefined);
+
       if (check.length > 0) {
-        // console.log(check);
-        setSearchData([...data, "others"]);
+        setSearchData([...data, "Others"]);
       } else {
         console.log("hello");
         setSearchData(["Others"]);

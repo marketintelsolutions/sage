@@ -126,7 +126,7 @@
               display: flex;
               align-items: center;
               gap: 3px;
-              color: black;
+              color: var(--primary-purple);
 
               @media (max-width: $breakpoint-tablet) {
                 font-size: 13px;

@@ -12,23 +12,6 @@ const Faq = () => {
   const { state } = useLocation();
   const { targetId } = state || {};
 
-  useEffect(() => {
-    if (!targetId) {
-      window.scroll(0, 0);
-      return;
-    }
-
-    const el = document.getElementById(targetId);
-
-    if (el) {
-      const scrolledY = window.scrollY;
-      const { top } = el.getBoundingClientRect();
-
-      const position = top + scrolledY - 200;
-      window.scroll(0, position);
-    }
-  }, [targetId]);
-
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -37,6 +20,9 @@ const Faq = () => {
     subject: "",
     message: "",
   });
+
+  const [search, setSearch] = useState("");
+  const [data, setData] = useState(faqData);
 
   const handleChange = (e) => {
     setFormData({
@@ -70,30 +56,67 @@ const Faq = () => {
       fields,
     });
   };
-  //   useEffect(() => {
-  //     window.scroll(0, 0);
-  //   }, []);
+
+  useEffect(() => {
+    // const questions = faqData.map((item) => item.question);
+
+    // const newData = questions;
+
+    if (search) {
+      const match = faqData.filter((item) =>
+        item.question.toLowerCase().match(search.toLowerCase())
+      );
+
+      const data = match.map((item) => item?.input);
+      const check = data.filter((item) => item !== undefined);
+
+      console.log(match, "match");
+      console.log(data, "data");
+
+      if (check.length > 0) {
+        setData([...data]);
+      } else {
+        console.log("hello");
+        setData(["Others"]);
+      }
+    } else {
+      setData(faqData);
+    }
+  }, [search]);
+
+  useEffect(() => {
+    if (!targetId) {
+      window.scroll(0, 0);
+      return;
+    }
+
+    const el = document.getElementById(targetId);
+
+    if (el) {
+      const scrolledY = window.scrollY;
+      const { top } = el.getBoundingClientRect();
+
+      const position = top + scrolledY - 200;
+      window.scroll(0, position);
+    }
+  }, [targetId]);
   return (
     <section className="faq-main">
       <div className="faqtop" style={{ backgroundImage: `url(${faqblue})` }}>
         <h1>Can we help you?</h1>
         <div className="input">
-          <input type="text" placeholder="Search" />
+          <input
+            type="text"
+            placeholder="Search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
           <span>
             <BiSearchAlt2 />
           </span>
-
-          {/* <div className="questions">
-            {faqData.map((item, index) => {
-              console.log(index);
-              if (item) {
-                return <p key={index}>{item.question}</p>;
-              }
-            })}
-          </div> */}
         </div>
       </div>
-      <SectionFour targetId={targetId} />
+      <SectionFour targetId={targetId} data={data} />
       <div className="faq-form" id="others">
         <ContactForm
           handleSubmit={handleSubmit}

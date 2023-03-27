@@ -19,7 +19,7 @@ const SharedLayout = ({ children }) => {
           CompanyIcon={logo}
           companyName="Sage Diagnostics"
           message="Hello, how can we help you today?"
-          phoneNumber="+2349160409450"
+          phoneNumber="+2348139289067"
         />
       </div>
     </>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { faqData } from "../utils/data";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 
-const SectionFour = ({ targetId }) => {
+const SectionFour = ({ targetId, data }) => {
   const [isAccordion, setIsAccordion] = useState(null);
 
   const toggle = (value) => {
@@ -24,7 +24,7 @@ const SectionFour = ({ targetId }) => {
     <section className="section-four">
       <h1>FAQ</h1>
       <div className="center">
-        {faqData.map((item) => {
+        {data.map((item) => {
           const { id, question, answer } = item;
 
           return (
