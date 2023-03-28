@@ -67,7 +67,7 @@ const Services = ({ _, scrollPosition }) => {
       <div className="services-center">
         <div>
           <h1>Services</h1>
-          <h3>The preferred and trusted medical diagnostics partner</h3>
+          <h3>The preferred and trusted medical diagnostics partner.</h3>
         </div>
 
         {services.map((item) => {
