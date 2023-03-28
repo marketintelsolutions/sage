@@ -122,12 +122,12 @@
     // }
 
     &:hover {
-      // border: 2px solid red;
       box-shadow: 1px 2px 15px 1px rgb(211, 208, 208);
       transition: var(--transition);
 
       & .info {
-        box-shadow: 1px 1px 6px 5px var(--primary-grey);
+        // border: 2px solid red;
+        box-shadow: 1px 1px 15px 2px rgb(230, 227, 227);
         background: white;
         border-radius: 5px;
         transition: var(--transition);

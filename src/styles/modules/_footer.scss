@@ -7,15 +7,12 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 170px 0 50px;
+  padding: 100px 0 50px;
   // height:
 
   @media (max-width: $breakpoint-tablet) {
     padding: 100px var(--padding-tablet) 50px;
   }
-  // @media (max-width: $breakpoint-small) {
-  //   padding: 100px var(--padding-small) 50px;
-  // }
 
   & .content {
     // border: 2px solid red;

@@ -48,7 +48,7 @@ const SectionThree = () => {
             <h2>
               <span>
                 <MdOutlineImageSearch />
-              </span>{" "}
+              </span>
               Imaging
             </h2>
             <ul>

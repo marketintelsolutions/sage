@@ -60,6 +60,7 @@
         align-items: center;
         justify-content: center;
         z-index: 3;
+        // border: 2px solid red;
 
         @media (max-width: $breakpoint-small) {
           width: 300px;
@@ -107,6 +108,7 @@
             font-size: 30px;
             color: white;
             width: fit-content;
+            // border: 2px solid red;
 
             @media (max-width: $breakpoint-tablet) {
               font-size: 17px;
