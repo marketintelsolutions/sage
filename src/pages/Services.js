@@ -60,7 +60,7 @@ const Services = ({ _, scrollPosition }) => {
         </div>
         <h2>
           Provide innovative, timely,
-          <br /> and quality medical diagnostics services..
+          <br /> and quality medical diagnostics services.
         </h2>
         <p>Cutting-Edge Molecular Lab Solutions.</p>
       </div>
