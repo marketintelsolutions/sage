@@ -25,7 +25,7 @@ const Contact = () => {
     console.log(formData);
 
     let formName = "User Getting in Touch";
-    let recipient_email = "igbagboleye2@gmail.com";
+    let recipient_email = "enquiries@sagedsl.com";
 
     const { firstname, lastname, email, phone, subject, message } = formData;
 
