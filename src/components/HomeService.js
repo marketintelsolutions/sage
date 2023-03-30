@@ -1,34 +1,48 @@
 import React, { useState } from "react";
 import { home } from "../assets/images";
+import { sendhome } from "../utils/sendMailHelpers";
 
 const HomeService = () => {
-  const [name, setName] = useState("wike");
-  const [email, setEmail] = useState("igbagboleye@gmail.com");
-  const [message, setMessage] = useState("testing");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+    address: "",
+    phone: "",
+  });
+
   const [status, setStatus] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     console.log("sent");
-    fetch("http://localhost:5000/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", mode: "no-cors" },
-      body: JSON.stringify({ name, email, message }),
-    })
-      .then((response) => {
-        if (response.ok) {
-          setStatus("Email sent successfully");
-        } else {
-          setStatus("Error sending email");
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-        setStatus("Error sending email");
-      });
-    setName("");
-    setEmail("");
-    setMessage("");
+
+    let formName = "User Getting in Touch";
+    let recipient_email = "enquiries@sagedsl.com";
+
+    console.log(formData);
+
+    const fields = Object.keys(formData);
+
+    const { name, email, message, address, phone } = formData;
+
+    sendhome({
+      name,
+      email,
+      message,
+      address,
+      phone,
+      formName,
+      recipient_email,
+      fields,
+    });
+
+    setFormData({ name: "", email: "", message: "", address: "", phone: "" });
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -41,11 +55,25 @@ const HomeService = () => {
         <div className="center">
           <div className="item">
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+            />
           </div>
           <div className="item">
             <label htmlFor="test">Test</label>
-            <input type="text" name="test" id="test" placeholder="Test" />
+            <input
+              type="text"
+              name="message"
+              id="test"
+              placeholder="Test"
+              value={formData.message}
+              onChange={handleChange}
+            />
           </div>
           <div className="item">
             <label htmlFor="address">Address</label>
@@ -54,11 +82,20 @@ const HomeService = () => {
               name="address"
               id="address"
               placeholder="Address"
+              value={formData.address}
+              onChange={handleChange}
             />
           </div>
           <div className="item">
             <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+            />
           </div>
           <div className="item">
             <label htmlFor="number">Phone number</label>
@@ -68,6 +105,8 @@ const HomeService = () => {
               id="number"
               className="number"
               placeholder="Phone number"
+              value={formData.phone}
+              onChange={handleChange}
             />
           </div>
         </div>

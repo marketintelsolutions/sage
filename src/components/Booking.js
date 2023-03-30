@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { booking } from "../assets/images";
+import { sendbooking } from "../utils/sendMailHelpers";
 
 const investigations = [
   "X-Ray",
@@ -27,6 +28,73 @@ const time = [
 const Booking = () => {
   const [slotActive, setSlotActive] = useState("");
 
+  // FORM DATA
+  const [slot, setSlot] = useState("");
+  const [investigation, setInvestigation] = useState("");
+  const [date, setDate] = useState("");
+  const [moreDetails, setMoreDetails] = useState("");
+  const [title, setTitle] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [gender, setGender] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [weight, setWeight] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(
+      slot,
+      investigation,
+      date,
+      moreDetails,
+      title,
+      firstname,
+      lastname,
+      gender,
+      phone,
+      email,
+      weight
+    );
+
+    const formData = {
+      slot,
+      investigation,
+      date,
+      moreDetails,
+      title,
+      firstname,
+      lastname,
+      gender,
+      phone,
+      email,
+      weight,
+    };
+
+    let formName = "APPOINTMENT BOOKING";
+    let recipient_email = "enquiries@sagedsl.com";
+
+    const fields = Object.keys(formData);
+
+    sendbooking({
+      slot,
+      investigation,
+      date,
+      moreDetails,
+      title,
+      firstname,
+      lastname,
+      gender,
+      phone,
+      email,
+      weight,
+      formName,
+      recipient_email,
+      fields,
+    });
+  };
+
   return (
     <section className="booking">
       <h1>Appointment Booking</h1>
@@ -42,11 +110,16 @@ const Booking = () => {
             width="100%"
           />
         </div>
-        <form className="form">
+        <form className="form" onSubmit={handleSubmit}>
           <div className="top">
             <div className="item department">
+              {/* INVESTIGATION */}
               <label htmlFor="investigation">Investigation</label>
-              <select name="investigation" id="investigation">
+              <select
+                name="investigation"
+                id="investigation"
+                onChange={(e) => setInvestigation(e.target.value)}
+              >
                 <option value="">Select Investigation</option>
                 {investigations.map((item, index) => (
                   <option value={item} key={index}>
@@ -55,29 +128,41 @@ const Booking = () => {
                 ))}
               </select>
             </div>
+            {/* ITEM DATE */}
             <div className="item date">
               <label htmlFor="date">Appointment Date</label>
-              {/* <select name="department" id="date">
-                  <option value="">Select Date</option>
-                  <option value="01-03-2023">01-03-2023</option>
-                  <option value="03-03-2023">03-03-2023</option>
-                  <option value="05-03-2023">05-03-2023</option>
-                  <option value="12-03-2023">12-03-2023</option>
-                </select> */}
-              <input type="date" name="date" id="date" />
+              <input
+                type="date"
+                name="date"
+                id="date"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+              />
             </div>
           </div>
+
+          {/* MORE DETAILS ON INVESTIGATION */}
           <div className="more">
             <label htmlFor="more">More Details on Investigation</label>
-            <textarea name="more" id="more"></textarea>
+            <textarea
+              name="more"
+              id="more"
+              value={moreDetails}
+              onChange={(e) => setMoreDetails(e.target.value)}
+            ></textarea>
           </div>
+
+          {/* SLOT */}
           <div className="slot">
             <h2>Slot</h2>
             <div className="items">
               {time.map((item, index) => (
                 <div
                   className={`${slotActive === index ? "item active" : "item"}`}
-                  onClick={() => setSlotActive(index)}
+                  onClick={() => {
+                    setSlot(item);
+                    setSlotActive(index);
+                  }}
                   key={index}
                 >
                   <p>{item}</p>
@@ -87,7 +172,12 @@ const Booking = () => {
             </div>
           </div>
           <div className="name">
-            <select name="title" id="title">
+            {/* TITLE */}
+            <select
+              name="title"
+              id="title"
+              onChange={(e) => setTitle(e.target.value)}
+            >
               <option value="Title">Title</option>
               <option value="Mr">Mr</option>
               <option value="Mrs">Mrs</option>
@@ -96,26 +186,63 @@ const Booking = () => {
               <option value="F/CHOF">F/CHOF</option>
               <option value="Dr.">Dr.</option>
             </select>
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+
+            {/* FIRST NAME */}
+            <input
+              type="text"
+              placeholder="First Name"
+              value={firstname}
+              onChange={(e) => setFirstname(e.target.value)}
+            />
+            {/* LAST NAME */}
+            <input
+              type="text"
+              placeholder="Last Name"
+              value={lastname}
+              onChange={(e) => setLastname(e.target.value)}
+            />
           </div>
           <div className="details">
-            <select name="gender" id="gender">
+            {/* GENDER */}
+            <select
+              name="gender"
+              id="gender"
+              onChange={(e) => setGender(e.target.value)}
+            >
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
             <input type="date" name="dateofb" />
+
+            {/* PHONE */}
             <input
               type="number"
               placeholder="Mobile No."
               name="phone"
               className="number"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
             />
-            <input type="email" placeholder="Email ID" name="email" />
-            <input type="number" placeholder="Weight in kg" name="weight" />
+            {/* EMAIL */}
+            <input
+              type="email"
+              placeholder="Email ID"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+
+            {/* WEIGHT */}
+            <input
+              type="number"
+              placeholder="Weight in kg"
+              name="weight"
+              value={weight}
+              onChange={(e) => setWeight(e.target.value)}
+            />
           </div>
-          <button type="button">SUBMIT</button>
+          <button type="submit">SUBMIT</button>
         </form>
       </div>
     </section>

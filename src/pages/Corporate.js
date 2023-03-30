@@ -2,21 +2,79 @@ import React, { useState, useEffect } from "react";
 import { corporateData, nigeriaStates } from "../utils/packagesData";
 import { corporate } from "../assets/images";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { sendcorporate } from "../utils/sendMailHelpers";
 
 const Corporate = () => {
   const [text, setText] = useState(true);
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    company: "",
+    email: "",
+    address: "",
+    city: "",
+    state: "",
+    phone: "",
+    heathPackage: "",
+    message: "",
+  });
 
   useEffect(() => {
     window.scroll(0, 0);
     setText(false);
   }, []);
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // handle form submission logic here
+    console.log(formData);
+
+    let formName = "User Getting in Touch";
+    let recipient_email = "enquiries@sagedsl.com";
+
+    const {
+      firstname,
+      lastname,
+      company,
+      email,
+      address,
+      city,
+      state,
+      phone,
+      heathPackage,
+      message,
+    } = formData;
+
+    const fields = Object.keys(formData);
+
+    sendcorporate({
+      firstname,
+      lastname,
+      company,
+      email,
+      address,
+      city,
+      state,
+      phone,
+      heathPackage,
+      message,
+      formName,
+      recipient_email,
+      fields,
+    });
+  };
+
   return (
     <section className="corporate">
-      <div
-        className={`${text ? "topmost translated" : "topmost"}`}
-        // style={{ backgroundImage: `url(${corporate})` }}
-      >
+      <div className={`${text ? "topmost translated" : "topmost"}`}>
         <div className="image">
           <LazyLoadImage
             alt="microscope"
@@ -43,43 +101,86 @@ const Corporate = () => {
           Kindly fill out the form below , one of our customer representative
           will reach out to you shortly.
         </p>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="top">
             <div className="input-item">
               <label htmlFor="firstname">First Name</label>
-              <input type="text" name="firstname" id="firstname" />
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                value={formData.firstname}
+                onChange={handleChange}
+              />
             </div>
             <div className="input-item">
               <label htmlFor="lastname">Last Name</label>
-              <input type="text" name="lastname" id="lastname" />
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                value={formData.lastname}
+                onChange={handleChange}
+              />
             </div>
             <div className="input-item">
               <label htmlFor="company">Company Name</label>
-              <input type="text" name="company" id="company" />
+              <input
+                type="text"
+                name="company"
+                id="company"
+                value={formData.company}
+                onChange={handleChange}
+              />
             </div>
             <div className="input-item">
               <label htmlFor="mail">Email Address</label>
-              <input type="email" name="email" id="mail" />
+              <input
+                type="email"
+                name="email"
+                id="mail"
+                value={formData.email}
+                onChange={handleChange}
+              />
             </div>
           </div>
           <div className="center">
             <div className="input-item">
               <label htmlFor="address">Office Address</label>
-              <input type="text" name="address" id="address" />
+              <input
+                type="text"
+                name="address"
+                id="address"
+                value={formData.address}
+                onChange={handleChange}
+              />
             </div>
             <div className="input-item">
               <label htmlFor="city">City</label>
-              <input type="text" name="city" id="city" />
+              <input
+                type="text"
+                name="city"
+                id="city"
+                value={formData.city}
+                onChange={handleChange}
+              />
             </div>
             <div className="input-item">
               <label htmlFor="state">State</label>
-              <select name="state" id="state">
-                <option value="" selected>
-                  Select State
-                </option>
+              <select
+                name="state"
+                id="state"
+                value={formData.state}
+                onChange={handleChange}
+              >
+                <option value="">Select State</option>
                 {nigeriaStates.map((state) => {
                   const { name } = state;
-                  return <option value={name}>{name}</option>;
+                  return (
+                    <option key={name} value={name}>
+                      {name}
+                    </option>
+                  );
                 })}
               </select>
             </div>
@@ -91,23 +192,44 @@ const Corporate = () => {
                 id="phone"
                 className="number"
                 placeholder="080xxx"
+                value={formData.phone}
+                onChange={handleChange}
               />
             </div>
             <div className="input-item">
-              <label htmlFor="package">Select a Package</label>
-              <select name="package" id="package">
+              <label htmlFor="heathPackage">Select a Package</label>
+              <select
+                name="heathPackage"
+                id="heathPackage"
+                value={formData.heathPackage}
+                onChange={handleChange}
+              >
+                <option hidden defaultValue>
+                  {" "}
+                  Select a Package
+                </option>
                 {corporateData.map((item) => {
                   const { text } = item;
-                  return <option value={text}>{text}</option>;
+
+                  return (
+                    <option key={text} value={text}>
+                      {text}
+                    </option>
+                  );
                 })}
               </select>
             </div>
           </div>
           <div className="message">
             <label htmlFor="message">Message</label>
-            <textarea name="message" id="message"></textarea>
+            <textarea
+              name="message"
+              id="message"
+              value={formData.message}
+              onChange={handleChange}
+            ></textarea>
           </div>
-          <button type="button">Send Message</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </section>

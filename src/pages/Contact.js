@@ -25,15 +25,17 @@ const Contact = () => {
     console.log(formData);
 
     let formName = "User Getting in Touch";
-    let recipient_email = "enquiries@sagedsl.com";
+    // let recipient_email = "enquiries@sagedsl.com";
+    let recipient_email = "igbagboleye@gmail.com";
 
     const { firstname, lastname, email, phone, subject, message } = formData;
 
     const fields = Object.keys(formData);
 
-    console.log(fields);
+    // console.log(fields);
 
     sendmail({
+      // type:'contact',
       firstname,
       lastname,
       email,

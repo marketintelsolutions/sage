@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { sendfeedback } from "../utils/sendMailHelpers";
 
 const ResponseTimeOptions = [
   { label: "Within 1 hour", value: "1hour" },
@@ -27,8 +28,7 @@ function FeedbackForm() {
   const [knowSageDiagnostics, setKnowSageDiagnostics] = useState(null);
   const [sageDiagnosticsUsage, setSageDiagnosticsUsage] = useState(null);
   const [responseTime, setResponseTime] = useState("");
-  const [motivation, setMotivation] = useState([]);
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedAlertMode, setSelectedOption] = useState("");
   const [helpdesk, setHelpdesk] = useState("");
   const [quality, setQuality] = useState("");
   const [turnaround, setTurnaround] = useState("");
@@ -42,13 +42,15 @@ function FeedbackForm() {
   const [hadIssues, setHadIssues] = useState(false);
   const [responseQuality, setResponseQuality] = useState("");
   const [feedback, setFeedback] = useState("");
+  const [selectedMotivations, setSelectedMotivations] = useState([]);
 
   const handleMeetingFrequencyChange = (e) => {
     setMeetingFrequency(e.target.value);
   };
 
   const handleHadIssuesChange = (e) => {
-    setHadIssues(e.target.value === "YES");
+    console.log(e.target.value);
+    setHadIssues(e.target.value);
   };
 
   const handleResponseQualityChange = (e) => {
@@ -71,18 +73,59 @@ function FeedbackForm() {
     setKnowSageDiagnostics(event.target.value);
   };
 
-  const handleMotivationChange = (e) => {
-    const selectedMotivations = Array.from(
-      e.target.selectedOptions,
-      (option) => option.value
-    );
-    setMotivation(selectedMotivations);
+  const handleMotivationChange = (event) => {
+    const selectedValue = event.target.value;
+
+    // If the checkbox is checked, add the selected value to the state
+    if (event.target.checked) {
+      setSelectedMotivations([...selectedMotivations, selectedValue]);
+    } else {
+      // If the checkbox is unchecked, remove the selected value from the state
+      setSelectedMotivations(
+        selectedMotivations.filter((motivation) => motivation !== selectedValue)
+      );
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const formData = {
+      doctorName,
+      contactNumber,
+      address,
+      email,
+      knowSageDiagnostics,
+      sageDiagnosticsUsage,
+      responseTime,
+      selectedMotivations,
+      selectedAlertMode,
+      helpdesk,
+      quality,
+      turnaround,
+      dispatch,
+      awareness,
+      mediaPresence,
+      testPrices,
+      responseTime2,
+      testRange,
+      meetingFrequency,
+      hadIssues,
+      responseQuality,
+      feedback,
+    };
     // Submit form data to the server or perform other actions
-    console.log({ doctorName, contactNumber, address, email });
+    console.log(formData);
+    const fields = Object.keys(formData);
+
+    let formName = "User Getting in Touch";
+    let recipient_email = "enquiries@sagedsl.com";
+
+    const newData = { ...formData, fields, formName, recipient_email };
+
+    sendfeedback({
+      ...newData,
+    });
   };
 
   return (
@@ -222,12 +265,14 @@ function FeedbackForm() {
                 > */}
           <div className="options">
             {MotivationOptions.map((option) => (
-              <div className="item">
+              <div className="item" key={option.value}>
                 <input
                   type="checkbox"
                   name={option.label}
                   id={option.label}
                   value={option.value}
+                  checked={selectedMotivations.includes(option.value)}
+                  onChange={handleMotivationChange}
                 />
                 <span>{option.label}</span>
               </div>
@@ -247,7 +292,7 @@ function FeedbackForm() {
               <input
                 type="radio"
                 value="Web Application"
-                checked={selectedOption === "Web Application"}
+                checked={selectedAlertMode === "Web Application"}
                 onChange={handleOptionChange}
               />
               <span>Web Application</span>
@@ -256,7 +301,7 @@ function FeedbackForm() {
               <input
                 type="radio"
                 value="E-Mail"
-                checked={selectedOption === "E-Mail"}
+                checked={selectedAlertMode === "E-Mail"}
                 onChange={handleOptionChange}
               />
               <span>E-Mail</span>
@@ -265,7 +310,7 @@ function FeedbackForm() {
               <input
                 type="radio"
                 value="Telephone Call"
-                checked={selectedOption === "Telephone Call"}
+                checked={selectedAlertMode === "Telephone Call"}
                 onChange={handleOptionChange}
               />
               <span>Telephone Call</span>
@@ -274,7 +319,7 @@ function FeedbackForm() {
               <input
                 type="radio"
                 value="SMS"
-                checked={selectedOption === "SMS"}
+                checked={selectedAlertMode === "SMS"}
                 onChange={handleOptionChange}
               />
               <span>SMS</span>
@@ -283,7 +328,7 @@ function FeedbackForm() {
               <input
                 type="radio"
                 value="Hardcopy delivery"
-                checked={selectedOption === "Hardcopy delivery"}
+                checked={selectedAlertMode === "Hardcopy delivery"}
                 onChange={handleOptionChange}
               />
               <span>Hardcopy delivery</span>
@@ -474,7 +519,7 @@ function FeedbackForm() {
             <span>No</span>
           </div>
         </div>
-        {hadIssues && (
+        {hadIssues === "YES" && (
           <div className="response">
             <label>How was the response from SAGE DIAGNOSTICS?</label>
             <select
