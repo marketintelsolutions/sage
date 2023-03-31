@@ -45,6 +45,15 @@ const Contact = () => {
       recipient_email,
       fields,
     });
+
+    setFormData({
+      firstname: "",
+      lastname: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
   };
 
   useEffect(() => {

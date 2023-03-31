@@ -95,8 +95,8 @@ export const sendbooking = ({
     weight
   ) {
     axios
-      // .post("http://localhost:5000/send_booking", {
-      .post("https://sage-go1t.onrender.com/send_email", {
+      .post("https://sage-go1t.onrender.com/send_booking", {
+        // .post("https://sage-go1t.onrender.com/send_email", {
         slot,
         investigation,
         date,

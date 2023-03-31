@@ -74,6 +74,7 @@ const Booking = () => {
 
     let formName = "APPOINTMENT BOOKING";
     let recipient_email = "enquiries@sagedsl.com";
+    // let recipient_email = "igbagboleye2@gmail.com";
 
     const fields = Object.keys(formData);
 
@@ -93,6 +94,18 @@ const Booking = () => {
       recipient_email,
       fields,
     });
+
+    setSlot("");
+    setInvestigation("");
+    setDate("");
+    setMoreDetails("");
+    setTitle("");
+    setFirstname("");
+    setLastname("");
+    setGender("");
+    setPhone("");
+    setEmail("");
+    setWeight("");
   };
 
   return (

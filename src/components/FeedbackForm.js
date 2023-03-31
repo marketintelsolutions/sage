@@ -126,6 +126,29 @@ function FeedbackForm() {
     sendfeedback({
       ...newData,
     });
+
+    setDoctorName("");
+    setContactNumber("");
+    setAddress("");
+    setEmail("");
+    setKnowSageDiagnostics("");
+    setSageDiagnosticsUsage("");
+    setResponseTime("");
+    setSelectedOption("");
+    setHelpdesk("");
+    setQuality("");
+    setTurnaround("");
+    setDispatch("");
+    setAwareness("");
+    setMediaPresence("");
+    setTestPrices("");
+    setResponseTime2("");
+    setTestRange("");
+    setMeetingFrequency("");
+    setHadIssues("");
+    setResponseQuality("");
+    setFeedback("");
+    setSelectedMotivations("");
   };
 
   return (

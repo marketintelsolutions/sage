@@ -70,6 +70,18 @@ const Corporate = () => {
       recipient_email,
       fields,
     });
+    setFormData({
+      firstname: "",
+      lastname: "",
+      company: "",
+      email: "",
+      address: "",
+      city: "",
+      state: "",
+      phone: "",
+      heathPackage: "",
+      message: "",
+    });
   };
 
   return (
