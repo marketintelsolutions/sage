@@ -61,10 +61,21 @@ const PreNav = () => {
         </div>
         <div className="right">
           <div className="socials">
-            <BsTwitter />
-            <BsFacebook />
-            <BsInstagram />
-            <SiTiktok />
+            <a href="https://twitter.com/sage_diagnostic?">
+              {" "}
+              <BsTwitter />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100090491735035&mibextid=ZbWKwL">
+              {" "}
+              <BsFacebook />
+            </a>
+            <a href="https://instagram.com/sage_diagnostics?igshid=ZDdkNTZiNTM=">
+              <BsInstagram />
+            </a>
+            <a href="https://www.tiktok.com/@sage_diagnostics">
+              {" "}
+              <SiTiktok />
+            </a>
           </div>
           <a href="#">
             <button>Test Results</button>

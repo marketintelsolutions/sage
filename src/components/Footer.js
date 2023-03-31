@@ -8,6 +8,7 @@ import {
   BsTiktok,
   BsFillTelephoneFill,
   BsTelephone,
+  BsLinkedin,
 } from "react-icons/bs";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "react-router-dom";
@@ -98,10 +99,25 @@ const Footer = () => {
         <div className="item">
           <h1>get connected</h1>
           <div className="icons">
-            <BsTwitter />
-            <BsFacebook />
-            <BsInstagram />
-            <SiTiktok />
+            <a href="https://twitter.com/sage_diagnostic?">
+              {" "}
+              <BsTwitter />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100090491735035&mibextid=ZbWKwL">
+              {" "}
+              <BsFacebook />
+            </a>
+            <a href="https://instagram.com/sage_diagnostics?igshid=ZDdkNTZiNTM=">
+              <BsInstagram />
+            </a>
+            <a href="https://www.tiktok.com/@sage_diagnostics">
+              {" "}
+              <SiTiktok />
+            </a>
+            <a href="https://www.linkedin.com/company/sage-diagnostics">
+              {" "}
+              <BsLinkedin />
+            </a>
           </div>
           <p>info@sagedsl.com</p>
           <p>enquiries@sagedsl.com</p>
