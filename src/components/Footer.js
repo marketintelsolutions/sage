@@ -99,22 +99,31 @@ const Footer = () => {
         <div className="item">
           <h1>get connected</h1>
           <div className="icons">
-            <a href="https://twitter.com/sage_diagnostic?">
+            <a href="https://twitter.com/sage_diagnostic?" target="_blank">
               {" "}
               <BsTwitter />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=100090491735035&mibextid=ZbWKwL">
+            <a
+              href="https://www.facebook.com/profile.php?id=100090491735035&mibextid=ZbWKwL"
+              target="_blank"
+            >
               {" "}
               <BsFacebook />
             </a>
-            <a href="https://instagram.com/sage_diagnostics?igshid=ZDdkNTZiNTM=">
+            <a
+              href="https://instagram.com/sage_diagnostics?igshid=ZDdkNTZiNTM="
+              target="_blank"
+            >
               <BsInstagram />
             </a>
-            <a href="https://www.tiktok.com/@sage_diagnostics">
+            <a href="https://www.tiktok.com/@sage_diagnostics" target="_blank">
               {" "}
               <SiTiktok />
             </a>
-            <a href="https://www.linkedin.com/company/sage-diagnostics">
+            <a
+              href="https://www.linkedin.com/company/sage-diagnostics"
+              target="_blank"
+            >
               {" "}
               <BsLinkedin />
             </a>
