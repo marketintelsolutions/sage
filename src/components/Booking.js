@@ -95,6 +95,8 @@ const Booking = () => {
       fields,
     });
 
+    setSlotActive(null);
+
     setSlot("");
     setInvestigation("");
     setDate("");
@@ -132,8 +134,9 @@ const Booking = () => {
                 name="investigation"
                 id="investigation"
                 onChange={(e) => setInvestigation(e.target.value)}
+                value={investigation}
               >
-                <option value="">Select Investigation</option>
+                <option>Select Investigation</option>
                 {investigations.map((item, index) => (
                   <option value={item} key={index}>
                     {item}
@@ -190,6 +193,7 @@ const Booking = () => {
               name="title"
               id="title"
               onChange={(e) => setTitle(e.target.value)}
+              value={title}
             >
               <option value="Title">Title</option>
               <option value="Mr">Mr</option>
@@ -221,12 +225,12 @@ const Booking = () => {
               name="gender"
               id="gender"
               onChange={(e) => setGender(e.target.value)}
+              value={gender}
             >
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
-            <input type="date" name="dateofb" />
 
             {/* PHONE */}
             <input

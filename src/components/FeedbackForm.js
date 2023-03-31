@@ -528,6 +528,7 @@ function FeedbackForm() {
               type="radio"
               name="hadIssues"
               value="YES"
+              checked={hadIssues === "YES"}
               onChange={handleHadIssuesChange}
             />
             <span>Yes</span>
@@ -537,6 +538,7 @@ function FeedbackForm() {
               type="radio"
               name="hadIssues"
               value="NO"
+              checked={hadIssues === "NO"}
               onChange={handleHadIssuesChange}
             />
             <span>No</span>
