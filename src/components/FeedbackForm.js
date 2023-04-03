@@ -115,7 +115,34 @@ function FeedbackForm() {
       feedback,
     };
     // Submit form data to the server or perform other actions
-    console.log(formData);
+    // console.log(formData);
+
+    if (
+      !doctorName ||
+      !contactNumber ||
+      !address ||
+      !email ||
+      !knowSageDiagnostics ||
+      !responseTime ||
+      !selectedMotivations ||
+      !selectedAlertMode ||
+      !helpdesk ||
+      !quality ||
+      !turnaround ||
+      !dispatch ||
+      !awareness ||
+      !mediaPresence ||
+      !testPrices ||
+      !responseTime2 ||
+      !testRange ||
+      !meetingFrequency ||
+      !hadIssues ||
+      !feedback
+    ) {
+      alert("Fill all fields");
+      return;
+    }
+
     const fields = Object.keys(formData);
 
     let formName = "User Getting in Touch";

@@ -27,6 +27,11 @@ const HomeService = () => {
 
     const { name, email, message, address, phone } = formData;
 
+    if (!name || !email || !message || !address || !phone) {
+      alert("Fill all fields");
+      return;
+    }
+
     sendhome({
       name,
       email,

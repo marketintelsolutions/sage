@@ -55,6 +55,22 @@ const Corporate = () => {
 
     const fields = Object.keys(formData);
 
+    if (
+      !firstname ||
+      !lastname ||
+      !company ||
+      !email ||
+      !address ||
+      !city ||
+      !state ||
+      !phone ||
+      !heathPackage ||
+      !message
+    ) {
+      alert("Fill all fields");
+      return;
+    }
+
     sendcorporate({
       firstname,
       lastname,

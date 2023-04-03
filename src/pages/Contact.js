@@ -5,12 +5,12 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
+    firstname: null,
+    lastname: null,
+    email: null,
+    phone: null,
+    subject: null,
+    message: null,
   });
 
   const handleChange = (e) => {
@@ -22,12 +22,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    // console.log(formData);
 
     let formName = "User Getting in Touch";
     let recipient_email = "enquiries@sagedsl.com";
 
     const { firstname, lastname, email, phone, subject, message } = formData;
+
+    if (!firstname || !lastname || !email || !phone || !subject || !message) {
+      alert("Fill all fields");
+      return;
+    }
+
+    // console.log({ firstname, lastname, email, phone, subject, message });
 
     const fields = Object.keys(formData);
 

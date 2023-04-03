@@ -78,6 +78,23 @@ const Booking = () => {
 
     const fields = Object.keys(formData);
 
+    if (
+      !slot ||
+      !investigation ||
+      !date ||
+      !moreDetails ||
+      !title ||
+      !firstname ||
+      !lastname ||
+      !gender ||
+      !phone ||
+      !email ||
+      !weight
+    ) {
+      alert("Fill all fields");
+      return;
+    }
+
     sendbooking({
       slot,
       investigation,
