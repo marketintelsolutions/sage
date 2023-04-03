@@ -97,7 +97,7 @@ const About = () => {
             <h3>Vision</h3>
             <p>
               The preferred and trusted medical diagnostics partner — improving
-              health & wellness, impacting lives.
+              health & wellness, impacting lives
             </p>
           </div>
           <div className="center center-spaced">
