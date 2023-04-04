@@ -247,7 +247,7 @@
 
       & span {
         padding: 5.5px;
-        color: var(--primary-purple);
+        color: var(--primary-blue);
         background: white;
         border-radius: 50%;
         display: flex;
@@ -297,6 +297,17 @@
         color: white;
         cursor: pointer;
       }
+
+      // & .facebook {
+      //   background: white;
+      //   color: var(--primary-blue);
+      //   border-radius: 50%;
+      //   height: 22px;
+      //   width: 22px;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: flex-end;
+      // }
     }
   }
   & a {
@@ -306,7 +317,7 @@
     // padding: 15px;
     width: 120px;
     height: 40px;
-    color: var(--primary-purple);
+    color: var(--primary-blue);
     background: white;
     border: none;
     font-size: 14px;

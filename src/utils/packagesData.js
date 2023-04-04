@@ -1,27 +1,35 @@
 export const corporateData = [
   {
     id: 1,
-    text: "Cardiac Screening",
+    text: "Occupational health screening",
   },
   {
     id: 2,
-    text: "Blue-day Package",
+    text: "Basic Domestic Staff",
   },
   {
     id: 3,
-    text: "Wellness Checkup",
+    text: "Standard Domestic Staff",
   },
   {
     id: 4,
-    text: "PCOS test",
+    text: "Pre employment tests",
   },
   {
     id: 5,
-    text: "Comprehensive PCOS Test",
+    text: "Food handlers",
   },
   {
     id: 6,
-    text: "Premium Wellness Package",
+    text: "Cardiac Screening",
+  },
+  {
+    id: 7,
+    text: "Prenuptial Screening",
+  },
+  {
+    id: 8,
+    text: "Cervical Screening",
   },
 ];
 

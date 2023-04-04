@@ -11,6 +11,7 @@ import {
 } from "react-icons/bs";
 import { SiTiktok } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
+import { RiFacebookFill } from "react-icons/ri";
 
 const PreNav = () => {
   return (
@@ -68,9 +69,9 @@ const PreNav = () => {
             <a
               href="https://www.facebook.com/profile.php?id=100090491735035&mibextid=ZbWKwL"
               target="_blank"
+              className="facebook"
             >
-              {" "}
-              <BsFacebook />
+              {/* <BsFacebook /> */} <RiFacebookFill />
             </a>
             <a
               href="https://instagram.com/sage_diagnostics?igshid=ZDdkNTZiNTM="

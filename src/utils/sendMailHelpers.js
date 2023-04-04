@@ -133,6 +133,7 @@ export const sendcorporate = ({
   phone,
   heathPackage,
   message,
+  noOfStaff,
   formName,
   recipient_email,
   fields,
@@ -147,6 +148,7 @@ export const sendcorporate = ({
     state &&
     phone &&
     heathPackage &&
+    noOfStaff &&
     message
   ) {
     axios
@@ -162,6 +164,7 @@ export const sendcorporate = ({
         phone,
         heathPackage,
         message,
+        noOfStaff,
         formName,
         recipient_email,
         fields,

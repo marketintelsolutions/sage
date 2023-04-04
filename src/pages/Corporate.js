@@ -17,6 +17,7 @@ const Corporate = () => {
     phone: "",
     heathPackage: "",
     message: "",
+    noOfStaff: "",
   });
 
   useEffect(() => {
@@ -51,6 +52,7 @@ const Corporate = () => {
       phone,
       heathPackage,
       message,
+      noOfStaff,
     } = formData;
 
     const fields = Object.keys(formData);
@@ -65,7 +67,8 @@ const Corporate = () => {
       !state ||
       !phone ||
       !heathPackage ||
-      !message
+      !message ||
+      !noOfStaff
     ) {
       alert("Fill all fields");
       return;
@@ -82,6 +85,7 @@ const Corporate = () => {
       phone,
       heathPackage,
       message,
+      noOfStaff,
       formName,
       recipient_email,
       fields,
@@ -97,6 +101,7 @@ const Corporate = () => {
       phone: "",
       heathPackage: "",
       message: "",
+      noOfStaff: "",
     });
   };
 
@@ -246,6 +251,18 @@ const Corporate = () => {
                   );
                 })}
               </select>
+            </div>
+            <div className="input-item">
+              <label htmlFor="phone">No. of Doctors</label>
+              <input
+                type="number"
+                name="noOfStaff"
+                id="noOfStaff"
+                className="number"
+                placeholder="e.g 20"
+                value={formData.noOfStaff}
+                onChange={handleChange}
+              />
             </div>
           </div>
           <div className="message">
