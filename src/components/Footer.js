@@ -11,6 +11,7 @@ import {
   BsLinkedin,
 } from "react-icons/bs";
 import { SiTiktok } from "react-icons/si";
+import { RiWhatsappLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -91,7 +92,7 @@ const Footer = () => {
           </p>
           <p>
             <span>
-              <BsTelephone />
+              <RiWhatsappLine />
             </span>{" "}
             08139239147
           </p>

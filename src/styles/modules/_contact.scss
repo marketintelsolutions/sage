@@ -60,7 +60,7 @@
     justify-content: center;
     gap: 20px;
     flex-direction: column;
-    background: var(--primary-purple);
+    background: var(--primary-blue);
     color: white;
     top: 50%;
     width: 400px;
@@ -142,7 +142,7 @@
     & h3 {
       font-size: 25px;
       letter-spacing: 1px;
-      color: var(--primary-purple);
+      color: var(--primary-blue);
 
       @media (max-width: $breakpoint-tablet) {
         font-size: 22px;
