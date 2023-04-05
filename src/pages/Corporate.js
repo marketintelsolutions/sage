@@ -253,7 +253,7 @@ const Corporate = () => {
               </select>
             </div>
             <div className="input-item">
-              <label htmlFor="phone">No. of Doctors</label>
+              <label htmlFor="phone">No. of Staff</label>
               <input
                 type="number"
                 name="noOfStaff"
