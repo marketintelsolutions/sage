@@ -35,7 +35,7 @@ export const corporateData = [
 
 export const individualData = [
   {
-    name: "Support Staff package (mini)",
+    name: "Support Staff package (mini) - CORPORATE",
     items: [
       "PCV",
       "Hepatitis B Surface Antigen (HBsAg) Rapid",
@@ -46,7 +46,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Support Staff package (maxi)",
+    name: "Support Staff package (maxi) - CORPORATE",
     items: [
       "Hb Electrophoresis /Genotype (Quantitative)",
       "Full blood count",
@@ -59,7 +59,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Cardiac Screen",
+    name: "Cardiac Screen - INDIVIDUAL",
     items: [
       "Creatine Kinase-MB (CK-MB)",
       "Lipid Profile (Lipogram)",
@@ -69,7 +69,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Blue-day Package",
+    name: "Blue-day Package - INDIVIDUAL",
     items: [
       "Erythrocyte Sedimentation Rate (ESR)",
       "Full Blood Count",
@@ -81,7 +81,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Social package",
+    name: "Social package - INDIVIDUAL",
     items: [
       "Full Blood Count",
       "Malaria (Thick and Thin Films)",
@@ -94,7 +94,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Vitality package (Basic)",
+    name: "Vitality package (Basic) - INDIVIDUAL",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -105,7 +105,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Emerald package (mini)",
+    name: "Emerald package (mini)-INDIVIDUAL",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Lipid Profile (Lipogram)",
@@ -129,7 +129,7 @@ export const individualData = [
       "Kidney Function Test",
       "Calcium",
       "Uric Acid",
-      "Thyroid Function Test (Free T3, Free T4,TSH)",
+      "Thyroid Function Test (Free T3, Free T4, TSH)",
       "Full Blood Count",
       "C-Reactive Protein (CRP)",
       "Hepatitis B Surface Antigen (HBsAg) Rapid",
@@ -202,7 +202,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Cervical Cancer Screening ",
+    name: "Cervical Cancer Screening",
     items: ["Liquid Based Cytology (LBC)"],
   },
   {
@@ -212,9 +212,8 @@ export const individualData = [
       "Semen: Microscopy, Culture & Sensitivity (MCS)",
     ],
   },
-
   {
-    name: "Topaz fertility profile (maxi)",
+    name: "Topaz fertility profile (maxi)- INDIVIDUAL",
     items: [
       "Follicule Stimulating Hormone (FSH)",
       "Luteinizing Hormone (LH)",
@@ -225,7 +224,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Vitality package (Basic)",
+    name: "Vitality package (Basic)- INDIVIDUAL",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -236,7 +235,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Topaz package (mini)",
+    name: "Topaz package (mini) - INDIVIDUAL",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Lipid Profile (Lipogram)",
@@ -251,7 +250,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Topaz package (maxi)",
+    name: "Topaz package (maxi) - INDIVIDUAL",
     items: [
       "HbA1C",
       "Inorganic Phosphate",
@@ -273,7 +272,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Pre Employment",
+    name: "Pre Employment - CORPORATE",
     items: [
       "Sputum AFB - Tuberculosis test",
       "HIV I & II Rapid",
