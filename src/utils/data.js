@@ -42,7 +42,7 @@ export const services = [
         image: microbiology,
         text: "Medical microbiology",
         description:
-          "Medical microbiology is a subdiscipline of microbiology that deal with the study of microorganisms capable of infecting and causing diseases in humans. With out state of the art microbiology unit, we help to isolate, identify, and report susceptibility attributes of microorganisms with various antimicrobial substances.",
+          "Medical microbiology is a subdiscipline of microbiology that deal with the study of microorganisms capable of infecting and causing diseases in humans. With our state of the art microbiology unit, we help to isolate, identify, and report susceptibility attributes of microorganisms with various antimicrobial substances.",
       },
       {
         id: 4,
