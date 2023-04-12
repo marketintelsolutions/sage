@@ -104,7 +104,7 @@ const About = () => {
             <h3>Mission</h3>
             <p>
               Provide innovative, timely, and quality medical diagnostics
-              services...{" "}
+              services{" "}
             </p>
           </div>
         </div>
