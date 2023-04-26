@@ -1,0 +1,44 @@
+.newsletter {
+  padding: var(--padding-main);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: white;
+
+  & h1 {
+    font-size: 35px;
+  }
+
+  & p {
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  & form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 30px;
+    & input {
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+
+    & button {
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 20px;
+      text-transform: capitalize;
+      border: 1px solid var(--primary-blue);
+      background: transparent;
+      cursor: pointer;
+      transition: var(--transition);
+
+      &:hover {
+        background: var(--primary-blue);
+        color: white;
+        transition: var(--transition);
+      }
+    }
+  }
+}

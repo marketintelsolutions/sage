@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import FaqSearch from "../components/FaqSearch";
+import Newsletter from "../components/Newsletter";
 import SectionFour from "../components/SectionFour";
 import SectionOne from "../components/SectionOne";
 import SectionThree from "../components/SectionThree";
@@ -43,6 +44,7 @@ const Home = () => {
       {/* ABOUT */}
       <SectionTwo />
       <SectionThree />
+      <Newsletter />
       <FaqSearch
         setFaqSearch={setFaqSearch}
         faqSearch={faqSearch}
