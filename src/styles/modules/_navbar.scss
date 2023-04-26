@@ -217,11 +217,11 @@
   z-index: 99999999;
   font-size: 12px;
 
-  @media (max-width: $breakpoint-tablet) {
-    display: none;
-  }
   @media (max-width: $breakpoint-large) {
     font-size: 10px;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    padding: 20px var(--padding-tablet);
   }
 
   & .center {
@@ -238,6 +238,9 @@
     // background: var(--primary-blue);
     display: flex;
     gap: 30px;
+    @media (max-width: $breakpoint-tablet) {
+      display: none;
+    }
 
     & .item {
       display: flex;
@@ -287,11 +290,24 @@
     align-items: center;
     gap: 40px;
 
+    @media (max-width: $breakpoint-tablet) {
+      // display: none;
+      width: 100%;
+      justify-content: space-between;
+    }
+
     & .socials {
       font-size: 18px;
       display: flex;
       gap: 15px;
       align-items: center;
+
+      @media (max-width: $breakpoint-large) {
+        font-size: 16px;
+      }
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 14px;
+      }
 
       & a {
         color: white;
@@ -329,6 +345,19 @@
     transition: var(--transition);
     font-weight: 700;
     letter-spacing: 1px;
+
+    @media (max-width: $breakpoint-large) {
+      font-size: 13px;
+      width: 110px;
+      height: 35px;
+      border-radius: 17px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 11px;
+      width: 95px;
+      height: 30px;
+      border-radius: 14px;
+    }
 
     &:hover {
       // opacity: 0.9;
