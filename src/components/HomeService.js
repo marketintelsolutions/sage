@@ -9,6 +9,7 @@ const HomeService = () => {
     message: "",
     address: "",
     phone: "",
+    referral: "",
   });
 
   const [status, setStatus] = useState("");
@@ -25,9 +26,9 @@ const HomeService = () => {
 
     const fields = Object.keys(formData);
 
-    const { name, email, message, address, phone } = formData;
+    const { name, email, message, address, phone, referral } = formData;
 
-    if (!name || !email || !message || !address || !phone) {
+    if (!name || !email || !message || !address || !phone || !referral) {
       alert("Fill all fields");
       return;
     }
@@ -38,12 +39,20 @@ const HomeService = () => {
       message,
       address,
       phone,
+      referral,
       formName,
       recipient_email,
       fields,
     });
 
-    setFormData({ name: "", email: "", message: "", address: "", phone: "" });
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+      address: "",
+      phone: "",
+      referral: "",
+    });
   };
 
   const handleChange = (e) => {
@@ -111,6 +120,18 @@ const HomeService = () => {
               className="number"
               placeholder="Phone number"
               value={formData.phone}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="item">
+            <label htmlFor="number">Who referred you?</label>
+            <input
+              type="text"
+              name="referral"
+              id="referral"
+              // className="number"
+              placeholder="Who referred you?"
+              value={formData.referral}
               onChange={handleChange}
             />
           </div>

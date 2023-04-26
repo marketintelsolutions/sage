@@ -40,6 +40,7 @@ const Booking = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [weight, setWeight] = useState("");
+  const [referral, setReferral] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -55,7 +56,8 @@ const Booking = () => {
       gender,
       phone,
       email,
-      weight
+      weight,
+      referral
     );
 
     const formData = {
@@ -70,6 +72,7 @@ const Booking = () => {
       phone,
       email,
       weight,
+      referral,
     };
 
     let formName = "APPOINTMENT BOOKING";
@@ -89,7 +92,8 @@ const Booking = () => {
       !gender ||
       !phone ||
       !email ||
-      !weight
+      !weight ||
+      !referral
     ) {
       alert("Fill all fields");
       return;
@@ -107,6 +111,7 @@ const Booking = () => {
       phone,
       email,
       weight,
+      referral,
       formName,
       recipient_email,
       fields,
@@ -125,6 +130,7 @@ const Booking = () => {
     setPhone("");
     setEmail("");
     setWeight("");
+    setReferral("");
   };
 
   return (
@@ -274,6 +280,13 @@ const Booking = () => {
               name="weight"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
+            />
+            {/* REFERRAL */}
+            <input
+              type="text"
+              placeholder="Who referred you?"
+              value={referral}
+              onChange={(e) => setReferral(e.target.value)}
             />
           </div>
           <button type="submit">SUBMIT</button>
