@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FaqSearch from "../components/FaqSearch";
 import Newsletter from "../components/Newsletter";
+import Patners from "../components/Patners";
 import SectionFour from "../components/SectionFour";
 import SectionOne from "../components/SectionOne";
 import SectionThree from "../components/SectionThree";
@@ -50,6 +51,7 @@ const Home = () => {
         faqSearch={faqSearch}
         searchData={searchData}
       />
+      <Patners />
     </>
   );
 };

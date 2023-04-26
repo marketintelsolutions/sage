@@ -1,0 +1,9 @@
+.patners {
+  padding: var(--padding-main);
+  color: white;
+  background: var(--primary-blue);
+  & h1 {
+    font-size: 35px;
+    text-transform: capitalize;
+  }
+}
