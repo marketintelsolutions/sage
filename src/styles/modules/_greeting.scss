@@ -29,6 +29,19 @@
     width: 850px;
     // grid-template-columns: 1fr 1fr÷;
 
+    @media (max-width: $breakpoint-tablet) {
+      width: 570px;
+      padding: 15px;
+    }
+    @media (max-width: $breakpoint-small) {
+      padding: 10px;
+      width: 370px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      padding: 8px;
+      width: 340px;
+    }
+
     & .group-center {
       border: 2px solid var(--primary-purple);
       display: flex;
@@ -41,15 +54,40 @@
       gap: 20px;
       flex-direction: column;
 
+      @media (max-width: $breakpoint-tablet) {
+        padding: 20px;
+        font-size: 20px;
+      }
+      @media (max-width: $breakpoint-small) {
+        padding: 10px;
+        font-size: 17px;
+      }
+
       & h1 {
         font-size: 25px;
         color: var(--primary-blue);
+
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 20px;
+        }
+        @media (max-width: $breakpoint-small) {
+          font-size: 17px;
+        }
       }
 
       & p {
         font-size: 15px;
         line-height: 30px;
         text-align: justify;
+
+        @media (max-width: $breakpoint-tablet) {
+          line-height: 23px;
+          font-size: 13px;
+        }
+        @media (max-width: $breakpoint-small) {
+          font-size: 11px;
+          line-height: 15px;
+        }
       }
     }
 
@@ -67,9 +105,14 @@
       }
       & img {
         height: 460px;
-        // height: 100%;
         width: 100%;
-        // width: 400px;
+
+        @media (max-width: $breakpoint-tablet) {
+          height: 400px;
+        }
+        @media (max-width: $breakpoint-small) {
+          height: 300px;
+        }
       }
     }
   }
@@ -86,6 +129,20 @@
     box-shadow: 1px 1px 13px 5px rgba(129, 127, 127, 0.5);
     width: 850px;
     height: 330px;
+    @media (max-width: $breakpoint-tablet) {
+      width: 570px;
+      transform: translateX(50px);
+    }
+    @media (max-width: $breakpoint-small) {
+      width: 370px;
+      height: 220px;
+      bottom: -60px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      width: 340px;
+      transform: translateX(20px);
+    }
 
     & .group-center {
       border: none;
@@ -101,6 +158,13 @@
       & img {
         height: 300px;
         // height: 100%;
+
+        @media (max-width: $breakpoint-tablet) {
+          height: 280px;
+        }
+        @media (max-width: $breakpoint-small) {
+          height: 200px;
+        }
       }
     }
 
@@ -115,6 +179,15 @@
       transition: var(--transition);
       background: var(--primary-purple);
       color: white;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 17px;
+        padding: 17px;
+      }
+      @media (max-width: $breakpoint-small) {
+        font-size: 13px;
+        padding: 13px;
+      }
 
       &:hover {
         color: black;
