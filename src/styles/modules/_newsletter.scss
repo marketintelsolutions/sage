@@ -5,13 +5,20 @@
   gap: 40px;
   background: white;
 
+  @media (max-width: $breakpoint-tablet) {
+    padding: var(--padding-tablet);
+  }
+  @media (max-width: $breakpoint-small) {
+  }
+
   & h1 {
-    font-size: 35px;
+    font-size: 30px;
+    color: var(--primary-blue);
   }
 
   & p {
     line-height: 30px;
-    font-size: 20px;
+    font-size: 17px;
     text-align: justify;
   }
 
@@ -19,24 +26,33 @@
     display: grid;
     grid-template-columns: 1fr 1fr auto;
     gap: 30px;
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $breakpoint-small) {
+      grid-template-columns: 1fr;
+    }
     & input {
       padding: 10px 20px;
-      font-size: 20px;
+      font-size: 17px;
     }
 
     & button {
       padding: 10px 20px;
       border-radius: 10px;
-      font-size: 20px;
+      font-size: 17px;
       text-transform: capitalize;
-      border: 1px solid var(--primary-blue);
+      border: 1px solid var(--primary-purple);
       background: transparent;
       cursor: pointer;
       transition: var(--transition);
+      background: var(--primary-purple);
+      color: white;
 
       &:hover {
-        background: var(--primary-blue);
-        color: white;
+        color: black;
+        background: white;
         transition: var(--transition);
       }
     }

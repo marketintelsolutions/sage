@@ -11,13 +11,6 @@
   // background: var(--primary-purple-light);
   background: rgb(226, 221, 228);
 
-  // background: rgb(224, 208, 228);
-  // background: linear-gradient(
-  //   180deg,
-  //   rgba(255, 255, 255, 1) 0%,
-  //   var(--primary-purple-light) 65%
-  // );
-
   @media (max-width: $breakpoint-tablet) {
     padding: 30px var(--padding-tablet);
   }

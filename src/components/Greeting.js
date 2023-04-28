@@ -4,8 +4,16 @@ import welcome from "../assets/images/welcome.jpg";
 import lab from "../assets/images/lab.jpg";
 
 const Greeting = ({ setGreetOpen }) => {
+  const closeGreet = (e) => {
+    // console.log(e.target.classList.contains("greeting"));
+
+    if (e.target.classList.contains("greeting")) {
+      setGreetOpen(false);
+    }
+  };
+
   return (
-    <div className="greeting">
+    <div className="greeting" onClick={(e) => closeGreet(e)}>
       <div className="greeting-container">
         <div className="group group-one">
           <div className="group-center">
