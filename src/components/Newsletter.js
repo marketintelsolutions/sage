@@ -4,6 +4,11 @@ const Newsletter = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
+  const handleSubmit = () => {
+    setName("");
+    setEmail("");
+  };
+
   return (
     <section className="newsletter">
       <h1>Subscribe To Our Newsletter </h1>
@@ -32,7 +37,9 @@ const Newsletter = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <button type="button">Submit</button>
+        <button type="button" onClick={handleSubmit}>
+          Submit
+        </button>
       </form>
     </section>
   );
