@@ -4,6 +4,7 @@ import {
   nancy,
   claudius,
   oluwagbogo,
+  team6,
   osadugba,
 } from "../assets/images";
 
@@ -34,10 +35,11 @@ const people = [
     image: nancy,
   },
   {
-    name: "-",
+    name: "EZIKANYI CHRIS",
     role: "Business Development Lead",
-    image:
-      "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    // image:
+    //   "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    image: team6,
   },
 ];
 
