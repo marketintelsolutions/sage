@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f7344f5.css",
-    "main.js": "/static/js/main.11bd8cf5.js",
+    "main.css": "/static/css/main.d85b3ae4.css",
+    "main.js": "/static/js/main.7b6a03f4.js",
     "static/media/microscope.jpg": "/static/media/microscope.ff54f726eec182353280.jpg",
     "static/media/microbiology.jpg": "/static/media/microbiology.915d492a69982f0cf2b8.jpg",
     "static/media/xray.jpg": "/static/media/xray.573e3865de364409da23.jpg",
@@ -20,29 +20,36 @@
     "static/media/mammogram.jpg": "/static/media/mammogram.79a3977613d7c773d6c5.jpg",
     "static/media/pathology.jpg": "/static/media/pathology.47ebe88ed9950dbd4df0.jpg",
     "static/media/histology.jpg": "/static/media/histology.8afb873ff6f79481fbfa.jpg",
+    "static/media/welcome.jpg": "/static/media/welcome.59a78e898fedb588fc90.jpg",
     "static/media/home.jpg": "/static/media/home.b2af278e71663b0d1650.jpg",
     "static/media/hmo.jpg": "/static/media/hmo.d37899d4e4505bed767b.jpg",
     "static/media/error.jpg": "/static/media/error.db3d96a71225e5f8a106.jpg",
     "static/media/ecg.jpg": "/static/media/ecg.184b8d1d70b372222f35.jpg",
+    "static/media/lab.jpg": "/static/media/lab.5307f698f3116a89a9c1.jpg",
     "static/media/immunoassay.jpg": "/static/media/immunoassay.6a8ff71621d8f4182de3.jpg",
     "static/media/osadugba.png": "/static/media/osadugba.b1d6dbd15feb86b4e6cb.png",
     "static/media/oluwagbogo.png": "/static/media/oluwagbogo.0451d2394031206f0a5e.png",
     "static/media/healthCheck.jpg": "/static/media/healthCheck.5c6bf96ee0e5da09dc51.jpg",
     "static/media/claudius.png": "/static/media/claudius.d8b70e7d5850bc7cc237.png",
+    "static/media/team6.png": "/static/media/team6.2fd778a46cce8bbeba94.png",
     "static/media/adedokun.png": "/static/media/adedokun.af8c0899d8033b6e2b31.png",
     "static/media/logo2.png": "/static/media/logo2.65e0590fc3d5c68b49a2.png",
     "static/media/nancy.png": "/static/media/nancy.24e5ebc0c74eb9234598.png",
+    "static/media/afrilife.png": "/static/media/afrilife.78e3731dc6d060a9c921.png",
     "static/media/logo2.jpg": "/static/media/logo2.388cdff384e53920c73c.jpg",
     "static/media/hematology.jpg": "/static/media/hematology.fd0e54451b4a5bd540a6.jpg",
+    "static/media/phillipshmo.png": "/static/media/phillipshmo.4bad375a76fa92ae5b26.png",
     "static/media/faqblue.jpg": "/static/media/faqblue.0f2a04a06a1a1d15298b.jpg",
+    "static/media/paclogo.png": "/static/media/paclogo.29622c79f0cf24488cec.png",
+    "static/media/ziltch1.png": "/static/media/ziltch1.961235d143be899d96d8.png",
     "static/media/echocardiogram.jpg": "/static/media/echocardiogram.b7eb4f818cb1653dad4a.jpg",
     "static/media/logo-icon.svg": "/static/media/logo-icon.80d26e6fcc2d7cdaf1c1f20598c707c7.svg",
     "index.html": "/index.html",
-    "main.9f7344f5.css.map": "/static/css/main.9f7344f5.css.map",
-    "main.11bd8cf5.js.map": "/static/js/main.11bd8cf5.js.map"
+    "main.d85b3ae4.css.map": "/static/css/main.d85b3ae4.css.map",
+    "main.7b6a03f4.js.map": "/static/js/main.7b6a03f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f7344f5.css",
-    "static/js/main.11bd8cf5.js"
+    "static/css/main.d85b3ae4.css",
+    "static/js/main.7b6a03f4.js"
   ]
 }
