@@ -32,7 +32,7 @@ const SectionOne = () => {
           <br /> lab solutions.
         </h3>
         <p>
-          Provide innovative, timely, and quality medical diagnostics services.{" "}
+        Providing innovative, timely, and quality medical diagnostics services.{" "}
         </p>
       </div>
     </section>
