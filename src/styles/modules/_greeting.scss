@@ -21,6 +21,9 @@
     align-items: center;
     justify-content: center;
     // width: 900px;
+    @media (max-width: $breakpoint-mobile) {
+      transform: scale(0.7, 0.7);
+    }
   }
 
   & .group {
