@@ -34,30 +34,30 @@ export const corporateData = [
 ];
 
 export const individualData = [
-  {
-    name: "Support Staff package (mini) - CORPORATE",
-    items: [
-      "PCV",
-      "Hepatitis B Surface Antigen (HBsAg) Rapid",
-      "HIV I & II Rapid",
-      "BHCG- Qualitative (Pregnancy Test)",
-      "Widal test",
-      "Sputum AFB - Tuberculosis test",
-    ],
-  },
-  {
-    name: "Support Staff package (maxi) - CORPORATE",
-    items: [
-      "Hb Electrophoresis /Genotype (Quantitative)",
-      "Full blood count",
-      "Widal test",
-      "Hepatitis B Surface Antigen (HBsAg) Rapid",
-      "HIV I & II Antibody",
-      "BHCG- Qualitative (Pregnancy Test)",
-      "Hepatitis C Virus Ab (Rapid)",
-      "Sputm AFB - Tuberculosis test",
-    ],
-  },
+  // {
+  //   name: "Support Staff package (mini) - CORPORATE",
+  //   items: [
+  //     "PCV",
+  //     "Hepatitis B Surface Antigen (HBsAg) Rapid",
+  //     "HIV I & II Rapid",
+  //     "BHCG- Qualitative (Pregnancy Test)",
+  //     "Widal test",
+  //     "Sputum AFB - Tuberculosis test",
+  //   ],
+  // },
+  // {
+  //   name: "Support Staff package (maxi) - CORPORATE",
+  //   items: [
+  //     "Hb Electrophoresis /Genotype (Quantitative)",
+  //     "Full blood count",
+  //     "Widal test",
+  //     "Hepatitis B Surface Antigen (HBsAg) Rapid",
+  //     "HIV I & II Antibody",
+  //     "BHCG- Qualitative (Pregnancy Test)",
+  //     "Hepatitis C Virus Ab (Rapid)",
+  //     "Sputm AFB - Tuberculosis test",
+  //   ],
+  // },
   {
     name: "Cardiac Screen - INDIVIDUAL",
     items: [
