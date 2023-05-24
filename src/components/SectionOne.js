@@ -29,10 +29,10 @@ const SectionOne = () => {
       <div className={`${text ? "text translated" : "text"}`}>
         <h3>
           Cutting-edge molecular
-          <br /> lab solutions
+          <br /> lab solutions.
         </h3>
         <p>
-        Providing innovative, timely, and quality medical diagnostics services.{" "}
+        Providing innovative, timely, and quality medical diagnostics services{" "}
         </p>
       </div>
     </section>
