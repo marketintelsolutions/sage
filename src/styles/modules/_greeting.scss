@@ -24,6 +24,9 @@
     @media (max-width: $breakpoint-mobile) {
       transform: scale(0.7, 0.7);
     }
+    @media (max-width: $breakpoint-small) {
+      transform: scale(0.5, 0.5);
+    }
   }
 
   & .group {
