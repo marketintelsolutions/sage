@@ -40,7 +40,7 @@ const About = () => {
             />
           </div>
           <h3> Improving health & wellness, impacting lives.</h3>
-          <p>Cutting-Edge Molecular Lab Solutions.</p>
+          <p>Cutting-Edge Molecular Lab Solutions</p>
         </div>
         <div className="group">
           <div className="center">
