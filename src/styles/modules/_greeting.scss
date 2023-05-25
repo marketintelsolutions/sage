@@ -14,15 +14,14 @@
 
   & .greeting-container {
     position: relative;
-    // height: 100%;
-    // width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // width: 900px;
+    transform: scale(0.75, 0.75);
+
     @media (max-width: $breakpoint-mobile) {
-      transform: scale(0.7, 0.7);
+      transform: scale(0.6, 0.6);
     }
     @media (max-width: $breakpoint-small) {
       transform: scale(0.5, 0.5);
