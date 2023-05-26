@@ -58,9 +58,21 @@ export const individualData = [
   //     "Sputm AFB - Tuberculosis test",
   //   ],
   // },
+  // {
+  //   name: "Cardiac Screen - INDIVIDUAL",
+  //   items: [
+  //     "Creatine Kinase-MB (CK-MB)",
+  //     "Lipid Profile (Lipogram)",
+  //     "Kidney Function Test",
+  //     "Troponin-T",
+  //     "D – Dimer",
+  //   ],
+  // },
   {
-    name: "Cardiac Screen - INDIVIDUAL",
+    name: "Cardiac Screen - mini",
+    price: "31,500",
     items: [
+      "Chest X-RAY",
       "Creatine Kinase-MB (CK-MB)",
       "Lipid Profile (Lipogram)",
       "Kidney Function Test",
@@ -68,8 +80,20 @@ export const individualData = [
       "D – Dimer",
     ],
   },
+  // {
+  //   name: "Cardiac Screen - maxi",
+  //   price: "31,500",
+  //   items: [
+  //     "Creatine Kinase-MB (CK-MB)",
+  //     "Lipid Profile (Lipogram)",
+  //     "Kidney Function Test",
+  //     "Troponin-T",
+  //     "D – Dimer",
+  //   ],
+  // },
   {
     name: "Blue-day Package - INDIVIDUAL",
+    price: "14,200",
     items: [
       "Erythrocyte Sedimentation Rate (ESR)",
       "Full Blood Count",
@@ -82,6 +106,7 @@ export const individualData = [
   },
   {
     name: "Social package - INDIVIDUAL",
+    price: "25,600",
     items: [
       "Full Blood Count",
       "Malaria (Thick and Thin Films)",
@@ -95,6 +120,7 @@ export const individualData = [
   },
   {
     name: "Vitality package (Basic) - INDIVIDUAL",
+    price: "17,700",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -106,6 +132,7 @@ export const individualData = [
   },
   {
     name: "Emerald package (mini)-INDIVIDUAL",
+    price: "40,700",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Lipid Profile (Lipogram)",
@@ -119,6 +146,7 @@ export const individualData = [
       "Kidney Function Test (Urea/Creatinine)",
     ],
   },
+
   {
     name: "Emerald package (maxi)",
     items: [
@@ -153,6 +181,7 @@ export const individualData = [
   },
   {
     name: "Emerald fertility profile (mini)",
+    price: "33,800",
     items: [
       "Estradiol",
       "Follicule Stimulating Hormone (FSH)",
@@ -162,7 +191,19 @@ export const individualData = [
     ],
   },
   {
+    name: "Emerald fertility profile (mini)",
+    price: "37,101",
+    items: [
+      "Estradiol",
+      "Follicule Stimulating Hormone (FSH)",
+      "Luteinizing Hormone (LH)",
+      "Prolactin",
+      "Progesterone (Day 4)",
+    ],
+  },
+  {
     name: "Emerald fertility profile (maxi)",
+    price: "69,100",
     items: [
       "Thyroid Stimulating Hormone (TSH)",
       "Estradiol",
@@ -176,6 +217,7 @@ export const individualData = [
   },
   {
     name: "PCOS(mini)",
+    price: "24,000",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -187,6 +229,7 @@ export const individualData = [
   },
   {
     name: "PCOS(maxi)",
+    price: "79,000",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Thyroid Stimulating Hormone (TSH)",
@@ -203,10 +246,12 @@ export const individualData = [
   },
   {
     name: "Cervical Cancer Screening",
+    price: "10,800",
     items: ["Liquid Based Cytology (LBC)"],
   },
   {
     name: "Topaz fertility profile (mini)",
+    price: "15,800",
     items: [
       "Seminal Fluid Analysis (SFA)",
       "Semen: Microscopy, Culture & Sensitivity (MCS)",
@@ -214,6 +259,7 @@ export const individualData = [
   },
   {
     name: "Topaz fertility profile (maxi)- INDIVIDUAL",
+    price: "39,200",
     items: [
       "Follicule Stimulating Hormone (FSH)",
       "Luteinizing Hormone (LH)",
@@ -236,6 +282,7 @@ export const individualData = [
   },
   {
     name: "Topaz package (mini) - INDIVIDUAL",
+    price: "38,900",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Lipid Profile (Lipogram)",

@@ -32,11 +32,11 @@ const Individual = () => {
         <h2>Individual Health Packages</h2>
         <div className="packages">
           {individualData.map((item) => {
-            const { name, items } = item;
+            const { name, items, price } = item;
             return (
               <div className="item">
                 <h2>{name}</h2>
-                {/* <h3>₦00,000</h3> */}
+                {price ? <h3>₦{price}</h3> : <h3>₦---,---</h3>}
                 <hr />
                 <div className="text">
                   {items.map((text) => {
