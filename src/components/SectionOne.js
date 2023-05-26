@@ -5,6 +5,8 @@ import {
   LazyLoadImage,
 } from "react-lazy-load-image-component";
 import { homePage } from "../utils/homePageData";
+import leftArrow from "../assets/leftArrow.svg";
+import rightArrow from "../assets/rightArrow.svg";
 
 const SectionOne = () => {
   const [texts, setText] = useState(true);
@@ -40,11 +42,52 @@ const SectionOne = () => {
     };
   }, [page]);
 
+  const scroll = (direction) => {
+    if (direction === "left") {
+      if (page === 0) {
+        setPage(300);
+        return;
+      }
+      setPage(page - 100);
+      return;
+    } else if (direction === "right") {
+      if (page === 300) {
+        setPage(0);
+        return;
+      }
+      setPage(page + 100);
+    }
+  };
+
   return (
     <section
       className="section-one"
       // style={{ backgroundImage: `url(${microscope})` }}
     >
+      <div className="left-button">
+        <img src={leftArrow} alt="leftArrow" onClick={() => scroll("left")} />
+      </div>
+      <div className="right-button">
+        <img
+          src={rightArrow}
+          alt="rightArrow"
+          onClick={() => scroll("right")}
+        />
+      </div>
+      <div className="sections">
+        {homePage.map((_, index) => {
+          let active;
+          active = `${index}00` === `${page}`;
+
+          if (index === 0) {
+            active = `${index}` === `${page}`;
+          }
+          console.log(active);
+          return (
+            <div className={`${active ? "section active" : "section"}`}></div>
+          );
+        })}
+      </div>
       <div
         className="section-content"
         style={{ transform: `translateX(-${page}%)` }}
