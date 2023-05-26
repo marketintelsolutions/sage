@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { individual } from "../assets/images";
-import { individualData } from "../utils/packagesData";
+import { conventionalPackages, individualData } from "../utils/packagesData";
 
 const Individual = () => {
   const [text, setText] = useState(true);
@@ -29,7 +29,32 @@ const Individual = () => {
       </div>
 
       <div className="content">
-        <h2>Individual Health Packages</h2>
+        <h2>Conventional Individual Packages</h2>
+        <div className="packages">
+          {conventionalPackages.map((item) => {
+            const { name, tests, price } = item;
+            return (
+              <div className="item">
+                <h2>{name}</h2>
+                {price ? <h3>₦{price}</h3> : <h3>₦---,---</h3>}
+                <hr />
+                <div className="text">
+                  {tests.map((text) => {
+                    return (
+                      <>
+                        <p>{text}</p>
+                        <hr />
+                      </>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="content">
+        <h2>Specialised Individual Packages</h2>
         <div className="packages">
           {individualData.map((item) => {
             const { name, items, price } = item;

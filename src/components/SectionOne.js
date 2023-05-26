@@ -60,10 +60,7 @@ const SectionOne = () => {
   };
 
   return (
-    <section
-      className="section-one"
-      // style={{ backgroundImage: `url(${microscope})` }}
-    >
+    <section className="section-one">
       <div className="left-button">
         <img src={leftArrow} alt="leftArrow" onClick={() => scroll("left")} />
       </div>
