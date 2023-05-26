@@ -11,10 +11,6 @@ import {
   echocardiogram,
   spirometry,
   audiometry,
-  healthCheck,
-  healthScreen,
-  homeService,
-  hmo,
   immunoassay,
 } from "../assets/images";
 
