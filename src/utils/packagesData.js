@@ -80,17 +80,18 @@ export const individualData = [
       "D – Dimer",
     ],
   },
-  // {
-  //   name: "Cardiac Screen - maxi",
-  //   price: "31,500",
-  //   items: [
-  //     "Creatine Kinase-MB (CK-MB)",
-  //     "Lipid Profile (Lipogram)",
-  //     "Kidney Function Test",
-  //     "Troponin-T",
-  //     "D – Dimer",
-  //   ],
-  // },
+  {
+    name: "Cardiac Screen - maxi",
+    price: "54,100",
+    items: [
+      "Chest X-RAY",
+      "Creatine Kinase-MB (CK-MB)",
+      "Lipid Profile (Lipogram)",
+      "ECG and ECHO",
+      "Troponin-T",
+      "D – Dimer",
+    ],
+  },
   {
     name: "Blue-day Package - INDIVIDUAL",
     price: "14,200",
@@ -149,6 +150,7 @@ export const individualData = [
 
   {
     name: "Emerald package (maxi)",
+    price: "95,400",
     items: [
       "HbA1C",
       "Inorganic Phosphate",
@@ -169,27 +171,27 @@ export const individualData = [
       "Liquid Based Cytology (LBC)",
     ],
   },
-  {
-    name: "Pre-Nuptial",
-    items: [
-      "Blood Grouping (ABO & Rh Typing)",
-      "Hb Electrophoresis /Genotype (Quantitative)",
-      "Hepatitis B Surface Antigen (HBsAg) Rapid",
-      "HIV I & II Rapid",
-      "BHCG- Qualitative (Pregnancy Test)",
-    ],
-  },
-  {
-    name: "Emerald fertility profile (mini)",
-    price: "33,800",
-    items: [
-      "Estradiol",
-      "Follicule Stimulating Hormone (FSH)",
-      "Luteinizing Hormone (LH)",
-      "Prolactin",
-      "Progesterone (Day 3)",
-    ],
-  },
+  // {
+  //   name: "Pre-Nuptial",
+  //   items: [
+  //     "Blood Grouping (ABO & Rh Typing)",
+  //     "Hb Electrophoresis /Genotype (Quantitative)",
+  //     "Hepatitis B Surface Antigen (HBsAg) Rapid",
+  //     "HIV I & II Rapid",
+  //     "BHCG- Qualitative (Pregnancy Test)",
+  //   ],
+  // },
+  // {
+  //   name: "Emerald fertility profile (mini)",
+  //   price: "33,800",
+  //   items: [
+  //     "Estradiol",
+  //     "Follicule Stimulating Hormone (FSH)",
+  //     "Luteinizing Hormone (LH)",
+  //     "Prolactin",
+  //     "Progesterone (Day 3)",
+  //   ],
+  // },
   {
     name: "Emerald fertility profile (mini)",
     price: "37,101",
@@ -271,6 +273,7 @@ export const individualData = [
   },
   {
     name: "Vitality package (Basic)- INDIVIDUAL",
+    price: "17,700",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -298,6 +301,7 @@ export const individualData = [
   },
   {
     name: "Topaz package (maxi) - INDIVIDUAL",
+    price: "93,100",
     items: [
       "HbA1C",
       "Inorganic Phosphate",
@@ -318,18 +322,18 @@ export const individualData = [
       "Urinalysis",
     ],
   },
-  {
-    name: "Pre Employment - CORPORATE",
-    items: [
-      "Sputum AFB - Tuberculosis test",
-      "HIV I & II Rapid",
-      "HBsAG",
-      "Full Blood Count",
-      "Genotype test",
-      "Drug of Abuse",
-      "Medical history & complete Examination",
-    ],
-  },
+  // {
+  //   name: "Pre Employment - CORPORATE",
+  //   items: [
+  //     "Sputum AFB - Tuberculosis test",
+  //     "HIV I & II Rapid",
+  //     "HBsAG",
+  //     "Full Blood Count",
+  //     "Genotype test",
+  //     "Drug of Abuse",
+  //     "Medical history & complete Examination",
+  //   ],
+  // },
 ];
 
 export const conventionalPackages = [
