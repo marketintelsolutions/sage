@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eacb2b23.css",
-    "main.js": "/static/js/main.1be24b87.js",
+    "main.css": "/static/css/main.d9b2c083.css",
+    "main.js": "/static/js/main.4ab2557b.js",
     "static/media/microscope.jpg": "/static/media/microscope.ff54f726eec182353280.jpg",
     "static/media/microbiology.jpg": "/static/media/microbiology.915d492a69982f0cf2b8.jpg",
     "static/media/xray.jpg": "/static/media/xray.573e3865de364409da23.jpg",
@@ -45,11 +45,13 @@
     "static/media/echocardiogram.jpg": "/static/media/echocardiogram.b7eb4f818cb1653dad4a.jpg",
     "static/media/logo-icon.svg": "/static/media/logo-icon.80d26e6fcc2d7cdaf1c1f20598c707c7.svg",
     "index.html": "/index.html",
-    "main.eacb2b23.css.map": "/static/css/main.eacb2b23.css.map",
-    "main.1be24b87.js.map": "/static/js/main.1be24b87.js.map"
+    "static/media/rightArrow.svg": "/static/media/rightArrow.e4b533a9d1cd65bfd5dd92f9cc76fedf.svg",
+    "static/media/leftArrow.svg": "/static/media/leftArrow.03b22c301dfdab133b13733f11e045d9.svg",
+    "main.d9b2c083.css.map": "/static/css/main.d9b2c083.css.map",
+    "main.4ab2557b.js.map": "/static/js/main.4ab2557b.js.map"
   },
   "entrypoints": [
-    "static/css/main.eacb2b23.css",
-    "static/js/main.1be24b87.js"
+    "static/css/main.d9b2c083.css",
+    "static/js/main.4ab2557b.js"
   ]
 }
