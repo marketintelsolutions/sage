@@ -93,7 +93,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Blue-day Package - INDIVIDUAL",
+    name: "Blue-day Package",
     price: "14,200",
     items: [
       "Erythrocyte Sedimentation Rate (ESR)",
@@ -106,7 +106,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Social package - INDIVIDUAL",
+    name: "Social package",
     price: "25,600",
     items: [
       "Full Blood Count",
@@ -120,7 +120,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Vitality package (Basic) - INDIVIDUAL",
+    name: "Vitality package (Basic)",
     price: "17,700",
     items: [
       "Fasting Blood Sugar (FBS)",
@@ -132,7 +132,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Emerald package (mini)-INDIVIDUAL",
+    name: "Emerald package (mini)",
     price: "40,700",
     items: [
       "Fasting Blood Sugar (FBS)",
@@ -260,7 +260,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Topaz fertility profile (maxi)- INDIVIDUAL",
+    name: "Topaz fertility profile (maxi)",
     price: "39,200",
     items: [
       "Follicule Stimulating Hormone (FSH)",
@@ -272,7 +272,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Vitality package (Basic)- INDIVIDUAL",
+    name: "Vitality package (Basic)",
     price: "17,700",
     items: [
       "Fasting Blood Sugar (FBS)",
@@ -284,7 +284,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Topaz package (mini) - INDIVIDUAL",
+    name: "Topaz package (mini)",
     price: "38,900",
     items: [
       "Fasting Blood Sugar (FBS)",
@@ -300,7 +300,7 @@ export const individualData = [
     ],
   },
   {
-    name: "Topaz package (maxi) - INDIVIDUAL",
+    name: "Topaz package (maxi)",
     price: "93,100",
     items: [
       "HbA1C",
