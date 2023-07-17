@@ -28,7 +28,7 @@ const Home = () => {
       if (check.length > 0) {
         setSearchData([...data, "Others"]);
       } else {
-        console.log("hello");
+        // console.log("hello");
         setSearchData(["Others"]);
       }
     } else {

@@ -84,7 +84,7 @@ const PreNav = () => {
               <SiTiktok />
             </a>
           </div>
-          <a href="#">
+          <a href="http://sagediag.elabassist.com/" target="_blank">
             <button>Test Results</button>
           </a>
         </div>
