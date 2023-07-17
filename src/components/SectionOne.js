@@ -35,7 +35,7 @@ const SectionOne = () => {
       }
 
       setPage((prevPage) => prevPage + 100);
-    }, 3000);
+    }, 7000);
 
     return () => {
       clearTimeout(timeout);

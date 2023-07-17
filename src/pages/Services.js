@@ -62,7 +62,7 @@ const Services = ({ _, scrollPosition }) => {
           Provide innovative, timely,
           <br /> and quality medical diagnostics services
         </h2>
-        <p>Cutting-Edge Molecular Lab Solutions</p>
+        <p>wholistic approach to quality service</p>
       </div>
       <div className="services-center">
         <div>
