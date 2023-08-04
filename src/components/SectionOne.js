@@ -27,7 +27,7 @@ const SectionOne = () => {
     //   }, 3000);
     // });
     const timeout = setTimeout(() => {
-      let max = 200;
+      let max = 300;
 
       if (page === max) {
         setPage(0);
@@ -45,13 +45,13 @@ const SectionOne = () => {
   const scroll = (direction) => {
     if (direction === "left") {
       if (page === 0) {
-        setPage(200);
+        setPage(300);
         return;
       }
       setPage(page - 100);
       return;
     } else if (direction === "right") {
-      if (page === 200) {
+      if (page === 300) {
         setPage(0);
         return;
       }
