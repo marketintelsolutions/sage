@@ -15,17 +15,6 @@ const SectionOne = () => {
   useEffect(() => {
     setText(false);
 
-    // homePage.map((_, index) => {
-    //   const current = `${index}00`;
-    //   let max = "400";
-
-    //   if (page === max) {
-    //     setPage(0);
-    //   }
-    //   const timeout = setTimeout(() => {
-    //     setPage(current);
-    //   }, 3000);
-    // });
     const timeout = setTimeout(() => {
       let max = 300;
 
