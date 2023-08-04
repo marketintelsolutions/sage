@@ -27,7 +27,7 @@ const SectionOne = () => {
     //   }, 3000);
     // });
     const timeout = setTimeout(() => {
-      let max = 300;
+      let max = 200;
 
       if (page === max) {
         setPage(0);
@@ -45,13 +45,13 @@ const SectionOne = () => {
   const scroll = (direction) => {
     if (direction === "left") {
       if (page === 0) {
-        setPage(300);
+        setPage(200);
         return;
       }
       setPage(page - 100);
       return;
     } else if (direction === "right") {
-      if (page === 300) {
+      if (page === 200) {
         setPage(0);
         return;
       }
@@ -79,9 +79,12 @@ const SectionOne = () => {
           if (index === 0) {
             active = `${index}` === `${page}`;
           }
-          console.log(active);
+          // console.log(active);
           return (
-            <div className={`${active ? "section active" : "section"}`}></div>
+            <div
+              key={index}
+              className={`${active ? "section active" : "section"}`}
+            ></div>
           );
         })}
       </div>
