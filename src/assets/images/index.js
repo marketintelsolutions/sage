@@ -28,6 +28,7 @@ import service from "./services.jpg";
 import error from "./error.jpg";
 import faqblue from "./faqblue.jpg";
 import team6 from "./team6.png";
+import businessteam from "./businessteam.jpg";
 
 export {
   adedokun,
@@ -60,4 +61,5 @@ export {
   error,
   faqblue,
   team6,
+  businessteam
 };

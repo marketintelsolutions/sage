@@ -34,43 +34,9 @@ export const corporateData = [
 ];
 
 export const individualData = [
-  // {
-  //   name: "Support Staff package (mini) - CORPORATE",
-  //   items: [
-  //     "PCV",
-  //     "Hepatitis B Surface Antigen (HBsAg) Rapid",
-  //     "HIV I & II Rapid",
-  //     "BHCG- Qualitative (Pregnancy Test)",
-  //     "Widal test",
-  //     "Sputum AFB - Tuberculosis test",
-  //   ],
-  // },
-  // {
-  //   name: "Support Staff package (maxi) - CORPORATE",
-  //   items: [
-  //     "Hb Electrophoresis /Genotype (Quantitative)",
-  //     "Full blood count",
-  //     "Widal test",
-  //     "Hepatitis B Surface Antigen (HBsAg) Rapid",
-  //     "HIV I & II Antibody",
-  //     "BHCG- Qualitative (Pregnancy Test)",
-  //     "Hepatitis C Virus Ab (Rapid)",
-  //     "Sputm AFB - Tuberculosis test",
-  //   ],
-  // },
-  // {
-  //   name: "Cardiac Screen - INDIVIDUAL",
-  //   items: [
-  //     "Creatine Kinase-MB (CK-MB)",
-  //     "Lipid Profile (Lipogram)",
-  //     "Kidney Function Test",
-  //     "Troponin-T",
-  //     "D – Dimer",
-  //   ],
-  // },
   {
     name: "Cardiac Screen - mini",
-    price: "31,500",
+    price: "42,500",
     items: [
       "Chest X-RAY",
       "Creatine Kinase-MB (CK-MB)",
@@ -82,7 +48,7 @@ export const individualData = [
   },
   {
     name: "Cardiac Screen - maxi",
-    price: "54,100",
+    price: "73,000",
     items: [
       "Chest X-RAY",
       "Creatine Kinase-MB (CK-MB)",
@@ -94,7 +60,7 @@ export const individualData = [
   },
   {
     name: "Blue-day Package",
-    price: "14,200",
+    price: "19,200",
     items: [
       "Erythrocyte Sedimentation Rate (ESR)",
       "Full Blood Count",
@@ -107,7 +73,7 @@ export const individualData = [
   },
   {
     name: "Social package",
-    price: "25,600",
+    price: "34,500",
     items: [
       "Full Blood Count",
       "Malaria (Thick and Thin Films)",
@@ -121,7 +87,7 @@ export const individualData = [
   },
   {
     name: "Vitality package (Basic)",
-    price: "17,700",
+    price: "23,900",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -133,7 +99,7 @@ export const individualData = [
   },
   {
     name: "Emerald package (mini)",
-    price: "40,700",
+    price: "54,900",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Lipid Profile (Lipogram)",
@@ -150,7 +116,7 @@ export const individualData = [
 
   {
     name: "Emerald package (maxi)",
-    price: "95,400",
+    price: "128,790",
     items: [
       "HbA1C",
       "Inorganic Phosphate",
@@ -171,30 +137,9 @@ export const individualData = [
       "Liquid Based Cytology (LBC)",
     ],
   },
-  // {
-  //   name: "Pre-Nuptial",
-  //   items: [
-  //     "Blood Grouping (ABO & Rh Typing)",
-  //     "Hb Electrophoresis /Genotype (Quantitative)",
-  //     "Hepatitis B Surface Antigen (HBsAg) Rapid",
-  //     "HIV I & II Rapid",
-  //     "BHCG- Qualitative (Pregnancy Test)",
-  //   ],
-  // },
-  // {
-  //   name: "Emerald fertility profile (mini)",
-  //   price: "33,800",
-  //   items: [
-  //     "Estradiol",
-  //     "Follicule Stimulating Hormone (FSH)",
-  //     "Luteinizing Hormone (LH)",
-  //     "Prolactin",
-  //     "Progesterone (Day 3)",
-  //   ],
-  // },
   {
     name: "Emerald fertility profile (mini)",
-    price: "37,101",
+    price: "45,600",
     items: [
       "Estradiol",
       "Follicule Stimulating Hormone (FSH)",
@@ -205,7 +150,7 @@ export const individualData = [
   },
   {
     name: "Emerald fertility profile (maxi)",
-    price: "69,100",
+    price: "93,200",
     items: [
       "Thyroid Stimulating Hormone (TSH)",
       "Estradiol",
@@ -219,7 +164,7 @@ export const individualData = [
   },
   {
     name: "PCOS(mini)",
-    price: "24,000",
+    price: "32,400",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -231,7 +176,7 @@ export const individualData = [
   },
   {
     name: "PCOS(maxi)",
-    price: "79,000",
+    price: "106,650",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Thyroid Stimulating Hormone (TSH)",
@@ -248,12 +193,12 @@ export const individualData = [
   },
   {
     name: "Cervical Cancer Screening",
-    price: "10,800",
+    price: "14,580",
     items: ["Liquid Based Cytology (LBC)"],
   },
   {
     name: "Topaz fertility profile (mini)",
-    price: "15,800",
+    price: "21,300",
     items: [
       "Seminal Fluid Analysis (SFA)",
       "Semen: Microscopy, Culture & Sensitivity (MCS)",
@@ -261,7 +206,7 @@ export const individualData = [
   },
   {
     name: "Topaz fertility profile (maxi)",
-    price: "39,200",
+    price: "52,900",
     items: [
       "Follicule Stimulating Hormone (FSH)",
       "Luteinizing Hormone (LH)",
@@ -273,7 +218,7 @@ export const individualData = [
   },
   {
     name: "Vitality package (Basic)",
-    price: "17,700",
+    price: "23,900",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Total Cholesterol",
@@ -285,7 +230,7 @@ export const individualData = [
   },
   {
     name: "Topaz package (mini)",
-    price: "38,900",
+    price: "52,500",
     items: [
       "Fasting Blood Sugar (FBS)",
       "Lipid Profile (Lipogram)",
@@ -301,7 +246,7 @@ export const individualData = [
   },
   {
     name: "Topaz package (maxi)",
-    price: "93,100",
+    price: "125,680",
     items: [
       "HbA1C",
       "Inorganic Phosphate",
@@ -322,18 +267,6 @@ export const individualData = [
       "Urinalysis",
     ],
   },
-  // {
-  //   name: "Pre Employment - CORPORATE",
-  //   items: [
-  //     "Sputum AFB - Tuberculosis test",
-  //     "HIV I & II Rapid",
-  //     "HBsAG",
-  //     "Full Blood Count",
-  //     "Genotype test",
-  //     "Drug of Abuse",
-  //     "Medical history & complete Examination",
-  //   ],
-  // },
 ];
 
 export const conventionalPackages = [
@@ -354,7 +287,7 @@ export const conventionalPackages = [
       "Total Cholesterol",
       "Thyroid Panel (FT3 + FT4 + TSH)",
     ],
-    price: "47,680",
+    price: "64,400",
   },
   {
     name: "SILVER",
@@ -386,7 +319,7 @@ export const conventionalPackages = [
       "PSA",
       "Spirometry",
     ],
-    price: "151,080",
+    price: "204,000",
   },
   {
     name: "GOLD",
@@ -423,7 +356,7 @@ export const conventionalPackages = [
       "CA 19.9",
       "D Dimer",
     ],
-    price: "225,080",
+    price: "303,800",
   },
   {
     name: "DIAMOND",
@@ -461,7 +394,7 @@ export const conventionalPackages = [
       "D Dimer",
       "Prostate (TRUSS)/LBC",
     ],
-    price: "237,080",
+    price: "320,000",
   },
   {
     name: "PLATINUM",
@@ -500,7 +433,7 @@ export const conventionalPackages = [
       "Prostate (TRUSS)/LBC",
       "Echocardiography",
     ],
-    price: "267,080",
+    price: "360,550",
   },
 ];
 

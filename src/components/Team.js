@@ -6,6 +6,7 @@ import {
   oluwagbogo,
   team6,
   osadugba,
+  businessteam
 } from "../assets/images";
 
 const people = [
@@ -25,21 +26,14 @@ const people = [
     image: oluwagbogo,
   },
   {
-    name: "Adedokun Adedayo A.",
-    role: "account manager",
-    image: adedokun,
-  },
-  {
     name: "Nancy Clement",
     role: "HR/admin officer",
     image: nancy,
   },
   {
     name: "EZIKANYI CHRIS",
-    role: "Business Development Lead",
-    // image:
-    //   "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-    image: team6,
+    role: "Business Development Team",
+    image: businessteam,
   },
 ];
 

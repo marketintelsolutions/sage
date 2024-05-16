@@ -14,7 +14,7 @@ const Individual = () => {
     <section className="individual">
       <div
         className={`${text ? "top translated" : "top"}`}
-        // style={{ backgroundImage: `url(${individual})` }}
+      // style={{ backgroundImage: `url(${individual})` }}
       >
         <div className="image">
           <LazyLoadImage
@@ -31,20 +31,20 @@ const Individual = () => {
       <div className="content">
         <h2>Conventional Individual Packages</h2>
         <div className="packages">
-          {conventionalPackages.map((item) => {
+          {conventionalPackages.map((item, index) => {
             const { name, tests, price } = item;
             return (
-              <div className="item">
+              <div className="item" key={index}>
                 <h2>{name}</h2>
                 {price ? <h3>₦{price}</h3> : <h3>₦---,---</h3>}
                 <hr />
                 <div className="text">
-                  {tests.map((text) => {
+                  {tests.map((text, index) => {
                     return (
-                      <>
+                      <div key={index}>
                         <p>{text}</p>
                         <hr />
-                      </>
+                      </div>
                     );
                   })}
                 </div>
