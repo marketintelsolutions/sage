@@ -31,7 +31,7 @@ const people = [
     image: nancy,
   },
   {
-    name: "EZIKANYI CHRIS",
+    name: "DEVELOPMENT TEAM",
     role: "Business Development Team",
     image: businessteam,
   },
