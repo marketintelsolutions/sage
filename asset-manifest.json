@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.35ba70d7.css",
-    "main.js": "/static/js/main.4613ba21.js",
+    "main.css": "/static/css/main.d2ed117a.css",
+    "main.js": "/static/js/main.4598b94a.js",
     "static/media/microscope.jpg": "/static/media/microscope.ff54f726eec182353280.jpg",
     "static/media/slide1.JPG": "/static/media/slide1.28b8013b105ba2f8e368.JPG",
     "static/media/microbiology.jpg": "/static/media/microbiology.915d492a69982f0cf2b8.jpg",
@@ -34,6 +34,7 @@
     "static/media/oluwagbogo.png": "/static/media/oluwagbogo.0451d2394031206f0a5e.png",
     "static/media/healthCheck.jpg": "/static/media/healthCheck.5c6bf96ee0e5da09dc51.jpg",
     "static/media/claudius.png": "/static/media/claudius.d8b70e7d5850bc7cc237.png",
+    "static/media/businessteam.jpg": "/static/media/businessteam.d9e8d2307e2d209c8fed.jpg",
     "static/media/team6.png": "/static/media/team6.2fd778a46cce8bbeba94.png",
     "static/media/adedokun.png": "/static/media/adedokun.af8c0899d8033b6e2b31.png",
     "static/media/logo2.png": "/static/media/logo2.65e0590fc3d5c68b49a2.png",
@@ -50,11 +51,11 @@
     "index.html": "/index.html",
     "static/media/rightArrow.svg": "/static/media/rightArrow.e4b533a9d1cd65bfd5dd92f9cc76fedf.svg",
     "static/media/leftArrow.svg": "/static/media/leftArrow.03b22c301dfdab133b13733f11e045d9.svg",
-    "main.35ba70d7.css.map": "/static/css/main.35ba70d7.css.map",
-    "main.4613ba21.js.map": "/static/js/main.4613ba21.js.map"
+    "main.d2ed117a.css.map": "/static/css/main.d2ed117a.css.map",
+    "main.4598b94a.js.map": "/static/js/main.4598b94a.js.map"
   },
   "entrypoints": [
-    "static/css/main.35ba70d7.css",
-    "static/js/main.4613ba21.js"
+    "static/css/main.d2ed117a.css",
+    "static/js/main.4598b94a.js"
   ]
 }
