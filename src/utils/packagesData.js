@@ -149,7 +149,7 @@ export const individualData = [
       "Follicule Stimulating Hormone (FSH)",
       "Luteinizing Hormone (LH)",
       "Prolactin",
-      "Progesterone (Day 4)",
+      "Progesterone (Day 3)",
     ],
   },
   {
