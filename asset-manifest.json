@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d2ed117a.css",
-    "main.js": "/static/js/main.cf85f9ac.js",
+    "main.js": "/static/js/main.d104e23e.js",
     "static/media/microscope.jpg": "/static/media/microscope.ff54f726eec182353280.jpg",
     "static/media/slide1.JPG": "/static/media/slide1.28b8013b105ba2f8e368.JPG",
     "static/media/microbiology.jpg": "/static/media/microbiology.915d492a69982f0cf2b8.jpg",
@@ -26,12 +26,11 @@
     "static/media/welcome.jpg": "/static/media/welcome.59a78e898fedb588fc90.jpg",
     "static/media/home.jpg": "/static/media/home.b2af278e71663b0d1650.jpg",
     "static/media/hmo.jpg": "/static/media/hmo.d37899d4e4505bed767b.jpg",
+    "static/media/franklyn.png": "/static/media/franklyn.373f6a58bad74b2d6350.png",
     "static/media/error.jpg": "/static/media/error.db3d96a71225e5f8a106.jpg",
     "static/media/ecg.jpg": "/static/media/ecg.184b8d1d70b372222f35.jpg",
     "static/media/lab.jpg": "/static/media/lab.5307f698f3116a89a9c1.jpg",
     "static/media/immunoassay.jpg": "/static/media/immunoassay.6a8ff71621d8f4182de3.jpg",
-    "static/media/osadugba.png": "/static/media/osadugba.b1d6dbd15feb86b4e6cb.png",
-    "static/media/oluwagbogo.png": "/static/media/oluwagbogo.0451d2394031206f0a5e.png",
     "static/media/healthCheck.jpg": "/static/media/healthCheck.5c6bf96ee0e5da09dc51.jpg",
     "static/media/claudius.png": "/static/media/claudius.d8b70e7d5850bc7cc237.png",
     "static/media/businessteam.jpg": "/static/media/businessteam.d9e8d2307e2d209c8fed.jpg",
@@ -52,10 +51,10 @@
     "static/media/rightArrow.svg": "/static/media/rightArrow.e4b533a9d1cd65bfd5dd92f9cc76fedf.svg",
     "static/media/leftArrow.svg": "/static/media/leftArrow.03b22c301dfdab133b13733f11e045d9.svg",
     "main.d2ed117a.css.map": "/static/css/main.d2ed117a.css.map",
-    "main.cf85f9ac.js.map": "/static/js/main.cf85f9ac.js.map"
+    "main.d104e23e.js.map": "/static/js/main.d104e23e.js.map"
   },
   "entrypoints": [
     "static/css/main.d2ed117a.css",
-    "static/js/main.cf85f9ac.js"
+    "static/js/main.d104e23e.js"
   ]
 }
