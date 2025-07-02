@@ -1,40 +1,40 @@
 import React from "react";
 import {
-  adedokun,
+  //adedokun,
   nancy,
-  claudius,
-  oluwagbogo,
-  team6,
-  osadugba,
-  businessteam
+  man,
+  //oluwagbogo,
+  //team6,
+  franklyn,
+ // businessteam
 } from "../assets/images";
 
 const people = [
   {
-    name: "Olumide Osadugba",
-    role: "Chief operating officer (C.O.O.)",
-    image: osadugba,
+    name: "Franklyn Ovbigbahon",
+    role: "General Manager (GM)",
+    image: franklyn,
   },
   {
-    name: "Cladius Eromosele",
-    role: "laboratory manager",
-    image: claudius,
+    name: "Ganiyu Olayiwola",
+    role: "Business Development Manager",
+    image: man,
   },
-  {
+  /*{
     name: "Oluwagbogo Christiana O.",
     role: "medical officer",
     image: oluwagbogo,
-  },
+  },*/
   {
     name: "Nancy Clement",
     role: "HR/admin officer",
     image: nancy,
   },
-  {
+  /*{
     name: "DEVELOPMENT TEAM",
     role: "Business Development Team",
     image: businessteam,
-  },
+  },*/
 ];
 
 const Team = () => {

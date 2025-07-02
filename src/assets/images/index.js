@@ -1,8 +1,9 @@
 import adedokun from "./adedokun.png";
 import nancy from "./nancy.png";
 import claudius from "./claudius.png";
-import oluwagbogo from "./oluwagbogo.png";
-import osadugba from "./osadugba.png";
+import man from "./man.png";
+import franklyn from "./franklyn.png";
+//import adedokun from "./adedokun.png";
 import histology from "./histology.jpg";
 import microbiology from "./microbiology.jpg";
 import pathology from "./pathology.jpg";
@@ -34,8 +35,10 @@ export {
   adedokun,
   nancy,
   claudius,
-  oluwagbogo,
-  osadugba,
+  //oluwagbogo,
+  man,
+  franklyn,
+  //adedokun,
   histology,
   microbiology,
   pathology,
