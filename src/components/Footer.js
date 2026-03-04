@@ -88,14 +88,14 @@ const Footer = () => {
             <span>
               <BsTelephone />
             </span>{" "}
-            08139289067
+            0814 178 6966
           </p>
-          <p>
+          {/* <p>
             <span>
               <RiWhatsappLine />
             </span>{" "}
             08139239147
-          </p>
+          </p> */}
         </div>
         <div className="item">
           <h1>get connected</h1>
@@ -130,7 +130,7 @@ const Footer = () => {
             </a>
           </div>
           <p>info@sagedsl.com</p>
-          <p>enquiries@sagedsl.com</p>
+          {/* <p>enquiries@sagedsl.com</p> */}
         </div>
       </div>
       <hr />

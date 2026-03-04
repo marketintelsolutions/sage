@@ -6,7 +6,8 @@ import {
   //oluwagbogo,
   //team6,
   franklyn,
- // businessteam
+  lydia
+  // businessteam
 } from "../assets/images";
 
 const people = [
@@ -16,9 +17,9 @@ const people = [
     image: franklyn,
   },
   {
-    name: "Ganiyu Olayiwola",
+    name: "Lydia Omowaye",
     role: "Business Development Manager",
-    image: man,
+    image: lydia,
   },
   /*{
     name: "Oluwagbogo Christiana O.",
