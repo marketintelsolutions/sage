@@ -27,7 +27,7 @@ const PreNav = () => {
             </span>
             <div className="text">
               {/* <p className="head">For Enquiries</p> */}
-              <p className="desc">enquiries@sagedsl.com</p>
+              <p className="desc">info@sagedsl.com</p>
             </div>
           </div>
           {/* <div className="item">
@@ -43,7 +43,7 @@ const PreNav = () => {
             </span>
             <div className="text">
               {/* <p className="head">Customer Care</p> */}
-              <p className="desc">08139289067</p>
+              <p className="desc">0814 178 6966</p>
             </div>
           </div>
           <div className="item location">

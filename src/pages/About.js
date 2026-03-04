@@ -11,7 +11,6 @@ import {
 import { TbHeartHandshake, TbBulb } from "react-icons/tb";
 import { CiDumbbell } from "react-icons/ci";
 import { FaPeopleCarry } from "react-icons/fa";
-import { GoLocation } from "react-icons/go";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { ultrasound, microbiology, spirometry } from "../assets/images";
 
@@ -28,7 +27,7 @@ const About = () => {
       <section className="about">
         <div
           className={`${text ? "top translated" : "top"}`}
-          // style={{ backgroundImage: `url(${items})` }}
+        // style={{ backgroundImage: `url(${items})` }}
         >
           <div className="image">
             <LazyLoadImage

@@ -3,6 +3,7 @@ import nancy from "./nancy.png";
 import claudius from "./claudius.png";
 import man from "./man.png";
 import franklyn from "./franklyn.png";
+import lydia from "./lydia.png";
 //import adedokun from "./adedokun.png";
 import histology from "./histology.jpg";
 import microbiology from "./microbiology.jpg";
@@ -38,6 +39,7 @@ export {
   //oluwagbogo,
   man,
   franklyn,
+  lydia,
   //adedokun,
   histology,
   microbiology,
