@@ -20,7 +20,7 @@ const HomeService = () => {
     console.log("sent");
 
     let formName = "User Getting in Touch";
-    let recipient_email = "enquiries@sagedsl.com";
+    let recipient_email = "info@sagedsl.com";
 
     console.log(formData);
 
