@@ -146,7 +146,7 @@ function FeedbackForm() {
     const fields = Object.keys(formData);
 
     let formName = "User Getting in Touch";
-    let recipient_email = "enquiries@sagedsl.com";
+    let recipient_email = "info@sagedsl.com";
 
     const newData = { ...formData, fields, formName, recipient_email };
 
@@ -266,7 +266,7 @@ function FeedbackForm() {
         </div>
 
         {knowSageDiagnostics === "Very Well" ||
-        knowSageDiagnostics === "Somewhat" ? (
+          knowSageDiagnostics === "Somewhat" ? (
           <div className="diagnostics">
             <label className="label">
               How long have you used SAGE DIAGNOSTICS?
