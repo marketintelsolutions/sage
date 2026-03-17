@@ -18,7 +18,7 @@ const people = [
   },
   {
     name: "Lydia Omowaye",
-    role: "Operations Manager",
+    role: "Operation Manager",
     image: lydia,
   },
   /*{
