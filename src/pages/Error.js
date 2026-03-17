@@ -4,7 +4,7 @@ import { error } from "../assets/images";
 import axios from "axios";
 
 const Error = () => {
-  const [recipient_email, setEmail] = useState("igbagboleye2@gmail.com");
+  const [recipient_email, setEmail] = useState("info@sagedsl.com");
   const [subject, setSubject] = useState("testing email sender");
   const [message, setMessage] = useState("this had better work");
 
