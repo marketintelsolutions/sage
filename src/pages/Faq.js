@@ -36,7 +36,8 @@ const Faq = () => {
     console.log(formData);
 
     let formName = "User Getting in Touch";
-    let recipient_email = "igbagboleye2@gmail.com";
+    let recipient_email = "info@sagedsl.com";
+
 
     const { firstname, lastname, email, phone, subject, message } = formData;
 

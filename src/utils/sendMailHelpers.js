@@ -14,7 +14,7 @@ export const sendmail = ({
 }) => {
   if (firstname && lastname && email && phone && subject && message) {
     axios
-      // .post("http://localhost:5000/send_email", {
+      // .post("http://localhost:5050/send_email", {
       .post("https://sagebackend-207c01373df4.herokuapp.com/send_email", {
         firstname,
         lastname,
@@ -45,8 +45,8 @@ export const sendhome = ({
 }) => {
   if (name && email && message && address && phone) {
     axios
-      // .post("http://localhost:5000/send_home", {
-      .post("https://sagebackend-207c01373df4.herokuapp.com/send_email", {
+      // .post("http://localhost:5050/send_home", {
+      .post("https://sagebackend-207c01373df4.herokuapp.com/send_home", {
         name,
         email,
         message,
@@ -100,7 +100,6 @@ export const sendbooking = ({
   ) {
     axios
       .post("https://sagebackend-207c01373df4.herokuapp.com/send_booking", {
-        // .post("https://sagebackend-207c01373df4.herokuapp.com/send_email", {
         slot,
         investigation,
         date,
@@ -157,8 +156,8 @@ export const sendcorporate = ({
     message
   ) {
     axios
-      // .post("http://localhost:5000/send_corporate", {
-      .post("https://sagebackend-207c01373df4.herokuapp.com/send_email", {
+      // .post("http://localhost:5050/send_corporate", {
+      .post("https://sagebackend-207c01373df4.herokuapp.com/send_corporate", {
         firstname,
         lastname,
         company,
@@ -234,8 +233,8 @@ export const sendfeedback = ({
     feedback
   ) {
     axios
-      // .post("http://localhost:5000/send_feedback", {
-      .post("https://sagebackend-207c01373df4.herokuapp.com/send_email", {
+      // .post("http://localhost:5050/send_feedback", {
+      .post("https://sagebackend-207c01373df4.herokuapp.com/send_feedback", {
         doctorName,
         contactNumber,
         address,
