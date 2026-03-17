@@ -41,7 +41,7 @@ const Greeting = ({ setGreetOpen }) => {
               <h1>Welcome to our site</h1>
               <p>
                 You can check your Test Results here, just click on the button
-                below
+                below.
               </p>
               <button>test result</button>
             </div>
