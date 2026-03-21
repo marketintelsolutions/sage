@@ -71,7 +71,7 @@ const PreNav = () => {
               target="_blank"
               className="facebook"
             >
-              {/* <BsFacebook /> */} <RiFacebookFill />
+              <RiFacebookFill />
             </a>
             <a
               href="https://instagram.com/sage_diagnostics?igshid=ZDdkNTZiNTM="

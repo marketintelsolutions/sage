@@ -43,7 +43,7 @@ const Greeting = ({ setGreetOpen }) => {
                 You can check your Test Results here, just click on the button
                 below.
               </p>
-              <button>test result</button>
+              <a target="_blank" href="http://sagediag.elabassist.com/"><button>test result</button></a>
             </div>
             <div className="right">
               <span onClick={() => setGreetOpen(false)}>
