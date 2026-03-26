@@ -20,8 +20,7 @@ const HomeService = () => {
     console.log("sent");
 
     let formName = "User Getting in Touch";
-    // let recipient_email = "info@sagedsl.com";
-    let recipient_email = "igbagboleye2@gmail.com";
+    let recipient_email = "info@sagedsl.com";
 
     console.log(formData);
 
