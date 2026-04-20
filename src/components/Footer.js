@@ -53,12 +53,12 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link to="/individual" className="links">
+            <Link to="/individual-health-screening-packages-nigeria" className="links">
               Individual Packages
             </Link>
           </p>
           <p>
-            <Link to="/corporate" className="links">
+            <Link to="/corporate-health-screening-services-nigeria" className="links">
               Corporate Packages
             </Link>
           </p>

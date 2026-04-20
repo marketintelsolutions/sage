@@ -50,10 +50,10 @@ const Navbar = () => {
             Health Packages <AiOutlineCaretDown />
           </p>
           <span className={`${isOpen && "open"}`}>
-            <Link to="/corporate" onClick={toggle}>
+            <Link to="/corporate-health-screening-services-nigeria" onClick={toggle}>
               Corporate
             </Link>
-            <Link to="/individual" onClick={toggle}>
+            <Link to="/individual-health-screening-packages-nigeria" onClick={toggle}>
               individual
             </Link>
           </span>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { individual } from "../assets/images";
 import { conventionalPackages, individualData } from "../utils/packagesData";
@@ -12,6 +13,14 @@ const Individual = () => {
   }, []);
   return (
     <section className="individual">
+      <Helmet>
+        <title>Individual Health Screening Packages in Nigeria — Sage DSL Diagnostic Centre</title>
+        <meta
+          name="description"
+          content="Explore individual health screening packages in Nigeria with Sage DSL, offering routine checkups, diagnostic tests, and preventive health screenings."
+        />
+        <link rel="canonical" href="https://sagedsl.com/individual-health-screening-packages-nigeria" />
+      </Helmet>
       <div
         className={`${text ? "top translated" : "top"}`}
       // style={{ backgroundImage: `url(${individual})` }}
