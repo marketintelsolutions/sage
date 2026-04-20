@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import FaqSearch from "../components/FaqSearch";
 import Newsletter from "../components/Newsletter";
 import Patners from "../components/Patners";
@@ -41,6 +42,14 @@ const Home = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Sage DSL — Medical Diagnostic Centre in Nigeria | Accurate Lab Tests & Health Screening</title>
+        <meta
+          name="description"
+          content="Sage DSL is a trusted medical diagnostic centre in Nigeria offering accurate lab tests, health screening, and reliable results for better healthcare decisions."
+        />
+        <link rel="canonical" href="https://sagedsl.com/" />
+      </Helmet>
       <SectionOne />
       {/* ABOUT */}
       <SectionTwo />

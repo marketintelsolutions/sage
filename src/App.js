@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import SharedLayout from "./components/SharedLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -19,8 +19,36 @@ function App() {
         <Route path="/services" index element={<Services />} />
         <Route path="/book-a-test" index element={<Patients />} />
         <Route path="/contact" index element={<Contact />} />
-        <Route path="/corporate" index element={<Corporate />} />
-        <Route path="/individual" index element={<Individual />} />
+        <Route
+          path="/corporate-health-screening-services-nigeria"
+          index
+          element={<Corporate />}
+        />
+        <Route
+          path="/corporate"
+          index
+          element={
+            <Navigate
+              to="/corporate-health-screening-services-nigeria"
+              replace
+            />
+          }
+        />
+        <Route
+          path="/individual-health-screening-packages-nigeria"
+          index
+          element={<Individual />}
+        />
+        <Route
+          path="/individual"
+          index
+          element={
+            <Navigate
+              to="/individual-health-screening-packages-nigeria"
+              replace
+            />
+          }
+        />
         <Route path="/faq" index element={<Faq />} />
         <Route path="*" index element={<Error />} />
       </Routes>

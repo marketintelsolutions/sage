@@ -77,7 +77,6 @@ const Booking = () => {
 
     let formName = "APPOINTMENT BOOKING";
     let recipient_email = "info@sagedsl.com";
-    // let recipient_email = "igbagboleye2@gmail.com";
 
     const fields = Object.keys(formData);
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { corporateData, nigeriaStates } from "../utils/packagesData";
 import { corporate } from "../assets/images";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -107,6 +108,14 @@ const Corporate = () => {
 
   return (
     <section className="corporate">
+      <Helmet>
+        <title>Corporate Health Screening Services in Nigeria — Sage DSL Diagnostic Centre</title>
+        <meta
+          name="description"
+          content="Explore corporate health screening services in Nigeria with Sage DSL, including occupational health checks, pre-employment tests, and staff wellness packages."
+        />
+        <link rel="canonical" href="https://sagedsl.com/corporate-health-screening-services-nigeria" />
+      </Helmet>
       <div className={`${text ? "topmost translated" : "topmost"}`}>
         <div className="image">
           <LazyLoadImage
