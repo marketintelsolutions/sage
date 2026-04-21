@@ -43,10 +43,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Sage DSL — Medical Diagnostic Centre in Nigeria | Accurate Lab Tests & Health Screening</title>
+        <title>Sage DSL — Medical Diagnostic Centre in Lekki, Lagos | Accurate Lab Tests & Health Screening</title>
         <meta
           name="description"
-          content="Sage DSL is a trusted medical diagnostic centre in Nigeria offering accurate lab tests, health screening, and reliable results for better healthcare decisions."
+          content="Sage DSL is a trusted medical diagnostic centre in Lekki, Lagos offering accurate lab tests, health screening, and reliable results for better healthcare decisions."
         />
         <link rel="canonical" href="https://sagedsl.com/" />
       </Helmet>
