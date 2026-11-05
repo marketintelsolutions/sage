@@ -166,6 +166,11 @@ footer {
     font-size: 12px;
     letter-spacing: 1px;
 
+    & .subsidiary {
+      display: block;
+      margin-top: 6px;
+    }
+
     @media (max-width: $breakpoint-tablet) {
       font-size: 11px;
     }
