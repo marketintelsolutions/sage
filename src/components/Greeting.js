@@ -1,55 +1,73 @@
-import React from "react";
-import { AiOutlineCloseSquare } from "react-icons/ai";
+import { useEffect } from "react";
+import { IoClose } from "react-icons/io5";
 import welcome from "../assets/images/welcome.jpg";
-import lab from "../assets/images/lab.jpg";
 
 const Greeting = ({ setGreetOpen }) => {
-  const closeGreet = (e) => {
-    // console.log(e.target.classList.contains("greeting"));
+  const close = () => setGreetOpen(false);
 
-    if (e.target.classList.contains("greeting")) {
-      setGreetOpen(false);
-    }
-  };
+  useEffect(() => {
+    const onKey = (e) => e.key === "Escape" && setGreetOpen(false);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [setGreetOpen]);
 
   return (
-    <div className="greeting" onClick={(e) => closeGreet(e)}>
-      <div className="greeting-container">
-        <div className="group group-one">
-          <div className="group-center">
-            <div className="left">
-              <h1>Welcome To Sage</h1>
-              <p>
-                Welcome to Sage Diagnostic company! We are committed to
-                providing accurate and timely diagnostic solutions to help you
-                make informed decisions about your health. With our
-                state-of-the-art technology and experienced team of
-                professionals, you can trust that your health is in good hands.
-              </p>
-            </div>
-            <div className="right">
-              <span onClick={() => setGreetOpen(false)}>
-                <AiOutlineCloseSquare />
-              </span>
-              <img src={welcome} alt="welcome" />
-            </div>
-          </div>
+    <div
+      className="greeting"
+      onClick={(e) => e.target === e.currentTarget && close()}
+    >
+      <div
+        className="greeting-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="greeting-title"
+      >
+        <button
+          type="button"
+          className="greeting-close"
+          aria-label="Close welcome message"
+          onClick={close}
+        >
+          <IoClose />
+        </button>
+
+        <div className="greeting-media">
+          <img src={welcome} alt="Sage Diagnostics laboratory" />
         </div>
-        <div className="group group-two">
-          <div className="group-center">
-            <div className="left">
-              <h1>Welcome to our site</h1>
-              <p>
-                You can check your Test Results here, just click on the button
-                below.
-              </p>
-              <a target="_blank" href="http://sagediag.elabassist.com/"><button>test result</button></a>
-            </div>
-            <div className="right">
-              <span onClick={() => setGreetOpen(false)}>
-                <AiOutlineCloseSquare />
-              </span>
-              <img src={lab} alt="lab" />
+
+        <div className="greeting-body">
+          <span className="greeting-eyebrow">Welcome to our site</span>
+          <h2 id="greeting-title">Welcome To Sage</h2>
+          <p>
+            We are committed to providing accurate and timely diagnostic
+            solutions to help you make informed decisions about your health.
+            With state-of-the-art technology and an experienced team, your
+            health is in good hands.
+          </p>
+
+          <div className="greeting-results">
+            <p>Already had a test? Check your results online.</p>
+            <div className="greeting-actions">
+              <a
+                className="greeting-btn primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://sagediag.elabassist.com/"
+              >
+                View Test Results
+              </a>
+              <button
+                type="button"
+                className="greeting-btn ghost"
+                onClick={close}
+              >
+                Explore the site
+              </button>
             </div>
           </div>
         </div>

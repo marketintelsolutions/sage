@@ -134,7 +134,12 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p className="copyright">© SAGE Nigeria Copyright {date}</p>
+      <p className="copyright">
+        © SAGE Nigeria Copyright {date}
+        <span className="subsidiary">
+          A subsidiary of PanAfrican Capital Holding Company
+        </span>
+      </p>
     </footer>
   );
 };
