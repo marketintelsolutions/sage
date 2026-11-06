@@ -757,12 +757,70 @@ function vendorInfo({
   });
 }
 
+// =====================================================================================
+// NEWSLETTER
+// =====================================================================================
+
+const NEWSLETTER_RECIPIENT = process.env.NEWSLETTER_RECIPIENT || "info@sagedsl.com";
+
+const escapeHtml = (value = "") =>
+  String(value).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;",
+  })[c]);
+
+function subscribeNewsletter({ name, email } = {}) {
+  return new Promise((resolve, reject) => {
+    const cleanName = String(name || "").trim().slice(0, 100);
+    const cleanEmail = String(email || "").trim().slice(0, 254);
+
+    if (!cleanName || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
+      return reject({ status: 400, message: "Please provide a valid name and email" });
+    }
+
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: `${process.env.EMAIL}`,
+        pass: `${process.env.PASSWORD}`,
+      },
+    });
+
+    const mail_configs = {
+      from: process.env.EMAIL,
+      to: NEWSLETTER_RECIPIENT,
+      replyTo: cleanEmail,
+      subject: "NEW NEWSLETTER SUBSCRIPTION",
+      text: `New newsletter subscriber\nName: ${cleanName}\nEmail: ${cleanEmail}`,
+      html: `<body>
+      <h2>NEW NEWSLETTER SUBSCRIPTION</h2>
+      <ul style="font-size:1.1em">
+       <li><span style="padding:4px 0;color:#aaa;font-size:1.2em;font-weight:400"><b>Name</b>: ${escapeHtml(cleanName)}</span></li><br/>
+       <li><span style="padding:4px 0;color:#aaa;font-size:1.2em;font-weight:400"><b>Email</b>: ${escapeHtml(cleanEmail)}</span></li><br/>
+      </ul>
+      </body>`,
+    };
+
+    transporter.sendMail(mail_configs, function (error) {
+      if (error) {
+        console.log(error);
+        return reject({ status: 500, message: "an error occured" });
+      }
+      return resolve({ message: "subscribed successfully" });
+    });
+  });
+}
+
 module.exports = {
   sendEmail,
   sendHome,
   sendBooking,
   sendCorporate,
   sendFeedback,
+  subscribeNewsletter,
 
   // attijara
   contact,

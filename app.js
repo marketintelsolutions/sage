@@ -7,6 +7,7 @@ const {
   sendBooking,
   sendCorporate,
   sendFeedback,
+  subscribeNewsletter,
   contact,
   gettingStarted,
   sendMessage,
@@ -19,7 +20,7 @@ const app = express();
 
 app.use(express.static(path.join(__dirname + "/public")));
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5050;
 require("dotenv").config();
 
 // allows to send information from frontend to backend
@@ -72,6 +73,13 @@ app.post("/send_feedback", (req, res) => {
   sendFeedback(req.body)
     .then((response) => res.send(response.message))
     .catch((error) => res.status(500).send(error.message));
+});
+
+// NEWSLETTER
+app.post("/subscribe_newsletter", (req, res) => {
+  subscribeNewsletter(req.body)
+    .then((response) => res.send(response.message))
+    .catch((error) => res.status(error.status || 500).send(error.message));
 });
 
 // =====================================================================================
